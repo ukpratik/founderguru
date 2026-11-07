@@ -98,7 +98,7 @@
       "homepage": "https://yourstory.com",
       "defaultLens": null,
       "dailyCap": null,
-      "needsKeywordFilter": false,
+      "needsKeywordFilter": true,
       "staleAfterDays": 14
     },
     {

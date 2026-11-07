@@ -25,7 +25,7 @@ class CatalogLoaderTest {
         assertThat(byId.getValue("producthunt").dailyCap).isEqualTo(5)
         assertThat(byId.getValue("crunchbase-news").defaultLens).isEqualTo(Lens.FUNDING)
         assertThat(shipped.sources.filter { it.needsKeywordFilter }.map { it.id })
-            .containsExactly("ettech-startups", "vulcan-post", "techcabal")
+            .containsExactly("yourstory", "ettech-startups", "vulcan-post", "techcabal") // D-025: YourStory added in M5
         assertThat(byId.getValue("disrupt-africa").url).isEqualTo("https://disruptafrica.com/feed/")
         assertThat(byId.getValue("yc-blog").staleAfterDays).isEqualTo(45)
         assertThat(byId.getValue("first-round-review").staleAfterDays).isEqualTo(60)

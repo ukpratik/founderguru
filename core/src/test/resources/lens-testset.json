@@ -1,0 +1,1325 @@
+{
+  "description": "Lens precision gate (US-005, G2, LLD §8). 150 real items captured from the 24 live v1 feeds on 2026-11-07 (LiveFeedsTest -Pfg.capture), sampled per source with a fixed seed, and hand-labelled against the lens definitions in product/02-concept/concept.md BEFORE any tagging rule was written. Labels describe the story's content, not its source. Frozen: change it only on purpose, in its own commit.",
+  "capturedAt": "2026-11-07",
+  "labelGuide": {
+    "FUNDING": "A company raised, closed or is raising money (equity, debt, grants), M&A or an exit, an IPO, or a new VC/startup fund; funding round-ups.",
+    "LAUNCHES": "A new product, company or feature is launched or shown (Show HN, Product Hunt, 'launches', 'unveils', emerging from stealth).",
+    "TRENDS": "Market or sector analysis, regulation or policy, layoffs or shutdowns, data reports (including funding data reports).",
+    "PLAYBOOKS": "Advice, how-tos, lessons and first-hand stories or interviews from founders, operators and investors."
+  },
+  "items": [
+    {
+      "id": "techcrunch-startups-2",
+      "sourceId": "techcrunch-startups",
+      "title": "Harbinger raises $240M after expanding into defense",
+      "snippet": "The Los Angeles-based startup has now raised more than $650 million, and is working on electric trucks, emergency vehicles, and a driverless platform for the military.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "techcrunch-startups-5",
+      "sourceId": "techcrunch-startups",
+      "title": "Zipline hits $21.5B valuation as Walmart expands bet on drone delivery",
+      "snippet": "Zipline raised $1.5 billion and ramped up its partnership with Walmart.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "techcrunch-startups-10",
+      "sourceId": "techcrunch-startups",
+      "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
+      "snippet": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable…",
+      "labels": [
+        "TRENDS",
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "techcrunch-startups-12",
+      "sourceId": "techcrunch-startups",
+      "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+      "snippet": "The five-year-old startup raised a $1.3 billion round led by Bessemer.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "techcrunch-startups-13",
+      "sourceId": "techcrunch-startups",
+      "title": "Rivian spinout Also was working on an e-moto project in Kenya — until it walked away",
+      "snippet": "Also co-founder and president Chris Yu told TechCrunch that he wanted to prioritize autonomous vehicles.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "techcrunch-startups-15",
+      "sourceId": "techcrunch-startups",
+      "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
+      "snippet": "Secure your TechCrunch Founder Summit pass savings before prices increase tomorrow at 9 a.m. ET. Save up to $100 on your pass, and get a second for free.",
+      "labels": []
+    },
+    {
+      "id": "techcrunch-startups-16",
+      "sourceId": "techcrunch-startups",
+      "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
+      "snippet": "A Kyiv startup’s pocket-sized, 10-ounce receiver lets Ukrainian troops watch the video feeds of Russian drones, though Russian moves toward digital video and AI-guided drones that emit no signals…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "techcrunch-startups-19",
+      "sourceId": "techcrunch-startups",
+      "title": "Readwise takes on Amazon’s Kindle and Goodreads with its new app for book lovers",
+      "snippet": "Readwise Books combines an e-book store, reading tracker, detailed reading stats, and AI features in a bid to challenge Amazon's ecosystem.",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "crunchbase-news-2",
+      "sourceId": "crunchbase-news",
+      "title": "How To Challenge A Monopoly In The AI Age",
+      "snippet": "AI chip startups can challenge the sector's Goliath's by building substantially better hardware for emerging inference demands, much as Juniper challenged Cisco with a new architecture suited to the…",
+      "labels": [
+        "TRENDS",
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "crunchbase-news-3",
+      "sourceId": "crunchbase-news",
+      "title": "General Catalyst Tops Lead Investors For October In Busy Month For US Startup Dealmaking",
+      "snippet": "October was a busy month for U.S. startup funding, led by well-known venture investors with a healthy appetite for big deals. We take a look at active investor rankings across three categories: lead…",
+      "labels": [
+        "FUNDING",
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "crunchbase-news-4",
+      "sourceId": "crunchbase-news",
+      "title": "Exclusive: Nurx And Journey Clinical Co-Founders Raise $6M For Mental Health Startup Siggy",
+      "snippet": "Siggy has raised $6 million in pre-seed funding to build a mental health service that uses AI to collect patients’ histories and track progress between appointments with licensed clinicians, the…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "crunchbase-news-5",
+      "sourceId": "crunchbase-news",
+      "title": "Dropbox Plans $350M AI Infrastructure Deal With Tigris Buy, Its Biggest Acquisition Yet",
+      "snippet": "Dropbox has announced plans to acquire Tigris Data for $350 million in a transaction the company told Crunchbase News would mark its largest acquisition since its founding in 2007.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "crunchbase-news-10",
+      "sourceId": "crunchbase-news",
+      "title": "China’s Largest Startup Deal Ever Lifts Global Venture Funding To $59B In October",
+      "snippet": "Global venture funding in October totaled $59 billion, a 45% jump from a year earlier, per Crunchbase data, in large part due to a record-setting $15.9 billion funding round for China’s DeepSeek.",
+      "labels": [
+        "FUNDING",
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "hn-show-3",
+      "sourceId": "hn-show",
+      "title": "Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM",
+      "snippet": "Hi HN, we have been developing with Firebase for a long time, and the only way Firebase developers can build apps without directly costing them is using the official Firebase Emulator Suite. However,…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "hn-show-5",
+      "sourceId": "hn-show",
+      "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+      "snippet": "My brother and I run a 2-person lab that trains our own generative video models from scratch. The ultimate goal is a set of creative tools that make it easier for anyone to make animation. Video…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "hn-show-7",
+      "sourceId": "hn-show",
+      "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+      "snippet": "To give you some context on the project. I'm a solo founder and I use AI heavily in my work. The idea came from wanting players to discover cities. Each city has its own history, so every case is set…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "hn-show-13",
+      "sourceId": "hn-show",
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "snippet": "Hi HN, we're Aarush and Arnav from The Subvocal Company (YC F26) (https://subvocal.company/). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "hn-show-17",
+      "sourceId": "hn-show",
+      "title": "Show HN: HackerHack – HackerBooks but for Posts Posted on HN",
+      "snippet": "No AI used for this btw.",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "hn-show-19",
+      "sourceId": "hn-show",
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "snippet": "Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5). It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "hn-show-20",
+      "sourceId": "hn-show",
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "snippet": "I have been researching what the ultimate diff tool would look like, based on actual diffs in open source repositories. OmniDiff can diff: code (25 languages), config, images, PDFs, archives,…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-11",
+      "sourceId": "producthunt",
+      "title": "ClarifierAI for Chrome",
+      "snippet": "Use AI for writing & translating in your Chrome Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-12",
+      "sourceId": "producthunt",
+      "title": "ChatGPT Images 2.6",
+      "snippet": "Create, edit, and animate images with AI Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-16",
+      "sourceId": "producthunt",
+      "title": "Sendoff",
+      "snippet": "Say \"send it.\" to automatically email your list Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-19",
+      "sourceId": "producthunt",
+      "title": "Sequence Tool",
+      "snippet": "Edit with words: long recordings into polished stories Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-22",
+      "sourceId": "producthunt",
+      "title": "Trace by Context.dev",
+      "snippet": "Weekly web scraping API benchmark Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-36",
+      "sourceId": "producthunt",
+      "title": "Turnstone",
+      "snippet": "Grok Bot alternative that runs on your AI, completely free Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "producthunt-44",
+      "sourceId": "producthunt",
+      "title": "Datastripes Data Stories",
+      "snippet": "Turn any spreadsheet into a data story in seconds Discussion | Link",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "yc-blog-1",
+      "sourceId": "yc-blog",
+      "title": "How Harsh Vardhan Goenka became founding engineer #1 at Kalpa Labs",
+      "snippet": "From ICPC World Finals to competitive programming clubs to building generalist audio models as the first engineer at a YC startup.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-2",
+      "sourceId": "yc-blog",
+      "title": "How Dylan Anderson became founding engineer at Adam",
+      "snippet": "Dylan left Minnesota for San Francisco to build AI agents for CAD software as the first engineer at Adam (W25).",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-3",
+      "sourceId": "yc-blog",
+      "title": "How Andrew HunzekerHesed became Employee #1 at 10x Science",
+      "snippet": "A principal engineer left consumer-scale software to build AI-native scientific analysis tools as the founding engineer at 10x Science.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-6",
+      "sourceId": "yc-blog",
+      "title": "How Yair Alon went from building Portrait Mode at Google to founding researcher at Poetiq",
+      "snippet": "After 10 years at Google Research and DeepMind, Yair Alon joined Poetiq to build an AI that improves itself.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-7",
+      "sourceId": "yc-blog",
+      "title": "How Varsha Parthasarathy became engineer #1 at Flex — solving a problem she'd experienced",
+      "snippet": "From Lyft's self-driving division to fixing HSA/FSA payments, Varsha joined Flex as its first engineer and built from scratch.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-10",
+      "sourceId": "yc-blog",
+      "title": "How Vin Bui became engineer #1 at Nowadays — and started treating it like his own company",
+      "snippet": "Vin found Nowadays on Work at a Startup, saw a codebase he could fix, and joined as the first engineer. Now he builds AI voice tools and mentors the team.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-11",
+      "sourceId": "yc-blog",
+      "title": "How Ryder Kemper became employee #7 at Corgi Insurance — and never left San Francisco",
+      "snippet": "Ryder flew to SF for a work trial, moved furniture in a Mystery Machine bus, and decided to stay. Here's what building from day one looks like.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yc-blog-12",
+      "sourceId": "yc-blog",
+      "title": "Vivian Midha Shen and Raphael Schaad Join YC as General Partners",
+      "snippet": "We’re thrilled to announce that Vivian Midha Shen and Raphael Schaad are joining Y Combinator as our newest General Partners.",
+      "labels": []
+    },
+    {
+      "id": "yc-blog-13",
+      "sourceId": "yc-blog",
+      "title": "Christopher Golda and Grey Baker Join YC as General Partners",
+      "snippet": "We're excited to announce that Christopher Golda and Grey Baker are joining YC as General Partners.",
+      "labels": []
+    },
+    {
+      "id": "yc-blog-15",
+      "sourceId": "yc-blog",
+      "title": "Harshita Arora Joins YC as General Partner",
+      "snippet": "We're thrilled to announce that Harshita Arora is joining Y Combinator as a General Partner. She brings deep fintech and infrastructure experience, a founder's instinct for product, and the…",
+      "labels": []
+    },
+    {
+      "id": "first-round-review-1",
+      "sourceId": "first-round-review",
+      "title": "Permission to Think For Yourself: Inside the Thiel Fellowship’s Early Years",
+      "snippet": "A former educator and school founder helped design the process for selecting and supporting teenagers who’d go on to build Ethereum, Figma and Anthropic. She set out to give them permission to pursue…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-4",
+      "sourceId": "first-round-review",
+      "title": "Firing Underperforming Employees (at Startups)",
+      "snippet": "How to make something extremely difficult, hopefully less difficult for everyone involved.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-5",
+      "sourceId": "first-round-review",
+      "title": "Firsthand: How I Built a Brand with Heart at Lovable",
+      "snippet": "At previous jobs I had to slow myself down to ask what the committee thought. Not at Lovable. I joined as the first designer and fourth employee — and Lovable's culture of intense ownership trusted…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-7",
+      "sourceId": "first-round-review",
+      "title": "Board Meetings 101 (for Early Stage Founders)",
+      "snippet": "First-time founders tend to make one of two mistakes: they overprepare for the performance or underprepare for the conversation.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-9",
+      "sourceId": "first-round-review",
+      "title": "How Supabase became the essential infrastructure for the AI era | Paul Copplestone (Co-founder, CEO)",
+      "snippet": "In this episode of In Depth, Brett sits down with Paul Copplestone, co-founder and CEO of Supabase, the open-source Postgres platform now serving more than seven million developers. Before Supabase,…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-10",
+      "sourceId": "first-round-review",
+      "title": "Firsthand: Seven Years Inside Applied Intuition, the Quietly Dominant Physical AI Company",
+      "snippet": "I joined Applied Intuition as a new-grad engineer back in early 2019, when it was just a handful of us working above a bar on Murphy Ave in Sunnyvale. Today I'm Deputy CTO of the company (that now…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-11",
+      "sourceId": "first-round-review",
+      "title": "“AI-Powered” Isn’t a Position",
+      "snippet": "A playbook for building a distinctive brand when too many AI products sound the same, look the same and have the same positioning.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-12",
+      "sourceId": "first-round-review",
+      "title": "Firsthand: How I Bet On Clay (And It Bet On Me)",
+      "snippet": "I joined Clay as one of its earliest employees and a reluctant marketing hire. This is how, over the last three years, we built a role around my strengths as a storyteller, scaled past $100M ARR, and…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-14",
+      "sourceId": "first-round-review",
+      "title": "Reluctantly Influential: Inside Lenny Rachitsky’s Demandingly Chill Life",
+      "snippet": "With millions of subscribers across platforms, Lenny Rachitsky is one of the most prolific people in tech media. But what drives him — and what keeps him up at night — is a story most people don’t…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "first-round-review-15",
+      "sourceId": "first-round-review",
+      "title": "What nobody tells engineers about becoming a CEO | Jay Kreps (Co-founder and CEO, Confluent)",
+      "snippet": "Jay Kreps is the co-founder and CEO of Confluent, the company built around Apache Kafka — the open-source data streaming platform he originally built while at LinkedIn.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "rest-of-world-2",
+      "sourceId": "rest-of-world",
+      "title": "Startups recalibrate Chinese AI for the West",
+      "snippet": "A growing number of startups are editing powerful Chinese open-weight models for Western businesses that are concerned about censorship and security.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-3",
+      "sourceId": "rest-of-world",
+      "title": "Why Africa needs its own AI off switch",
+      "snippet": "Africa must develop AI systems with local control to protect critical infrastructure such as mobile money networks from growing AI-powered cyberthreats.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-4",
+      "sourceId": "rest-of-world",
+      "title": "AI models cost more when you don’t use English",
+      "snippet": "Some languages require far more tokens for AI models to process, raising costs and reducing context for the people who use them.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-6",
+      "sourceId": "rest-of-world",
+      "title": "Will developing nations be able to handle millions of AI agents?",
+      "snippet": "It may be some time before AI agents can fully navigate the complexities and cultural nuances of developing nations.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-7",
+      "sourceId": "rest-of-world",
+      "title": "Western open-weight models still can’t beat China",
+      "snippet": "Chinese open-weight AI models offer high capability at significantly lower costs than U.S. frontier systems, but face monetization and compute challenges, experts said at a Rest of World event in San…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-10",
+      "sourceId": "rest-of-world",
+      "title": "The UAE embraces AI for kindergartners",
+      "snippet": "The country’s approach offers a glimpse of what education could look like if AI literacy becomes as fundamental as reading and writing.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-11",
+      "sourceId": "rest-of-world",
+      "title": "As U.S. blocks DJI, Insta360 races to win American creators",
+      "snippet": "Regulatory clarity and market timing are a boon for smaller Chinese smart-camera maker Insta360 and its independent Antigravity drone brand.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "rest-of-world-12",
+      "sourceId": "rest-of-world",
+      "title": "Conflict in the Red Sea is forcing cloud giants to find a new route for the internet",
+      "snippet": "Google, Meta, and Microsoft are said to be securing expensive land routes as fighting around Yemen threatens the submarine cables connecting Europe and Asia.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "inc42-4",
+      "sourceId": "inc42",
+      "title": "Stockal’s US Trading Row: Missing Consent, A Chinese Microcap, And Unanswered Questions",
+      "snippet": "Indian investors who held Apple, Amazon, Tesla, and NVIDIA, shares allege they logged into their Stockal accounts to find those…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "inc42-7",
+      "sourceId": "inc42",
+      "title": "AvenuesAI Q2 Net Profit Rises 6% YoY To ₹72 Cr, Revenue Up 47%",
+      "snippet": "AvenuesAI (formerly Infibeam Avenues) reported a 6% growth in its net profit to ₹71.7 Cr in the quarter ended September…",
+      "labels": []
+    },
+    {
+      "id": "inc42-14",
+      "sourceId": "inc42",
+      "title": "Cashfree Launches ‘Checkout For Agents’ To Enable AI-Led Payments",
+      "snippet": "Fintech soonicorn Cashfree Payments has launched ‘Checkout for Agents’, a new tool that enables AI agents to process customer payments…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "inc42-15",
+      "sourceId": "inc42",
+      "title": "CEO Harsh Jain Teases A Revamped Dream11 By 2026-End",
+      "snippet": "Erstwhile real money gaming (RMG) giant Dream11’s cofounder and CEO Harsh Jain has hinted at plans to launch a revamped…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "inc42-17",
+      "sourceId": "inc42",
+      "title": "Go Digit Q2 Profit Falls 31% To ₹142 Cr",
+      "snippet": "Insurtech Go Digit reported a 31.1% year-on-year (YoY) decline in its net profit for the September quarter (Q2 FY27) to…",
+      "labels": []
+    },
+    {
+      "id": "inc42-20",
+      "sourceId": "inc42",
+      "title": "[Update] Exclusive: RapidClaims In Talks To Raise $30 Mn",
+      "snippet": "Update | November 5, 19:43 After the story was published, RapidClaims founder and CEO Dushyant Mishra said the startup is…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "inc42-24",
+      "sourceId": "inc42",
+      "title": "Daksham Capital Launches ₹300 Cr Consumer Fund, Marks First Close At ₹125 Cr",
+      "snippet": "Multi-family office and wealth management group Daksham Capital has launched its maiden consumer-focused fund, Daksham Growth Ventures (DGV) Fund I,…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "yourstory-1",
+      "sourceId": "yourstory",
+      "title": "How Satin Group’s Sankalp plans to empower India’s next wave of founders",
+      "snippet": "University incubators play an important role in nurturing early-stage ideas, but Sankalp aims to go further by helping entrepreneurs bridge the gap between developing a concept and preparing it for…",
+      "labels": []
+    },
+    {
+      "id": "yourstory-3",
+      "sourceId": "yourstory",
+      "title": "Why operational excellence will define the next phase of India’s startup growth",
+      "snippet": "Startups often prioritise funding, sales and expansion while overlooking the operational foundations needed to sustain growth. The article explores why strong processes, reliable data and governance…",
+      "labels": [
+        "TRENDS",
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yourstory-4",
+      "sourceId": "yourstory",
+      "title": "VeloDB’s Nitin Waghulde on why AI agents break down after the demo",
+      "snippet": "At TechSparks 2026, VeloDB’s Regional Director for APAC explained why AI agents that work in pilots struggle in production, and why the fix often lies in the database underneath them.",
+      "labels": [
+        "TRENDS",
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yourstory-5",
+      "sourceId": "yourstory",
+      "title": "When code is cheap, trust is not: Inside the AI-era engineering roundtable",
+      "snippet": "In a closed-door roundtable, leaders from logistics, healthcare, telecom, fintech, and e-commerce discussed where to automate, where to keep humans in charge, and why observability can no longer be…",
+      "labels": [
+        "TRENDS",
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "yourstory-6",
+      "sourceId": "yourstory",
+      "title": "(Weekly funding roundup Oct 31-Nov 6) Sharp rise in capital inflow",
+      "snippet": "The total funding for the first week of November was $263 million across 23 deals, compared to just $115 million in the previous week.",
+      "labels": [
+        "FUNDING",
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "yourstory-8",
+      "sourceId": "yourstory",
+      "title": "Mamaearth parent’s profit surges 87%; Goyal defends Temple amid backlash",
+      "snippet": "Honasa Consumer, the parent company of Mamaearth, registered an 87% YoY rise in net profit for Q2FY27, while revenue rose 36%. In other news, Deepinder Goyal has posted a series of updates on X amid…",
+      "labels": []
+    },
+    {
+      "id": "yourstory-16",
+      "sourceId": "yourstory",
+      "title": "Mamaearth parent Honasa's Q2 net profit rises 87%",
+      "snippet": "The company reported a net profit of Rs 73.24 crore in Q2FY27. Revenue rose 36% YoY to Rs 731.18 crore.",
+      "labels": []
+    },
+    {
+      "id": "yourstory-20",
+      "sourceId": "yourstory",
+      "title": "MakeMyTrip enters shared mobility space with majority stake in Quick Ride",
+      "snippet": "MakeMyTrip has acquired the Quick Ride brand and its ride pooling business with a majority stake in this entity.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "entrackr-21",
+      "sourceId": "entrackr",
+      "title": "MapMyIndia’s Q2 FY27 profit jumps 85% to Rs 37.5 Cr; revenue rises 16%",
+      "snippet": "C.E. Info Systems, the parent company of MapMyIndia, reported a 15.8% year-on-year increase in operating revenue in Q2 FY27. The company’s net profit surged 85% during the quarter to Rs 37.52 crore.…",
+      "labels": []
+    },
+    {
+      "id": "entrackr-24",
+      "sourceId": "entrackr",
+      "title": "Fintech infra startup OneStack raises Rs 12.5 Cr from Shepherd's Hill, others",
+      "snippet": "Fintech infrastructure startup OneStack has raised Rs 12.5 crore from new investor Shepherd's Hill and existing backers Pentathlon Ventures and AVNM Ventures. The Mumbai-based startup had previously…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "entrackr-30",
+      "sourceId": "entrackr",
+      "title": "Razorpay receives SEBI approval for IPO",
+      "snippet": "Fintech unicorn Razorpay has received approval from the Securities and Exchange Board of India (SEBI) for its initial public offering (IPO), according to sources familiar with the development. The…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "entrackr-37",
+      "sourceId": "entrackr",
+      "title": "Exclusive: Armatrix kicks off Rs 67 Cr seed round at 4.8X valuation premium",
+      "snippet": "Deeptech robotics startup Armatrix has raised Rs 67.28 crore in a seed funding round led by UK-based Crane Venture Partners, along with participation from new and existing investors. The fresh…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "entrackr-46",
+      "sourceId": "entrackr",
+      "title": "DeHaat posts Rs 2,715 Cr revenue in FY26",
+      "snippet": "Several agritech companies that initially started as marketplaces for selling agricultural inputs and outputs are now moving towards building their own brands. The shift is aimed at improving…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "ettech-startups-1",
+      "sourceId": "ettech-startups",
+      "title": "Google acquires Wyoming data center site from AI infrastructure firm Crusoe",
+      "snippet": "Google has acquired Crusoe's data center site in southeast Wyoming, the AI infrastructure developer said on Friday, a day after the Alphabet unit announced a $17-billion investment in the project.",
+      "labels": []
+    },
+    {
+      "id": "ettech-startups-2",
+      "sourceId": "ettech-startups",
+      "title": "ETtech Deals Digest: Eloelo leads as weekly funding rises to $142 million, down 35% on-year",
+      "snippet": "Eloelo led deal activity with $80 million, followed by Peppermint Robotics at $10.6 million, altM at $10.3 million, Two Point O Capital at $10 million, and PowerUp Money at $10 million. Crane Venture…",
+      "labels": [
+        "FUNDING",
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "ettech-startups-19",
+      "sourceId": "ettech-startups",
+      "title": "Lenskart Q2 net profit more than doubles to Rs 232 crore, revenue rises 36%",
+      "snippet": "The company’s net profit rose 125% to Rs 232 crore, compared with Rs 103.45 crore in the year-ago period. Profit before tax more than doubled to Rs 304.48 crore from Rs 148 crore a year earlier. The…",
+      "labels": []
+    },
+    {
+      "id": "ettech-startups-24",
+      "sourceId": "ettech-startups",
+      "title": "Peppermint Robotics raises Rs 100 crore led by pi Ventures, Crane Venture Partners",
+      "snippet": "The company was founded in 2019 by Runal Dahiwade, and has raised Rs 150 crore to date. It also develops autonomous robots for material transportation and operates in nine countries. The US is its…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "ettech-startups-46",
+      "sourceId": "ettech-startups",
+      "title": "BlackBuck Q2 profit rises 42% to Rs 41 crore, revenue up 56%",
+      "snippet": "The Bengaluru-based company’s revenue from operations grew 56% YoY to Rs 235 crore as compared to Rs 151 crore in the year-ago quarter. Total expenses for the Blackbuck increased 36% YoY to Rs 114…",
+      "labels": []
+    },
+    {
+      "id": "sifted-1",
+      "sourceId": "sifted",
+      "title": "Sequoia is leaving London. Should Europe be worried?",
+      "snippet": "",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "sifted-6",
+      "sourceId": "sifted",
+      "title": "Early Revolut employees emerge from stealth with AI wealthtech Haido",
+      "snippet": "",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "sifted-7",
+      "sourceId": "sifted",
+      "title": "Exclusive: Helsing CEO backs AI learning startup Mindmax in £2.5m raise",
+      "snippet": "",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "sifted-8",
+      "sourceId": "sifted",
+      "title": "The future of engineering: fewer people, more work, and the end of tokenmaxxing",
+      "snippet": "",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "sifted-14",
+      "sourceId": "sifted",
+      "title": "Ex-Hummingbird investor plots new VC firm, sources say",
+      "snippet": "",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "sifted-15",
+      "sourceId": "sifted",
+      "title": "Can tech media survive the rise of AI and influencers?",
+      "snippet": "",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "sifted-23",
+      "sourceId": "sifted",
+      "title": "Enterprise customers want to see AI’s ROI. Here’s how startups can show it",
+      "snippet": "",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "tech-eu-1",
+      "sourceId": "tech-eu",
+      "title": "Fal doubles valuation to $16B, STATION F unveils 2026 Future 40, and Revolut confirms $115BN valuation",
+      "snippet": "This week, we tracked more than 55 tech funding deals worth over €2.7 billion and over 5 exits, M&A transactions, rumours, and related news stories across Europe.Want to stay in the know? If email...",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-eu-2",
+      "sourceId": "tech-eu",
+      "title": "Denmark's EIFO joins TEKEVER's $580M Series D as company expands into Odense",
+      "snippet": "Defencetech TEKEVER today announced plans to establish an operational presence in Odense, Denmark, its first in the Nordic region, to support its work across the region. The announcement follows a…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-eu-5",
+      "sourceId": "tech-eu",
+      "title": "From fallen leaves to factory floors: How Releaf is making alternative paper commercially viable",
+      "snippet": "Ukrainian-founded, Paris-based Releaf is developing an alternative to conventional wood-based paper by transforming urban fallen leaves into fibres for packaging, paper and other materials. The…",
+      "labels": []
+    },
+    {
+      "id": "tech-eu-8",
+      "sourceId": "tech-eu",
+      "title": "UK Sovereign AI fund and Stripe CEO back Potential Sciences in multi-million-dollar raise",
+      "snippet": "A London-based startup building AI infrastructure for scientific drug discovery has received backing from the UK government’s Sovereign AI fund and Stripe CEO Patrick Collison.Potential Sciences…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-eu-9",
+      "sourceId": "tech-eu",
+      "title": "Five UK startups secure eight patents from Panasonic, Nokia, NEC and DENSO",
+      "snippet": "Five UK startups have won the rights to patented technologies developed by some of the world's largest corporations, a prize that could transform their ability to compete at home and internationally.…",
+      "labels": []
+    },
+    {
+      "id": "tech-eu-11",
+      "sourceId": "tech-eu",
+      "title": "Zilch sees revenues uplift but losses increase",
+      "snippet": "Zilch, the UK fintech reportedly gearing up for an IPO, has reported a 36 per cent increase in full-year revenues to £147.5m, but losses swelled almost three-fold to £35.9m, its latest financial…",
+      "labels": []
+    },
+    {
+      "id": "tech-eu-15",
+      "sourceId": "tech-eu",
+      "title": "German aerospace startup VÆRIDION raises €30M for zero-emission regional fights",
+      "snippet": "A Munich-based aerospace startup on a mission to make affordable, zero-emission regional flights an everyday reality has raised €30m in a new funding round, it said today.VÆRIDION is developing an…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-eu-16",
+      "sourceId": "tech-eu",
+      "title": "SFC Capital backs Nayara's AI platform for patient care",
+      "snippet": "UK-basedhealthcare AI company Nayara has closed a pre-seed funding round led by SFC Capital, an early-stage investor in the UK. The funding will support thedevelopment and expansion of its AI-powered…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-funding-news-3",
+      "sourceId": "tech-funding-news",
+      "title": "If capital is a commodity, what are founders paying for?",
+      "snippet": "Early-stage capital has become a commodity, and it’s no longer what sets a fund apart. Founders should expect…",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "tech-funding-news-5",
+      "sourceId": "tech-funding-news",
+      "title": "Report: Monzo eyes £7.5B valuation after Nubank and private equity talks collapse",
+      "snippet": "Back in 2015, Monzo raised £1 million in 96 seconds. Since late September, it has been gauging investor…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-funding-news-6",
+      "sourceId": "tech-funding-news",
+      "title": "Drone delivery startup Zipline nearly triples valuation to $21.5B in 10 months with $1.5B raise",
+      "snippet": "In January 2014, Keller Rinaudo Cliffton‘s team shut down Romotive, the company behind the iPhone robot Romo. Cliffton,…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "tech-funding-news-7",
+      "sourceId": "tech-funding-news",
+      "title": "5 European edtech startups to watch, according to top VCs",
+      "snippet": "Edtech spent the years after the pandemic living down its reputation as a category that boomed on lockdown…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "tech-funding-news-10",
+      "sourceId": "tech-funding-news",
+      "title": "Five years after its Series A, insurance AI startup Kalepa raises $75M at $470M valuation",
+      "snippet": "Kalepa waited five years between funding rounds and has been cash flow positive for over two years. The…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "geekwire-startups-5",
+      "sourceId": "geekwire-startups",
+      "title": "Longtime investor Martin Tobias says no to 99% of startups — his new AI tool helps them find a yes",
+      "snippet": "Investor Match started as a way for the Incisive Ventures founder to help his own portfolio companies raise follow-on rounds. Now any founder can use it for $20.",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "geekwire-startups-14",
+      "sourceId": "geekwire-startups",
+      "title": "PicoBrew’s patents are back on the market, six years after the Seattle homebrew startup’s collapse",
+      "snippet": "Hilco Global is marketing 17 patents and applications from the defunct Seattle homebrew startup on behalf of Pico Craft Group, which bought the assets in 2024.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "geekwire-startups-23",
+      "sourceId": "geekwire-startups",
+      "title": "Data farmers: Ag-tech startup Aigen grows AI-generated weeds to train its solar-powered farm robots",
+      "snippet": "With diesel prices up sharply and digital plants speeding up training, the Redmond, Wash., startup is taking on new crops and new customers for its solar-powered weeding robots.",
+      "labels": []
+    },
+    {
+      "id": "geekwire-startups-28",
+      "sourceId": "geekwire-startups",
+      "title": "Autonomous flight startup Reliable Robotics opens Seattle area radar hub as valuation tops $1 billion",
+      "snippet": "Reliable Robotics is opening a new engineering hub in Bothell to advance autonomous flight technology, tapping Seattle’s aerospace talent as the California startup raises $115 million and surpasses a…",
+      "labels": []
+    },
+    {
+      "id": "geekwire-startups-29",
+      "sourceId": "geekwire-startups",
+      "title": "From dishes to diapers: Seattle home-help startup Rosie raises $7M, eyes Austin and S.F. in 2027",
+      "snippet": "Rosie, founded by two Amazon veterans, sells monthly memberships that families use to book vetted caregivers for childcare and household work. The company says it reached seven-figure annual…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "betakit-6",
+      "sourceId": "betakit",
+      "title": "Canada to implement QSBS-style tax incentive and “level playing field” with US",
+      "snippet": "Feds deliver on tech and VC tax ask with Canada Growth Incentive in Budget 2026. The post Canada to implement QSBS-style tax incentive and “level playing field” with US first appeared on BetaKit.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "betakit-37",
+      "sourceId": "betakit",
+      "title": "Cohere deal won’t be last time feds take stake in Canadian tech companies, AI minister says",
+      "snippet": "Evan Solomon says forthcoming $500-million tech fund will consider equity stakes. The post Cohere deal won’t be last time feds take stake in Canadian tech companies, AI minister says first appeared…",
+      "labels": [
+        "FUNDING",
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "betakit-39",
+      "sourceId": "betakit",
+      "title": "PrairiesCan minister says new regional funding shows Canada’s commitment to AI",
+      "snippet": "Feds adding $500 million to support AI adoption programming among small- and medium-sized businesses. The post PrairiesCan minister says new regional funding shows Canada’s commitment to AI first…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "betakit-47",
+      "sourceId": "betakit",
+      "title": "Three trends to watch from the 2026 Québec FinTech Report",
+      "snippet": "Station FinTech Montréal tracks the rise of agentic commerce and the forces reshaping fintech in Québec. The post Three trends to watch from the 2026 Québec FinTech Report first appeared on BetaKit.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "betakit-48",
+      "sourceId": "betakit",
+      "title": "Wealthsimple announces $425-million Series F at $13.8-billion valuation",
+      "snippet": "Existing backers to pour another $300 million into Wealthsimple and buy $125 million in shares from staff. The post Wealthsimple announces $425-million Series F at $13.8-billion valuation first…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "alleywatch-1",
+      "sourceId": "alleywatch",
+      "title": "The New York Tech Daily Funding Report: 11/6/2026",
+      "snippet": "The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/6/2026 featuring funding details for Cowboy and much more.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "alleywatch-3",
+      "sourceId": "alleywatch",
+      "title": "The New York Startup Daily Funding Report: 11/5/2026",
+      "snippet": "The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/5/2026 featuring funding details for Kalepa and much more.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "alleywatch-4",
+      "sourceId": "alleywatch",
+      "title": "The October 2026 US Venture Capital Funding Report",
+      "snippet": "US startups raised $20.83B in October, up 71% from a year ago and down 25% from September. Four rounds of $1B or more accounted for 26% of the total, and the 43 rounds of $100M or more took 68%. We…",
+      "labels": [
+        "FUNDING",
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "alleywatch-5",
+      "sourceId": "alleywatch",
+      "title": "The New York Tech Daily Funding Report: 11/4/2026",
+      "snippet": "The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/4/2026 featuring funding details for Traversal and much more.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "alleywatch-7",
+      "sourceId": "alleywatch",
+      "title": "Chord Acquires Zenlytic, Doubling Its Revenue",
+      "snippet": "Everyone’s giving AI agents access to company data. Almost nobody is making sure they understand the business. Chord just bought Zenlytic to fix that.",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "vulcan-post-2",
+      "sourceId": "vulcan-post",
+      "title": "MRANTI partners with Kazakhstan’s Alatau City to open new markets for M’sian tech companies",
+      "snippet": "[This is a sponsored article with Malaysian Research Accelerator for Technology and Innovation (MRANTI).] Malaysian technology companies will soon be able to bring our innovations to international…",
+      "labels": []
+    },
+    {
+      "id": "vulcan-post-5",
+      "sourceId": "vulcan-post",
+      "title": "While S’pore gyms shut down, UFIT is making up to S$18M a year with just 4 outlets",
+      "snippet": "This year is its best in five years, says founder and CEO Dean Ahmad Amid a spate of gym closures, UFIT is bucking the trend. According to its CEO and founder, Dean Ahmad, 41, the homegrown health…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "vulcan-post-7",
+      "sourceId": "vulcan-post",
+      "title": "S’pore Q3 2026 retrenchments hit 4,800, a nearly six-year high",
+      "snippet": "Resident unemployment has climbed to 3% Retrenchments rose by 3.9% to 4,800 in Q3 2026, up from 4,620 in Q2, according to the latest Ministry of Manpower (MOM)’s Labour Market Advance Release on…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "vulcan-post-8",
+      "sourceId": "vulcan-post",
+      "title": "Glasses are too expensive, so these M’sians started a biz that sells them for RM49+",
+      "snippet": "A couple months ago, I made the mistake of scratching my eyeball, which meant I couldn’t wear my contact lenses while it healed. This would’ve been fine, if I had not also accidentally broken my only…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "vulcan-post-10",
+      "sourceId": "vulcan-post",
+      "title": "According to Harvard, 2,200 S’poreans may have died from the 2015 haze. What could the 2026 toll be?",
+      "snippet": "Disclaimer: Unless otherwise stated, any opinions expressed below belong solely to the author. Following the particularly severe haze episode in 2015, when skies over much of Southeast Asia were…",
+      "labels": []
+    },
+    {
+      "id": "fintech-news-sg-1",
+      "sourceId": "fintech-news-sg",
+      "title": "Remote Launches Virtual Expense Cards for Global Employees",
+      "snippet": "Remote has launched virtual expense cards that let companies manage employee spending alongside payroll. Remote Expense Cards are available to eligible employees hired through its Employer of Record…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "fintech-news-sg-5",
+      "sourceId": "fintech-news-sg",
+      "title": "Mr Pips US$61 Million Fraud Case Turns Focus to Vietnam’s Payment Gateways",
+      "snippet": "Vietnamese prosecutors have recommended further investigation into how money in the Mr Pips fraud case moved through several payment intermediaries. Prosecutors outlined the recommendation at the…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "fintech-news-sg-6",
+      "sourceId": "fintech-news-sg",
+      "title": "Visa: AI Models Failed Nearly Half of Tests to Make Suitable Shopping Decisions",
+      "snippet": "Visa put 22 AI models through everyday shopping tests, and nearly half of their attempts failed. Its new Agentic Commerce Benchmark tested models from 12 AI labs across 15 shopping scenarios…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "fintech-news-sg-7",
+      "sourceId": "fintech-news-sg",
+      "title": "Tazapay Revenue Jumps 71% as Net Loss Widens to US$7.36 Million",
+      "snippet": "Tazapay increased its revenue by 71% in the financial year ended March 2026, although its net loss widened over the same period. The Singapore-based cross-border payments firm, which Circle agreed to…",
+      "labels": []
+    },
+    {
+      "id": "fintech-news-sg-8",
+      "sourceId": "fintech-news-sg",
+      "title": "NPCI Expands Beyond Payments With New AI, Blockchain Arm",
+      "snippet": "The National Payments Corporation of India (NPCI) is expanding beyond its core payments business with a new subsidiary focused on AI and blockchain. The new subsidiary, NPCI Tech Solutions Limited…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "techcabal-1",
+      "sourceId": "techcabal",
+      "title": "Qatar’s $5.5 million startup fund could open doors for African founders",
+      "snippet": "Qatar is offering foreign tech startups up to $5.5 million in funding, alongside residency and relocation support, as it seeks to attract entrepreneurs to Doha. African founders could benefit from…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "techcabal-4",
+      "sourceId": "techcabal",
+      "title": "Nigeria is rewriting its cyber laws, but can it secure its systems against hackers?",
+      "snippet": "Nigeria is reviewing its cybersecurity laws to counter mounting threats as artificial intelligence (AI) makes fraud, digital deception, and attacks on critical infrastructure harder to detect.",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "techcabal-6",
+      "sourceId": "techcabal",
+      "title": "Massive wants to help small businesses turn Google searches into customers",
+      "snippet": "Massive combines automated optimisation with human account managers who monitor search rankings and review business profiles.",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "techcabal-7",
+      "sourceId": "techcabal",
+      "title": "Optasia wants to move beyond airtime credit as microfinance drives growth",
+      "snippet": "Optasia is moving beyond airtime advances into AI-powered microfinance, targeting consumers and small businesses underserved by traditional lenders as it expands its digital lending business.",
+      "labels": []
+    },
+    {
+      "id": "techcabal-10",
+      "sourceId": "techcabal",
+      "title": "Habana went from World Cup winner to fintech beginner. Here’s what he learned.",
+      "snippet": "When he stepped into the fintech boardroom, the skills that made him a rugby star did not automatically translate into business success.",
+      "labels": [
+        "PLAYBOOKS"
+      ]
+    },
+    {
+      "id": "disrupt-africa-1",
+      "sourceId": "disrupt-africa",
+      "title": "How Syd Life AI is turning health data into better quality of life",
+      "snippet": "Lorena Puica had a successful corporate career, but health issues prompted a re-evaluation that led her to launch the AI-enabled wellness monitoring startup Syd Life AI in 2016. Headquartered in the…",
+      "labels": []
+    },
+    {
+      "id": "disrupt-africa-5",
+      "sourceId": "disrupt-africa",
+      "title": "UK emerges as key base for African tech startups",
+      "snippet": "The United Kingdom (UK) has emerged as a key international base for African tech companies, offering a mix of incorporation, operations and regulatory licensing that sets it apart from other global…",
+      "labels": [
+        "TRENDS"
+      ]
+    },
+    {
+      "id": "disrupt-africa-8",
+      "sourceId": "disrupt-africa",
+      "title": "Egypt’s MoneyHash helps Luno recover one in four lost deposits",
+      "snippet": "Egyptian payment orchestration startup MoneyHash is powering the payments infrastructure of crypto and investment platform Luno, helping it launch local payment options faster and recover deposits…",
+      "labels": []
+    },
+    {
+      "id": "disrupt-africa-9",
+      "sourceId": "disrupt-africa",
+      "title": "Moroccan startup PhiDoc launches “PhD operating system” for African researchers",
+      "snippet": "Moroccan ed-tech startup PhiDoc has launched an integrated research platform designed to give African PhD candidates and early-career researchers coordinated access to funding information, mentorship…",
+      "labels": [
+        "LAUNCHES"
+      ]
+    },
+    {
+      "id": "disrupt-africa-10",
+      "sourceId": "disrupt-africa",
+      "title": "How Kenya’s PayServe is building the operating layer for managed real estate",
+      "snippet": "Kenyan prop-tech and fintech startup PayServe is raising a US$1 million Series A round as it scales a platform that automates billing, payments and reconciliation for the country’s fast-growing…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "weetracker-1",
+      "sourceId": "weetracker",
+      "title": "African Stablecoin Payments Startup Yellow Card Acquires Brazilian Crypto Firm GoMoney",
+      "snippet": "Yellow Card, an Africa-founded stablecoin payments infrastructure provider, has acquired Brazilian virtual asset",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "weetracker-2",
+      "sourceId": "weetracker",
+      "title": "Moroccan Adtech Startup Journify Raises USD 12 M Series A",
+      "snippet": "Journify, a Moroccan-founded advertising technology startup, has raised USD 12 M in a",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "weetracker-4",
+      "sourceId": "weetracker",
+      "title": "Nigeria’s Helium Health Secures USD 2.5 M Google.org Grant For AI Maternal Care",
+      "snippet": "Helium Health, a Nigerian healthtech startup founded in 2014, has secured a NGN",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "weetracker-5",
+      "sourceId": "weetracker",
+      "title": "KrosAI Raises USD 135 K To Expand AI Voice Infrastructure Across Africa",
+      "snippet": "KrosAI, an AI telecommunications infrastructure startup founded by Nigerian entrepreneur Joshua Barimon Firima,",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "weetracker-7",
+      "sourceId": "weetracker",
+      "title": "Vitara Agritech Raises USD 2 M To Expand Ghana’s Shea Supply Chain",
+      "snippet": "Vitara Agritech, a Ghanaian agricultural technology company formerly known as Sommalife, has raised",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "latamlist-3",
+      "sourceId": "latamlist",
+      "title": "Celes raises $5M Series A led by SP Ventures",
+      "snippet": "Colombian retailtech Celes raised $5M in a Series A round led by SP Ventures, with participation from Fulcrum…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "latamlist-5",
+      "sourceId": "latamlist",
+      "title": "Colombian fintech FinMaq raises $6.5M Series A",
+      "snippet": "Colombian fintech FinMaq raised $6.5M in a Series A round led by Accion, with participation from Mundi Ventures…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "latamlist-6",
+      "sourceId": "latamlist",
+      "title": "Itaú to acquire NeoSpace AI for $589M",
+      "snippet": "Brazilian bank Itaú announced an agreement to acquire 100% of NeoSpace AI for approximately $589M. The bank will…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "latamlist-7",
+      "sourceId": "latamlist",
+      "title": "MineMind raises $1M at $11M valuation",
+      "snippet": "Brazilian startup MineMind raised $1M in a funding round that valued the company at $11M. Investors included Edson…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "latamlist-8",
+      "sourceId": "latamlist",
+      "title": "Colombian fintech Bold secures $11.3M credit facility from BBVA Spark",
+      "snippet": "Colombian fintech Bold secured an $11.3M credit facility from BBVA Spark. Founded in 2020, Bold provides financial services…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "lavca-2",
+      "sourceId": "lavca",
+      "title": "Colca Capital Acquires Giga.uno",
+      "snippet": "Colca Capital acquired Giga.uno, a Colombia-based enterprise content management and digital transformation services provider. #PE",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "lavca-4",
+      "sourceId": "lavca",
+      "title": "Clip Acquires Pulpos",
+      "snippet": "Clip acquired Pulpos, a Mexico-based cloud business management platform, to expand its services for merchants beyond digital payments. #VC",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "lavca-5",
+      "sourceId": "lavca",
+      "title": "Lightrock Fully Exits General Water via Sale to Kadri Group",
+      "snippet": "Lightrock fully exited General Water, a Brazil-based water supply and wastewater treatment company, via the sale of its ~27.5% stake to Kadri Group. #PE",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "lavca-6",
+      "sourceId": "lavca",
+      "title": "Vinci Compass Agrees to Acquire Controlling Stake in Sanar",
+      "snippet": "Vinci Compass agreed to acquire a controlling stake in Sanar, a Brazil-based medical education platform, through its Vinci Capital Partners IV fund. The secondary transaction facilitates exits for…",
+      "labels": [
+        "FUNDING"
+      ]
+    },
+    {
+      "id": "lavca-10",
+      "sourceId": "lavca",
+      "title": "Itaú Unibanco Agrees to Acquire 35% Stake in Prisma Capital",
+      "snippet": "Itaú Unibanco agreed to acquire a 35% stake in Prisma Capital, a Brazil-based alternative asset manager, through a preferred share investment. #PrivateCredit",
+      "labels": [
+        "FUNDING"
+      ]
+    }
+  ]
+}

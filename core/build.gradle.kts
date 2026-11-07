@@ -25,5 +25,8 @@ tasks.test {
     systemProperty("fg.sourcesJson", sources.asFile.path)
     // -Pfg.live=true runs LiveFeedsTest against the real 24 feeds (network; never in CI).
     providers.gradleProperty("fg.live").orNull?.let { systemProperty("fg.live", it) }
+    // -Pfg.capture=<file> (with fg.live) also writes every live item as {id, sourceId, title, snippet} JSON: the raw pool
+    // that lens-testset.json was sampled from (LLD §8).
+    providers.gradleProperty("fg.capture").orNull?.let { systemProperty("fg.capture", it) }
     testLogging { events("failed"); showStandardStreams = providers.gradleProperty("fg.live").isPresent }
 }

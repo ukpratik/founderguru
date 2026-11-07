@@ -42,6 +42,23 @@ class LensTaggerTest {
         assertThat(lenses("A fundamental rethink of chips")).isEmpty()
     }
 
+    @Test fun `D-024 trends vocabulary`() {
+        assertThat(lenses("Canada to implement QSBS-style tax incentive")).containsExactly(Lens.TRENDS)
+        assertThat(lenses("Nigeria is rewriting its cyber laws")).containsExactly(Lens.TRENDS)
+        assertThat(lenses("S'pore Q3 retrenchments hit 4,800")).containsExactly(Lens.TRENDS)
+        assertThat(lenses("Why Africa needs its own AI off switch")).containsExactly(Lens.TRENDS)
+        assertThat(lenses("Global venture funding hits \$59B")).containsExactly(Lens.TRENDS, Lens.FUNDING)
+        assertThat(lenses("Profit before tax doubled")).isEmpty()
+        assertThat(lenses("Lawson opens a store")).isEmpty()
+    }
+
+    @Test fun `a fund launch is Funding, not Launches`() {
+        assertThat(lenses("Daksham Capital launches Rs 300 Cr consumer fund")).containsExactly(Lens.FUNDING)
+        assertThat(lenses("The fund, launched in 2022, closes")).containsExactly(Lens.FUNDING)
+        assertThat(lenses("Zepto launches a cafe app")).containsExactly(Lens.LAUNCHES)
+        assertThat(lenses("Fintech launches app. Fund raises more")).containsExactly(Lens.LAUNCHES, Lens.FUNDING)
+    }
+
     @Test fun `source default lens is always added, keywords add more`() {
         val ph = plain.copy(defaultLens = Lens.LAUNCHES)
         assertThat(lenses("A calendar for teams", ph)).containsExactly(Lens.LAUNCHES)

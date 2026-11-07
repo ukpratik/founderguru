@@ -11,7 +11,7 @@ data class Tags(val lenses: Int, val sectors: Long, val regionMentions: Int)
  * are re-tagged at the next start (LLD §4.10).
  */
 object Tagger {
-    const val TAGGER_VERSION = 1
+    const val TAGGER_VERSION = 2
 
     fun tag(title: String, snippet: String, source: SourceDef): Tags {
         val text = WordMatcher.text(title, snippet)

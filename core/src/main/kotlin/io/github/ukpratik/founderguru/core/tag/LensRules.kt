@@ -6,7 +6,8 @@ import io.github.ukpratik.founderguru.core.model.SourceDef
 
 /**
  * Keyword rules per founder lens (US-005, ADR-005, LLD §4.6). The starting set is the LLD table; any change is measured
- * with LensPrecisionTest on the frozen `lens-testset.json` (precision ≥ 0.75 per lens) and bumps [Tagger.TAGGER_VERSION].
+ * with LensPrecisionTest on the frozen `lens-testset.json` and `lens-holdout.json` (precision ≥ 0.75 per lens on both)
+ * and bumps [Tagger.TAGGER_VERSION]. Rules are tuned on `lens-testset.json` only; the held-out set only measures (D-024).
  */
 object LensRules {
     val rules: Map<Lens, WordMatcher> = mapOf(
@@ -24,12 +25,25 @@ object LensRules {
                 "open-sourc(?:es|ed)", "beta",
             ),
             caseSensitive = listOf("Show HN"),
+            // D-024: a fund launch is Funding (label guide), not a product launch.
+            exclude = listOf("launch(?:es|ed|ing)?[^.]{0,40}?(?<![\\p{L}\\p{N}])funds?", "funds?[^.]{0,20}?launched"),
         ),
         Lens.TRENDS to WordMatcher(
             caseInsensitive = listOf(
-                "layoffs?", "lays off", "shuts down", "shutter(?:s|ed)?", "shutdown", "regulations?", "regulators?", "antitrust",
-                "bans?", "banned", "tariffs?", "funding winter", "slowdown", "report (?:finds|shows|says)", "survey finds",
-                "data shows", "market share", "trends?",
+                // Layoffs, shutdowns, jobs
+                "layoffs?", "lays off", "laid off", "job cuts", "retrenchments?", "unemployment", "shuts down", "shutter(?:s|ed)?",
+                "shutdown", "closures?", "defunct",
+                // Regulation and policy (D-024 adds the policy vocabulary)
+                "regulations?", "regulators?", "regulatory", "antitrust", "bans?", "banned", "tariffs?", "polic(?:y|ies)", "laws?",
+                "legislation", "lawmakers", "governments?", "ministers?", "ministry", "budget", "taxes",
+                "tax (?:incentives?|breaks?|credits?|rules?|cuts?)", "fraud", "crackdown",
+                // Market data and reports (D-024 adds funding-data phrasing)
+                "funding winter", "slowdown", "report (?:finds|shows|says)", "(?:study|survey|index) (?:finds|shows|says)",
+                "data shows", "per \\w+ data", "according to (?:a |the )?(?:new |latest )?(?:report|data|study|survey)",
+                "market share", "venture funding", "(?:weekly|monthly|quarterly) funding", "funding (?:roundup|tracker|data)",
+                "deals digest", "dealmaking",
+                // Analysis framing (D-024)
+                "trends?", "why", "the future of", "the rise of", "to watch", "experts?", "challenges",
             ),
         ),
         Lens.PLAYBOOKS to WordMatcher(

@@ -22,6 +22,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.FilterChip
@@ -30,6 +31,9 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.snapshotFlow
+import kotlinx.coroutines.flow.first
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
@@ -166,9 +170,20 @@ fun HotStrip(hot: List<SectorCount>, onOpen: (SectorCount) -> Unit) {
 fun LensChips(selected: LensFilter, enabled: Boolean, onSelect: (LensFilter) -> Unit) {
     val c = Fg.colors
     val group = stringResource(R.string.lens_group)
+    val row = rememberLazyListState()
+    // BUG-007: a remembered lens may be off screen (e.g. Playbooks after a relaunch); bring it into view, but leave the
+    // row alone when the selected chip is already fully visible.
+    LaunchedEffect(selected) {
+        val index = Labels.CHIPS.indexOf(selected)
+        if (index < 0) return@LaunchedEffect
+        val info = snapshotFlow { row.layoutInfo }.first { it.visibleItemsInfo.isNotEmpty() }
+        val item = info.visibleItemsInfo.firstOrNull { it.index == index }
+        if (item == null || item.offset < info.viewportStartOffset || item.offset + item.size > info.viewportEndOffset) row.scrollToItem(index)
+    }
     Column {
         LazyRow(
             Modifier.fillMaxWidth().semantics { selectableGroup(); contentDescription = group },
+            state = row,
             contentPadding = PaddingValues(start = Margin, end = Margin, top = 10.dp, bottom = 14.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {

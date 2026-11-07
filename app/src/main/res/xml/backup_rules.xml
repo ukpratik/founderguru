@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LLD §7: the database and settings are backed up; caches are not. -->
+<full-backup-content>
+    <include domain="database" path="founderguru.db" />
+    <include domain="file" path="datastore/" />
+</full-backup-content>

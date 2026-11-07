@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "listVersion": 1,
+  "sources": [
+    {
+      "id": "techcrunch-startups",
+      "name": "TechCrunch Startups",
+      "region": "GLOBAL",
+      "url": "https://techcrunch.com/category/startups/feed/",
+      "homepage": "https://techcrunch.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "crunchbase-news",
+      "name": "Crunchbase News",
+      "region": "GLOBAL",
+      "url": "https://news.crunchbase.com/feed/",
+      "homepage": "https://news.crunchbase.com",
+      "defaultLens": "FUNDING",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "hn-show",
+      "name": "Show HN (50+ points)",
+      "region": "GLOBAL",
+      "url": "https://hnrss.org/show?points=50",
+      "homepage": "https://news.ycombinator.com/show",
+      "defaultLens": "LAUNCHES",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "region": "GLOBAL",
+      "url": "https://www.producthunt.com/feed",
+      "homepage": "https://www.producthunt.com",
+      "defaultLens": "LAUNCHES",
+      "dailyCap": 5,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "yc-blog",
+      "name": "Y Combinator Blog",
+      "region": "GLOBAL",
+      "url": "https://www.ycombinator.com/blog/rss",
+      "homepage": "https://www.ycombinator.com/blog",
+      "defaultLens": "PLAYBOOKS",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 45
+    },
+    {
+      "id": "first-round-review",
+      "name": "First Round Review",
+      "region": "GLOBAL",
+      "url": "https://review.firstround.com/articles/rss/",
+      "homepage": "https://review.firstround.com",
+      "defaultLens": "PLAYBOOKS",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 60
+    },
+    {
+      "id": "rest-of-world",
+      "name": "Rest of World",
+      "region": "GLOBAL",
+      "url": "https://restofworld.org/feed/latest/",
+      "homepage": "https://restofworld.org",
+      "defaultLens": "TRENDS",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "inc42",
+      "name": "Inc42",
+      "region": "IN",
+      "url": "https://inc42.com/feed/",
+      "homepage": "https://inc42.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "yourstory",
+      "name": "YourStory",
+      "region": "IN",
+      "url": "https://yourstory.com/feed",
+      "homepage": "https://yourstory.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "entrackr",
+      "name": "Entrackr",
+      "region": "IN",
+      "url": "https://entrackr.com/rss",
+      "homepage": "https://entrackr.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "ettech-startups",
+      "name": "ETtech Startups",
+      "region": "IN",
+      "url": "https://economictimes.indiatimes.com/tech/startups/rssfeeds/78570540.cms",
+      "homepage": "https://economictimes.indiatimes.com/tech/startups",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": true,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "sifted",
+      "name": "Sifted",
+      "region": "EU",
+      "url": "https://sifted.eu/feed",
+      "homepage": "https://sifted.eu",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "tech-eu",
+      "name": "Tech.eu",
+      "region": "EU",
+      "url": "https://tech.eu/feed/",
+      "homepage": "https://tech.eu",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "tech-funding-news",
+      "name": "Tech Funding News",
+      "region": "EU",
+      "url": "https://techfundingnews.com/feed/",
+      "homepage": "https://techfundingnews.com",
+      "defaultLens": "FUNDING",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "geekwire-startups",
+      "name": "GeekWire Startups",
+      "region": "NA",
+      "url": "https://www.geekwire.com/startups/feed/",
+      "homepage": "https://www.geekwire.com/startups",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "betakit",
+      "name": "BetaKit",
+      "region": "NA",
+      "url": "https://betakit.com/feed/",
+      "homepage": "https://betakit.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "alleywatch",
+      "name": "AlleyWatch",
+      "region": "NA",
+      "url": "https://www.alleywatch.com/feed/",
+      "homepage": "https://www.alleywatch.com",
+      "defaultLens": "FUNDING",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "vulcan-post",
+      "name": "Vulcan Post",
+      "region": "SEA",
+      "url": "https://vulcanpost.com/feed/",
+      "homepage": "https://vulcanpost.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": true,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "fintech-news-sg",
+      "name": "Fintech News Singapore",
+      "region": "SEA",
+      "url": "https://fintechnews.sg/feed/",
+      "homepage": "https://fintechnews.sg",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "techcabal",
+      "name": "TechCabal",
+      "region": "AF",
+      "url": "https://techcabal.com/feed/",
+      "homepage": "https://techcabal.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": true,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "disrupt-africa",
+      "name": "Disrupt Africa",
+      "region": "AF",
+      "url": "https://disruptafrica.com/feed/",
+      "homepage": "https://disruptafrica.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "weetracker",
+      "name": "WeeTracker",
+      "region": "AF",
+      "url": "https://weetracker.com/feed/",
+      "homepage": "https://weetracker.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "latamlist",
+      "name": "LatamList",
+      "region": "LATAM",
+      "url": "https://latamlist.com/feed/",
+      "homepage": "https://latamlist.com",
+      "defaultLens": null,
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "lavca",
+      "name": "LAVCA",
+      "region": "LATAM",
+      "url": "https://www.lavca.org/feed/",
+      "homepage": "https://www.lavca.org",
+      "defaultLens": "FUNDING",
+      "dailyCap": null,
+      "needsKeywordFilter": false,
+      "staleAfterDays": 21
+    }
+  ]
+}

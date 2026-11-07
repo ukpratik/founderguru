@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Sifted</title>
+        <link>https://sifted.eu/</link>
+        <description>Quality journalism about Europe's New Economy</description>
+        <lastBuildDate>Sat, 07 Nov 2026 12:36:34 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Sifted</generator>
+        <language>en-US</language>
+        <copyright>Sifted EU</copyright>
+        <item>
+            <title><![CDATA[Sequoia is leaving London. Should Europe be worried?]]></title>
+            <link>https://sifted.eu/articles/sequoia-is-leaving-london-should-europe-be-worried/</link>
+            <guid>https://sifted.eu/articles/sequoia-is-leaving-london-should-europe-be-worried/</guid>
+            <pubDate>Fri, 06 Nov 2026 13:36:15 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What Sequoia’s London exit means for Europe]]></title>
+            <link>https://sifted.eu/articles/what-sequoia-london-exit-means-europe/</link>
+            <guid>https://sifted.eu/articles/what-sequoia-london-exit-means-europe/</guid>
+            <pubDate>Fri, 06 Nov 2026 12:00:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[European startups are using rollup strategies for defence. Some VCs are sceptical]]></title>
+            <link>https://sifted.eu/articles/european-startups-defence-rollups-vc-sceptical/</link>
+            <guid>https://sifted.eu/articles/european-startups-defence-rollups-vc-sceptical/</guid>
+            <pubDate>Fri, 06 Nov 2026 10:45:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The 12 startups most in demand from Onstage's W26 cohort]]></title>
+            <link>https://sifted.eu/articles/onstage-w26-cohort/</link>
+            <guid>https://sifted.eu/articles/onstage-w26-cohort/</guid>
+            <pubDate>Fri, 06 Nov 2026 05:00:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Inside the race to build European hardware without China]]></title>
+            <link>https://sifted.eu/articles/inside-the-race-to-build-european-hardware-without-china/</link>
+            <guid>https://sifted.eu/articles/inside-the-race-to-build-european-hardware-without-china/</guid>
+            <pubDate>Thu, 05 Nov 2026 14:56:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Early Revolut employees emerge from stealth with AI wealthtech Haido]]></title>
+            <link>https://sifted.eu/articles/haido-emerges-from-stealth/</link>
+            <guid>https://sifted.eu/articles/haido-emerges-from-stealth/</guid>
+            <pubDate>Thu, 05 Nov 2026 09:08:50 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Exclusive: Helsing CEO backs AI learning startup Mindmax in £2.5m raise]]></title>
+            <link>https://sifted.eu/articles/memrise-mindmax-helsing-funding-round-memory/</link>
+            <guid>https://sifted.eu/articles/memrise-mindmax-helsing-funding-round-memory/</guid>
+            <pubDate>Thu, 05 Nov 2026 05:00:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The future of engineering: fewer people, more work, and the end of tokenmaxxing]]></title>
+            <link>https://sifted.eu/articles/the-future-of-engineering-2026/</link>
+            <guid>https://sifted.eu/articles/the-future-of-engineering-2026/</guid>
+            <pubDate>Thu, 05 Nov 2026 05:00:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Starling Bank CEO to step down after just two years, reports say]]></title>
+            <link>https://sifted.eu/articles/starling-bank-ceo-raman-bhatia-quits-reports/</link>
+            <guid>https://sifted.eu/articles/starling-bank-ceo-raman-bhatia-quits-reports/</guid>
+            <pubDate>Wed, 04 Nov 2026 17:06:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sequoia to close London office, cut Europe team]]></title>
+            <link>https://sifted.eu/articles/sequoia-closes-london-office/</link>
+            <guid>https://sifted.eu/articles/sequoia-closes-london-office/</guid>
+            <pubDate>Wed, 04 Nov 2026 14:22:35 GMT</pubDate>
+        </item>
+</channel>
+</rss>

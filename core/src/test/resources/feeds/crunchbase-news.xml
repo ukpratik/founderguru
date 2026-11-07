@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Crunchbase News</title>
+	<atom:link href="https://news.crunchbase.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://news.crunchbase.com/</link>
+	<description>Data-driven reporting on private markets, startups, founders, and investors</description>
+	<lastBuildDate>Fri, 06 Nov 2026 19:29:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.12</generator>
+
+<image>
+	<url>https://news.crunchbase.com/wp-content/uploads/cb_news_favicon-150x150.png</url>
+	<title>Crunchbase News</title>
+	<link>https://news.crunchbase.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>The Week’s 10 Biggest Funding Rounds: AI, Defense And Space Tech Lead For Large Rounds</title>
+		<link>https://news.crunchbase.com/venture/biggest-startup-rounds-ai-defense-space-tech-shield-zipline/</link>
+		
+		<dc:creator><![CDATA[Joanna Glasner]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2026 19:29:06 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Communications tech]]></category>
+		<category><![CDATA[Defense tech]]></category>
+		<category><![CDATA[E-commerce]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation & Logistics]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[unicorn]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94352</guid>
+
+					<description><![CDATA[This week brought another plethora of large funding rounds for startups and growth-stage companies. Shield AI, a defense tech player focused on autonomy and virtual simulations, secured the largest financing, bringing in $2 billion. Next on the list was drone delivery provider Zipline International, which pulled in a fresh $1.5 billion.]]></description>
+										<content:encoded><![CDATA[<p><em>Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.S.-based companies? Check out <a href="https://news.crunchbase.com/biggest-us-vc-startup-funding-deals-2023/">The Crunchbase Megadeals Board</a>.</em></p>
+<p><em>This is a weekly feature that runs down the week’s Top 10 announced funding rounds in the U.S. Check out last week’s biggest funding deal roundup <a href="https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/">here</a>.</em></p>
+<p>This week brought another plethora of large funding rounds for startups and growth-stage companies. <a href="https://www.crunchbase.com/organization/shield-ai">Shield AI</a>, a defense tech player focused on autonomy and virtual simulations, secured the largest financing, bringing in $2 billion. Next on the list was drone delivery provider <a href="https://www.crunchbase.com/organization/zipline-international">Zipline International</a>, which pulled in a fresh $1.5 billion.</p>
+<p>Rounding out the ranks were good-sized financings for sectors including agentic AI, space tech and AI infrastructure.</p>
+<p>1. <strong>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/Top_10_.jpeg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/Top_10_.jpeg</image>	</item>
+		<item>
+		<title>How To Challenge A Monopoly In The AI Age</title>
+		<link>https://news.crunchbase.com/ai/challenging-monopolies-semiconductors-anand-tensordyn/</link>
+		
+		<dc:creator><![CDATA[Guest Author]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2026 12:00:08 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Cloud computing]]></category>
+		<category><![CDATA[Semiconductors and 5G]]></category>
+		<category><![CDATA[Startups]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94339</guid>
+
+					<description><![CDATA[AI chip startups can challenge the sector's Goliath's by building substantially better hardware for emerging inference demands, much as Juniper challenged Cisco with a new architecture suited to the internet’s rapid growth. To win customers, writes guest author R K Anand, co-founder and chief product officer of Tensordyne, challengers must prove their advantages, make switching easy and use small, agile teams to anticipate needs that incumbents have yet to address.]]></description>
+										<content:encoded><![CDATA[<p><em>By <a href="https://www.crunchbase.com/person/r-k-anand-4db0">R K Anand</a></em></p>
+<p>If you were in Silicon Valley in the late 1990s, today’s AI boom might feel familiar. In 1998 and 1999, internet traffic was roughly doubling every six to nine months. That was extraordinary growth in demand, and still, that pales in comparison to what we’re seeing unfold now.</p>
+<p>Today, the four largest U.S. cloud companies are looking at more than <a href="https://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html">$700 billion</a> in capital spending this year, and the cumulative AI infrastructure spending is projected to reach $3 trillion to $4 trillion by 2030.</p>
+<figure id="attachment_94336" aria-describedby="caption-attachment-94336" style="width: 348px" class="wp-caption alignright">]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/Computer_chip_02.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/Computer_chip_02.jpg</image>	</item>
+		<item>
+		<title>General Catalyst Tops Lead Investors For October In Busy Month For US Startup Dealmaking</title>
+		<link>https://news.crunchbase.com/venture/october-2026-lead-startup-investors/</link>
+		
+		<dc:creator><![CDATA[Joanna Glasner]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2026 12:00:03 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Cloud computing]]></category>
+		<category><![CDATA[Manufacturing]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[unicorn]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94341</guid>
+
+					<description><![CDATA[October was a busy month for U.S. startup funding, led by well-known venture investors with a healthy appetite for big deals. We take a look at active investor rankings across three categories: lead deal count, largest lead investments and total venture rounds.]]></description>
+										<content:encoded><![CDATA[<p>October was a busy month for U.S. startup funding, led by well-known venture investors with a healthy appetite for big deals.</p>
+<p><a href="https://www.crunchbase.com/organization/general-catalyst-partners">General Catalyst</a> emerged as the month’s busiest lead dealmaker, by both round count and size. Others who ranked high across multiple rankings include <a href="https://www.crunchbase.com/organization/sequoia-capital">Sequoia Capital</a>, <a href="https://www.crunchbase.com/organization/andreessen-horowitz">Andreessen Horowitz</a>, <a href="https://www.crunchbase.com/organization/accel">Accel</a> and <a href="https://www.crunchbase.com/organization/lightspeed-venture-partners">Lightspeed Venture Partners</a>.</p>
+<p>For a more detailed view, below we look at active investor rankings across three categories: lead deal count, largest lead investments and total venture rounds.</p>
+<h2>Busiest lead investors</h2>
+<p>Among lead venture investors, General Catalyst, known for investing across stages and sectors, topped the list, leading at least nine known rounds.</p>
+<p>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/Top_Investors_oct.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/Top_Investors_oct.jpg</image>	</item>
+		<item>
+		<title>Exclusive: Nurx And Journey Clinical Co-Founders Raise $6M For Mental Health Startup Siggy</title>
+		<link>https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/</link>
+		
+		<dc:creator><![CDATA[Judy Rider]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 16:00:40 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Health, Wellness & Biotech]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94329</guid>
+
+					<description><![CDATA[Siggy has raised $6 million in pre-seed funding to build a mental health service that uses AI to collect patients’ histories and track progress between appointments with licensed clinicians, the startup told Crunchbase News exclusively.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.crunchbase.com/organization/siggy-db51">Siggy</a> has raised $6 million in pre-seed funding to build a mental health service that uses AI to collect patients’ histories and track progress between appointments with licensed clinicians, the startup told Crunchbase News exclusively.</p>
+<p>The company brings together two founders who previously built businesses that help patients get treatment outside a traditional doctor’s office. <a href="https://www.crunchbase.com/person/jonathan-sabbagh?utm_source=chatgpt.com">Jonathan Sabbagh</a> co-founded<a href="https://www.crunchbase.com/organization/journey-clinical?utm_source=chatgpt.com"> Journey Clinical</a>, which supports practices offering ketamine-assisted psychotherapy, and <a href="https://www.crunchbase.com/person/edvard-enges%C3%A6th?utm_source=chatgpt.com">Edvard Engesæth</a> co-founded <a href="https://www.crunchbase.com/organization/nurx?utm_source=chatgpt.com">Nurx</a>, which provides birth control and other healthcare services online.</p>
+<p><a href="https://www.crunchbase.com/organization/village-global-2?utm_source=chatgpt.com">Village Global</a>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/2020/03/Mental_Health_App.png' length='0' type='image/png' /><image>https://news.crunchbase.com/wp-content/uploads/2020/03/Mental_Health_App.png</image>	</item>
+		<item>
+		<title>Dropbox Plans $350M AI Infrastructure Deal With Tigris Buy, Its Biggest Acquisition Yet</title>
+		<link>https://news.crunchbase.com/ma/dbx-ai-infrastructure-deal-tigris-acquisition/</link>
+		
+		<dc:creator><![CDATA[Judy Rider]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 14:00:20 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Cloud computing]]></category>
+		<category><![CDATA[M&A]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94328</guid>
+
+					<description><![CDATA[Dropbox has announced plans to acquire Tigris Data for $350 million in a transaction the company told Crunchbase News would mark its largest acquisition since its founding in 2007.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.crunchbase.com/organization/dropbox">Dropbox</a> announced Thursday plans to acquire <a href="https://www.crunchbase.com/organization/tigris-data-inc">Tigris Data</a> for $350 million in a transaction the company told Crunchbase News would mark its largest acquisition since its founding in 2007.</p>
+<p>Founded by former<a href="https://www.crunchbase.com/organization/uber"> Uber</a> engineers, Sunnyvale, California-based Tigris is building a network of localized data storage centers that it claims can meet the distributed compute needs of modern AI workloads.</p>
+<p>Tigris has raised about $31.9 million since its founding in 2021, <a href="https://www.crunchbase.com/organization/tigris-data-inc#financials">per Crunchbase data</a>. Its October 2025 Series A brought in $25 million from lead investor<a href="https://www.crunchbase.com/organization/spark-capital"> Spark Capital</a>, with participation from<a href="https://www.crunchbase.com/organization/andreessen-horowitz"> Andreessen Horowitz</a> and <a href="https://www.crunchbase.com/organization/basis-set-ventures">Basis Set Ventures</a>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/MA-shopping-1024x576.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/MA-shopping-1024x576.jpg</image>	</item>
+		<item>
+		<title>Sector Snapshot: Construction Robotics Funding Soars To $1.6B, Tripling Previous Peak</title>
+		<link>https://news.crunchbase.com/venture/sector-snapshot-2026-construction-robotics-funding-soars-bedrock/</link>
+		
+		<dc:creator><![CDATA[Judy Rider]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 12:00:59 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Real estate & property tech]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[unicorn]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94322</guid>
+
+					<description><![CDATA[Companies spanning construction and robotics have raised about $1.6 billion so far this year  — more than 4x the $389 million recorded in all of 2025 — according to Crunchbase data. The surge was driven by three companies that raised the majority of the funding.]]></description>
+										<content:encoded><![CDATA[<p>Construction companies are struggling to find enough workers. For startups, that means venture investors are pouring money into companies betting that robots can help close the gap.</p>
+<p>Companies spanning construction and robotics have raised about $1.6 billion this year through Oct. 29 — more than 4x the $389 million recorded in all of 2025 — according to Crunchbase data. The surge was driven by three companies that raised the majority of the funding.</p>
+<p><strong>The broad trend: </strong>For contractors struggling to hire, the appeal of construction-oriented tech offerings is straightforward: They need to get work done and there aren’t enough skilled workers to do it. The AI-driven data center building boom is only adding to that competition for workers. Labor shortages remain the biggest cause of project delays, according to <a href="https://www.agc.org/news/2026/09/03/construction-workforce-shortages-remain-acute-despite-soft-market-conditions-data-centers-strain">a recent survey</a> by the <a href="https://www.crunchbase.com/organization/associated-general-contractors-of-america">Associated General Contractors of America</a>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/AI-manufacturing.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/AI-manufacturing.jpg</image>	</item>
+		<item>
+		<title>Crunchbase Data: Less Than 2% Of 2026 Venture Funding Went To Post-Election Red States</title>
+		<link>https://news.crunchbase.com/venture/2026-post-election-funding-red-states-drops/</link>
+		
+		<dc:creator><![CDATA[Joanna Glasner]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2026 19:47:54 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Job market]]></category>
+		<category><![CDATA[Politics and regulation]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94324</guid>
+
+					<description><![CDATA[So far this year, less than 2% of all startup investment has gone to companies in post-election red states, a share that is much smaller than in years past due to five states shifting to purple in the most recent election.]]></description>
+										<content:encoded><![CDATA[<p>For the past few decades, the vast majority of U.S. startup funding has consistently gone to companies in blue states or purple states, where Democrats control all or some statewide offices.</p>
+<p>But with Tuesday’s election results, the investment divide between blue, purple and red states has grown even more pronounced.</p>
+<p>So far this year, less than 2% of all startup investment has gone to companies in post-election red states, defined as those that will have both a Republican governor and two Republican U.S. senators.</p>
+<p>The red states’ share is much smaller than in years past due to five states shifting to purple. Of those, the largest venture hub is Texas, which shifted to purple with the election of Democratic Senator James Talarico and Governor Gina Hinojosa, followed by Ohio.</p>
+<p>This year, as of Election Day, startups in the remaining 17 red states <a href="#footnote-1-94324" id="note-1-94324" rel="footnote">1</a>, which are home to nearly a quarter of Americans, had collectively <a href="https://www.crunchbase.com/discover/saved/red-state-venture-funding-in-2026/ae64afef-a2ab-4e5e-94fe-9d352106819b">pulled in just $8.6 billion</a>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/Post_Election.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/Post_Election.jpg</image>	</item>
+		<item>
+		<title>The Crunchbase Tech Layoffs Tracker</title>
+		<link>https://news.crunchbase.com/startups/tech-layoffs/</link>
+		
+		<dc:creator><![CDATA[Crunchbase News]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2026 17:42:30 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[Job market]]></category>
+		<category><![CDATA[Layoffs]]></category>
+		<category><![CDATA[Public Markets]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[unicorn]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=84369</guid>
+
+					<description><![CDATA[Over 127,000 workers at U.S.-based tech companies were laid off in mass job cuts in 2025, per a Crunchbase News tally, and the layoffs have continued into 2026. See the latest companies to cut roles.]]></description>
+										<content:encoded><![CDATA[<h3>Methodology</h3>
+<p><span style="font-weight: 400;">This tracker includes layoffs conducted by U.S.-based companies or those with a strong U.S. presence and is updated at least bi-weekly. We’ve included both startups and publicly traded, tech-heavy companies. We’ve also included companies based elsewhere that have a sizable team in the United States, such as </span><a href="https://www.crunchbase.com/organization/klarna"><span style="font-weight: 400;">Klarna</span></a><span style="font-weight: 400;">, even when it’s unclear how much of the U.S. workforce has been affected by layoffs.</span></p>
+<p><span style="font-weight: 400;">Layoff and workforce figures are best estimates based on reporting. We source the layoffs from media reports, our own reporting, social media posts and </span><a href="https://layoffs.fyi/"><span style="font-weight: 400;">layoffs.fyi</span></a><span style="font-weight: 400;">, a crowdsourced database of tech layoffs.</span></p>
+<p><span style="font-weight: 400;">]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/Layoffs-scissors.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/Layoffs-scissors.jpg</image>	</item>
+		<item>
+		<title>Most Venture Capital Is Going To Companies That Are Founded Or Led By Billionaires</title>
+		<link>https://news.crunchbase.com/venture/startup-billionaire-founders-ai-defense-anthropic-spcx/</link>
+		
+		<dc:creator><![CDATA[Joanna Glasner]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2026 12:00:14 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Defense tech]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation & Logistics]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[unicorn]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94318</guid>
+
+					<description><![CDATA[More than half of all seed- through growth-stage venture capital raised in the U.S. so far in 2026 went to seven companies founded or led by men who are already billionaires. Together, these companies raised more than $260 billion in equity funding in the first 10 months of the year. ]]></description>
+										<content:encoded><![CDATA[<p>The majority of U.S. venture capital nowadays goes to companies founded or led by men who are already billionaires.</p>
+<p>This is not a difficult stat to unearth. So far this year, just seven companies raised more than half of all seed- through growth-stage investment. They’re mostly familiar names: <a href="https://www.crunchbase.com/organization/openai">OpenAI</a>, <a href="https://www.crunchbase.com/organization/anthropic">Anthropic</a>, <a href="https://www.crunchbase.com/organization/spacexai">xAI</a> (now part of <a href="https://www.crunchbase.com/organization/space-exploration-technologies">SpaceX</a>), <a href="https://www.crunchbase.com/organization/anduril-industries">Anduril Industries</a>, <a href="https://www.crunchbase.com/organization/databricks">Databricks</a>, <a href="https://www.crunchbase.com/organization/project-prometheus">Prometheus</a> and <a href="https://www.crunchbase.com/organization/the-boring-company">The Boring Co.</a></p>
+<p>These companies raised more than $260 billion in equity funding in the first 10 months of the year. That’s just over 50% of the U.S. seed and venture investment over the same period, per Crunchbase data.</p>
+<p>]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/generic-money.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/generic-money.jpg</image>	</item>
+		<item>
+		<title>China’s Largest Startup Deal Ever Lifts Global Venture Funding To $59B In October</title>
+		<link>https://news.crunchbase.com/venture/october-2026-global-startup-funding-strong-china-deepseek/</link>
+		
+		<dc:creator><![CDATA[Gené Teare]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2026 12:00:44 +0000</pubDate>
+				<category><![CDATA[Artificial intelligence]]></category>
+		<category><![CDATA[Clean tech and energy]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Manufacturing]]></category>
+		<category><![CDATA[Semiconductors and 5G]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[emerging-unicorn]]></category>
+		<category><![CDATA[unicorn]]></category>
+		<guid isPermaLink="false">https://news.crunchbase.com/?p=94315</guid>
+
+					<description><![CDATA[Global venture funding in October totaled $59 billion, a 45% jump from a year earlier, per Crunchbase data, in large part due to a record-setting $15.9 billion funding round for China’s DeepSeek.]]></description>
+										<content:encoded><![CDATA[<p>Global venture funding in October totaled $59 billion, a 45% jump from a year earlier, per Crunchbase data, in large part due to a record-setting deal for China’s <a href="https://www.crunchbase.com/organization/deepseek">DeepSeek</a>. The company’s $15.9 billion funding round marked the largest-ever venture deal for a Chinese company ever, and came in the same month that two other frontier labs raised blockbuster Series A rounds totaling at or close to $1 billion.</p>
+<p>The bulk of October’s venture funding was invested in the two leading countries for startup investment, with companies based in the U.S. and China raising $28 billion and $20.6 billion last month, respectively. The last time more than $20 billion was invested in China in a single month was June 2018, when <a href="https://www.crunchbase.com/organization/ant-group">Ant Group</a> raised $14 billion in its Series C funding.</p>
+<div style="position: relative; width: 100%; height: 0px; padding: 52.91% 0px 0px; overflow: hidden; will-change: transform;">]]></content:encoded>
+					
+		
+		
+		<enclosure url='https://news.crunchbase.com/wp-content/uploads/sep-oct.jpg' length='0' type='image/jpeg' /><image>https://news.crunchbase.com/wp-content/uploads/sep-oct.jpg</image>	</item>
+</channel>
+</rss>

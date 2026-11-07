@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FounderGuru</string>
+    <!-- M1 developer screen only; replaced in M3. -->
+    <string name="dev_refresh">Refresh all sources</string>
+</resources>

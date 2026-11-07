@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>T</title>
+<item><title>No date at all here</title><link>https://example.com/d1</link></item>
+<item><title>Odd weekday date here</title><link>https://example.com/d2</link><pubDate>Thurs, 5 Nov 2026 9:05:00 IST</pubDate></item>
+<item><title>ISO date here ok</title><link>https://example.com/d3</link><dc:date>2026-11-05T09:05:00+05:30</dc:date></item>
+<item><title>Garbage date here ok</title><link>https://example.com/d4</link><pubDate>yesterday-ish</pubDate></item>
+<item><title>Future date here ok</title><link>https://example.com/d5</link><pubDate>Sat, 01 Jan 2050 00:00:00 GMT</pubDate></item>
+</channel></rss>

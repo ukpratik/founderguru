@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:webfeeds="http://webfeeds.org/rss/1.0"
+	>
+
+<channel>
+	<title>Startups - GeekWire</title>
+    <webfeeds:logo>https://www.geekwire.com/wp-content/themes/geekwire/dist/images/geekwire-feedly.svg</webfeeds:logo>
+    <webfeeds:accentColor>BE4825</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+	<atom:link href="https://www.geekwire.com/startups/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.geekwire.com/startups/</link>
+	<description>Breaking News in Technology &#38; Business</description>
+	<lastBuildDate>Fri, 06 Nov 2026 20:52:27 +0000</lastBuildDate>
+	<language>en-US</language>
+    <webfeeds:icon>https://www.geekwire.com/wp-content/themes/geekwire/dist/images/geekwire-logo-rss.png</webfeeds:icon>
+    <webfeeds:cover image="https://www.geekwire.com/wp-content/themes/geekwire/dist/images/geekwire-default-logo-social.png" />
+    <image>
+        <link>https://www.geekwire.com/startups/</link>
+        <title>GeekWire</title>
+        <url>https://www.geekwire.com/wp-content/themes/geekwire/dist/images/geekwire-logo-rss.png</url>
+        <height>144</height>
+        <width>144</width>
+    </image>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+<atom:link rel="hub" href="https://pubsubhubbub.appspot.com"/>
+<atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com"/>
+<atom:link rel="hub" href="https://websubhub.com/hub"/>
+<atom:link rel="self" href="https://www.geekwire.com/startups/feed/"/>
+<site xmlns="com-wordpress:feed-additions:1">255764510</site>	<item>
+		<title>How to be unemployed: Glenn Kelman on life after Redfin</title>
+		<link>https://www.geekwire.com/2026/how-to-be-unemployed-glenn-kelman-on-life-after-redfin/</link>
+		<pubDate>Fri, 06 Nov 2026 20:47:53 +0000</pubDate>
+		<dc:creator><![CDATA[Glenn Kelman]]></dc:creator>
+						<category><![CDATA[Real Estate]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Glenn Kelman]]></category>
+		<category><![CDATA[Redfin]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=963905</guid>
+				<description><![CDATA[<img width="1200" height="489" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/glenn-kelman-enough-bracelet.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="Green beaded leather bracelet spelling out the word Enough" decoding="async" fetchpriority="high" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/glenn-kelman-enough-bracelet.jpg 1200w, https://cdn.geekwire.com/wp-content/uploads/2026/11/glenn-kelman-enough-bracelet-768x313.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px"><br>Glenn Kelman, who led Redfin as CEO for 20 years, writes about the 10 months of unemployment that came before co-founding a new AI-native company. He considered becoming a high school teacher, a bagel shopkeeper and a state legislative candidate, and used AI to test ideas with potential co-founders. <a href="https://www.geekwire.com/2026/how-to-be-unemployed-glenn-kelman-on-life-after-redfin/">Read More</a>]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img decoding="async" width="1200" height="489" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/glenn-kelman-enough-bracelet.jpg" alt="Green beaded leather bracelet spelling out the word Enough" class="wp-image-963904" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/glenn-kelman-enough-bracelet.jpg 1200w, https://cdn.geekwire.com/wp-content/uploads/2026/11/glenn-kelman-enough-bracelet-768x313.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption class="wp-element-caption">At a conference, a fashion entrepreneur gave Glenn Kelman a bracelet that said “we are enough.” (Image via Glenn Kelman)</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">After 20 years at Redfin, and 10 months of unemployment, I’ve co-founded a new company. My business partner and I will announce our plans after we’ve built our product, but in the meantime GeekWire asked me to explain what I learned in the transition between Redfin and this new venture.</p>
+
+
+
+<p class="wp-block-paragraph">Many of us are in transition because society is in transition, with AI hollowing out big companies and making it easier to start new companies.</p>]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">963905</post-id>	</item>
+		<item>
+		<title>Tech Moves: Fred Hutch leader goes to AWS; Temporal, Augmodo and Neuralwatt name execs</title>
+		<link>https://www.geekwire.com/2026/tech-moves-fred-hutch-leader-goes-to-aws-temporal-and-augmodo-name-execs/</link>
+		<pubDate>Fri, 06 Nov 2026 18:06:53 +0000</pubDate>
+		<dc:creator><![CDATA[Lisa Stiffler]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Tech Moves]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Augmodo]]></category>
+		<category><![CDATA[BuyWander]]></category>
+		<category><![CDATA[CloudFlare]]></category>
+		<category><![CDATA[Doug Heimburger]]></category>
+		<category><![CDATA[Fred Hutch Cancer Center]]></category>
+		<category><![CDATA[IonQ]]></category>
+		<category><![CDATA[Neuralwatt]]></category>
+		<category><![CDATA[temporal]]></category>
+		<category><![CDATA[University of Washington]]></category>
+		<category><![CDATA[UW College of Engineering]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=963747</guid>
+				<description><![CDATA[<img width="1167" height="1167" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1.jpg 1167w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1-150x150.jpg 150w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1-768x768.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1-100x100.jpg 100w" sizes="(max-width: 1167px) 100vw, 1167px"><br>A Fred Hutch Cancer Center leader is joining AWS to help research institutions better use computing and AI to support their work; Seattle-area startups Temporal, Augmodo and BuyWander have appointed new leaders; the IonQ engineer behind MindRoom has joined a stealth startup; and more personnel changes.  <a href="https://www.geekwire.com/2026/tech-moves-fred-hutch-leader-goes-to-aws-temporal-and-augmodo-name-execs/">Read More</a>]]></description>
+								<content:encoded><![CDATA[<div class="wp-block-image">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="1167" height="1167" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1.jpg" alt="" class="wp-image-963816" style="width:300px;height:auto" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1.jpg 1167w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1-150x150.jpg 150w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1-768x768.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Gupta_proshot-2-2500x1875-1-100x100.jpg 100w" sizes="auto, (max-width: 1167px) 100vw, 1167px" /><figcaption class="wp-element-caption">Amitabha “Guppy” Gupta. (LinkedIn Photo)</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">&#8212; <a href="https://www.linkedin.com/in/guppy-gupta/"><strong>Amitabha “Guppy” Gupta</strong></a>, a Fred Hutch Cancer Center associate director who helps researchers translate their work to broader audiences, is leaving after 14 years to join <strong><a href="https://www.geekwire.com/amazon/">Amazon</a></strong>]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">963747</post-id>	</item>
+		<item>
+		<title>Seattle startup OneCourt brings tactile tablets for blind and low-vision fans to NHL games</title>
+		<link>https://www.geekwire.com/2026/seattle-startup-onecourt-brings-tactile-tablets-for-blind-and-low-vision-fans-to-nhl-games/</link>
+		<pubDate>Thu, 05 Nov 2026 22:01:12 +0000</pubDate>
+		<dc:creator><![CDATA[Kurt Schlosser]]></dc:creator>
+						<category><![CDATA[Sports Tech]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[accessibility]]></category>
+		<category><![CDATA[haptics]]></category>
+		<category><![CDATA[NHL]]></category>
+		<category><![CDATA[OneCourt]]></category>
+		<category><![CDATA[Ticketmaster]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=963483</guid>
+				<description><![CDATA[<img width="1260" height="709" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-1260x709.png" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-1260x709.png 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-768x432.png 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-1536x864.png 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-2048x1152.png 2048w" sizes="auto, (max-width: 1260px) 100vw, 1260px"><br>The haptic tablets, which turn live game data into vibrations, debuted at the Heritage Classic and are now available at every home game for the Capitals, Avalanche, Blackhawks and Red Wings. <a href="https://www.geekwire.com/2026/seattle-startup-onecourt-brings-tactile-tablets-for-blind-and-low-vision-fans-to-nhl-games/">Read More</a>]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="3840" height="2160" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1.png" alt="" class="wp-image-963499" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1.png 3840w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-1260x709.png 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-768x432.png 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-1536x864.png 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/TicketmasterNHL_OneCourt_1-2048x1152.png 2048w" sizes="auto, (max-width: 3840px) 100vw, 3840px" /><figcaption class="wp-element-caption">A hockey fan uses OneCourt&#8217;s tactile device during the NHL Heritage Classic, an outdoor game between the Montreal Canadiens and the Winnipeg Jets at Princess Auto Stadium in Winnipeg, Manitoba, on Oct. 25. (Ticketmaster Photo)</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">963483</post-id>	</item>
+		<item>
+		<title>No sweat: High-tech T-shirt brand Neat survives &#8216;Shark Tank&#8217; and lands $400K deal with Lori Greiner</title>
+		<link>https://www.geekwire.com/2026/no-sweat-high-tech-t-shirt-brand-neat-survives-shark-tank-and-lands-400k-deal-with-lori-greiner/</link>
+		<pubDate>Thu, 05 Nov 2026 17:45:43 +0000</pubDate>
+		<dc:creator><![CDATA[Kurt Schlosser]]></dc:creator>
+						<category><![CDATA[Geek Life]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Clothing]]></category>
+		<category><![CDATA[Jim Huffman]]></category>
+		<category><![CDATA[Lori Greiner]]></category>
+		<category><![CDATA[Neat]]></category>
+		<category><![CDATA[reality TV]]></category>
+		<category><![CDATA[shark tank]]></category>
+		<category><![CDATA[television]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=963174</guid>
+				<description><![CDATA[<img width="1260" height="840" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-1260x840.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-1260x840.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-768x512.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-1536x1024.jpg 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-2048x1365.jpg 2048w" sizes="auto, (max-width: 1260px) 100vw, 1260px"><br>The Seattle company’s patented “Sweat Maze” T-shirts won over one investor after a grilling on the reality TV show, and site traffic jumped 20-fold as the episode aired. <a href="https://www.geekwire.com/2026/no-sweat-high-tech-t-shirt-brand-neat-survives-shark-tank-and-lands-400k-deal-with-lori-greiner/">Read More</a>]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="3000" height="2000" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks.jpg" alt="" class="wp-image-963179" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks.jpg 3000w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-1260x840.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-768x512.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-1536x1024.jpg 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/SharkTank_ABC_Images_Jim_Tyler_Sharks-2048x1365.jpg 2048w" sizes="auto, (max-width: 3000px) 100vw, 3000px" /><figcaption class="wp-element-caption">CEO Jim Huffman, left, and COO Tyler Stelter of Seattle-based apparel maker Neat make their pitch in front of the sharks on ABC&#8217;s &#8220;Shark Tank&#8221; during an episode that aired Wednesday night. (Disney Photo / Daniel Delgado Jr.)</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">963174</post-id>	</item>
+		<item>
+		<title>Longtime investor Martin Tobias says no to 99% of startups — his new AI tool helps them find a yes</title>
+		<link>https://www.geekwire.com/2026/longtime-investor-martin-tobias-says-no-to-99-of-startups-his-new-ai-tool-helps-them-find-a-yes/</link>
+		<pubDate>Thu, 05 Nov 2026 15:01:47 +0000</pubDate>
+		<dc:creator><![CDATA[Kurt Schlosser]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Entrepreneurs]]></category>
+		<category><![CDATA[Incisive Ventures]]></category>
+		<category><![CDATA[Investor Match]]></category>
+		<category><![CDATA[martin tobias]]></category>
+		<category><![CDATA[VC]]></category>
+		<category><![CDATA[Venture capital]]></category>
+		<category><![CDATA[venture funding]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=963200</guid>
+				<description><![CDATA[<img width="1260" height="1260" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-1260x1260.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-1260x1260.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-150x150.jpg 150w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-768x768.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-1536x1536.jpg 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-100x100.jpg 100w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square.jpg 2000w" sizes="auto, (max-width: 1260px) 100vw, 1260px"><br>Investor Match started as a way for the Incisive Ventures founder to help his own portfolio companies raise follow-on rounds. Now any founder can use it for $20. <a href="https://www.geekwire.com/2026/longtime-investor-martin-tobias-says-no-to-99-of-startups-his-new-ai-tool-helps-them-find-a-yes/">Read More</a>]]></description>
+								<content:encoded><![CDATA[<div class="wp-block-image">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="2000" height="2000" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square.jpg" alt="" class="wp-image-963225" style="width:300px;height:auto" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square.jpg 2000w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-1260x1260.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-150x150.jpg 150w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-768x768.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-1536x1536.jpg 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Martin-Square-100x100.jpg 100w" sizes="auto, (max-width: 2000px) 100vw, 2000px" /><figcaption class="wp-element-caption">Martin Tobias. (Incisive Ventures Photo)</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"><a href="https://www.linkedin.com/in/martintobias/">Martin Tobias</a> was pitched by about 4,500 startups last year. He wrote 10 checks.</p>
+
+
+
+<p class="wp-block-paragraph">]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">963200</post-id>	</item>
+		<item>
+		<title>Finpilot raises $10M for AI agents that handle the grunt work for institutional investors</title>
+		<link>https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/</link>
+		<pubDate>Wed, 04 Nov 2026 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[Todd Bishop]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Euclidean Technologies]]></category>
+		<category><![CDATA[finpilot]]></category>
+		<category><![CDATA[John Alberg]]></category>
+		<category><![CDATA[Lakshay Chauhan]]></category>
+		<category><![CDATA[Lobby Capital]]></category>
+		<category><![CDATA[Madrona Venture Group]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=962983</guid>
+				<description><![CDATA[<img width="807" height="775" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/lakshay-chauhan-finpilot.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="Lakshay Chauhan, smiling, wearing glasses and a black sweater, with a forested hillside behind him." decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/lakshay-chauhan-finpilot.jpg 807w, https://cdn.geekwire.com/wp-content/uploads/2026/11/lakshay-chauhan-finpilot-768x738.jpg 768w" sizes="auto, (max-width: 807px) 100vw, 807px"><br>Seattle startup Finpilot, which uses AI agents to take the paperwork off the plates of people who invest money for&#8230; <a href="https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/">Read More</a>]]></description>
+								<content:encoded><![CDATA[<div class="wp-block-image">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="807" height="775" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/lakshay-chauhan-finpilot.jpg" alt="Lakshay Chauhan, smiling, wearing glasses and a black sweater, with a forested hillside behind him." class="wp-image-962990" style="width:350px;height:auto" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/lakshay-chauhan-finpilot.jpg 807w, https://cdn.geekwire.com/wp-content/uploads/2026/11/lakshay-chauhan-finpilot-768x738.jpg 768w" sizes="auto, (max-width: 807px) 100vw, 807px" /><figcaption class="wp-element-caption">Finpilot co-founder and CEO Lakshay Chauhan. (Finpilot Photo)</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Seattle startup <a href="https://finpilot.ai">Finpilot</a>, which uses AI agents to take the paperwork off the plates of people who invest money for hospitals, pension funds and foundations, has raised $10 million in a Series A round.</p>
+
+
+
+<p class="wp-block-paragraph">The round was led by Bay Area venture firm <a href="https://lobby.vc">Lobby Capital</a>]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">962983</post-id>	</item>
+		<item>
+		<title>Tech Moves: Microsoft loses a CVP to AWS and gains one from Alteryx; Lila Bio and BECU name execs</title>
+		<link>https://www.geekwire.com/2026/tech-moves-microsoft-loses-a-cvp-to-aws-and-gains-one-from-alteryx-lila-bio-and-becu-name-execs/</link>
+		<pubDate>Tue, 03 Nov 2026 18:28:09 +0000</pubDate>
+		<dc:creator><![CDATA[Lisa Stiffler]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Tech Moves]]></category>
+		<category><![CDATA[Alteryx]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Amazon Web Services]]></category>
+		<category><![CDATA[Avalanche Energy]]></category>
+		<category><![CDATA[BECU]]></category>
+		<category><![CDATA[Kaiser Permanente]]></category>
+		<category><![CDATA[Lila Biologics]]></category>
+		<category><![CDATA[LogicGate]]></category>
+		<category><![CDATA[Mazhar Mohammed]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[revealdx]]></category>
+		<category><![CDATA[Slalom]]></category>
+		<category><![CDATA[Technology Alliance]]></category>
+		<category><![CDATA[UW Foundation Board]]></category>
+		<category><![CDATA[Xcel Energy]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=962664</guid>
+				<description><![CDATA[<img width="800" height="800" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed.jpg 800w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed-150x150.jpg 150w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed-768x768.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed-100x100.jpg 100w" sizes="auto, (max-width: 800px) 100vw, 800px"><br>After more than 33 years at Microsoft, CVP Mazhar Mohammed has left for AWS, while the Redmond, Wash., company has gained a new CVP in its Agent Cloud group. Seattle's Lila Bio has appointed a chief development officer; the credit union BECU named an AI leader and other personnel changes.   <a href="https://www.geekwire.com/2026/tech-moves-microsoft-loses-a-cvp-to-aws-and-gains-one-from-alteryx-lila-bio-and-becu-name-execs/">Read More</a>]]></description>
+								<content:encoded><![CDATA[<div class="wp-block-image">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="800" height="800" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed.jpg" alt="" class="wp-image-962758" style="width:300px;height:auto" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed.jpg 800w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed-150x150.jpg 150w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed-768x768.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Mazar-Mohammed-100x100.jpg 100w" sizes="auto, (max-width: 800px) 100vw, 800px" /><figcaption class="wp-element-caption">Mazar Mohammed. (LinkedIn Photo)</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">&#8212; After more than 33 years at Microsoft, <a href="https://www.linkedin.com/in/mazharmohammed/"><strong>Mazhar Mohammed</strong></a> has left to become vice president of AWS Streaming and Messaging at <strong>Amazon</strong>.</p>
+
+
+
+<p class="wp-block-paragraph">]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">962664</post-id>	</item>
+		<item>
+		<title>Startup uses motion sensors and AI to tell families when an aging parent’s routine changes</title>
+		<link>https://www.geekwire.com/2026/startup-uses-motion-sensors-and-ai-to-tell-families-when-an-aging-parents-routine-changes/</link>
+		<pubDate>Mon, 02 Nov 2026 17:31:20 +0000</pubDate>
+		<dc:creator><![CDATA[Kurt Schlosser]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[elder tech]]></category>
+		<category><![CDATA[Michael Nassirian]]></category>
+		<category><![CDATA[Thessai]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=962403</guid>
+				<description><![CDATA[<img width="1260" height="889" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-1260x889.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-1260x889.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-768x542.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-1536x1084.jpg 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-2048x1445.jpg 2048w" sizes="auto, (max-width: 1260px) 100vw, 1260px"><br>After his mother-in-law was hurt in a fall and told no one, ex-Microsoft exec Michael Nassirian built a camera-free way for families to know when something’s off. <a href="https://www.geekwire.com/2026/startup-uses-motion-sensors-and-ai-to-tell-families-when-an-aging-parents-routine-changes/">Read More</a>]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="2662" height="1878" src="https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button.jpg" alt="" class="wp-image-962426" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button.jpg 2662w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-1260x889.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-768x542.jpg 768w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-1536x1084.jpg 1536w, https://cdn.geekwire.com/wp-content/uploads/2026/11/Basic-Bundle-Panic-Button-2048x1445.jpg 2048w" sizes="auto, (max-width: 2662px) 100vw, 2662px" /><figcaption class="wp-element-caption">Thessai&#8217;s bundle of motion sensors and panic buttons alongside the monitoring app. (Thessai Photo)</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph"><a href="https://thessai.com/">Thessai</a>]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">962403</post-id>	</item>
+		<item>
+		<title>Filing: Chip startup Powerlattice raises $86M to ease AI’s power crunch</title>
+		<link>https://www.geekwire.com/2026/filing-chip-startup-powerlattice-raises-86m-to-ease-ais-power-crunch/</link>
+		<pubDate>Fri, 30 Oct 2026 18:30:57 +0000</pubDate>
+		<dc:creator><![CDATA[Kurt Schlosser]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[chips]]></category>
+		<category><![CDATA[Funding]]></category>
+		<category><![CDATA[powerlattice]]></category>
+		<category><![CDATA[semiconductor]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=961939</guid>
+				<description><![CDATA[<img width="1260" height="840" src="https://cdn.geekwire.com/wp-content/uploads/2026/10/powerlattice.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/10/powerlattice.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/10/powerlattice-768x512.jpg 768w" sizes="auto, (max-width: 1260px) 100vw, 1260px"><br>The new funding nearly triples what the Vancouver, Wash.-based semiconductor startup had raised when it came out of stealth last year. Powerlattice says its tech can cut AI chip energy use by more than half. <a href="https://www.geekwire.com/2026/filing-chip-startup-powerlattice-raises-86m-to-ease-ais-power-crunch/">Read More</a>]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="1260" height="840" src="https://cdn.geekwire.com/wp-content/uploads/2026/10/powerlattice.jpg" alt="" class="wp-image-961945" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/10/powerlattice.jpg 1260w, https://cdn.geekwire.com/wp-content/uploads/2026/10/powerlattice-768x512.jpg 768w" sizes="auto, (max-width: 1260px) 100vw, 1260px" /><figcaption class="wp-element-caption">Powerlattice founders, from left: Gang Ren, Peng Zou, and Sujith Dermal. (Powerlattice / Walden Kirsch Photo)</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.powerlatticeinc.com/">Powerlattice</a>, a Vancouver, Wash.-based startup developing chips that cut the power demands of AI processors, has raised $86 million, according to an <a href="https://secgems.com/s/0002069744-26-000002.nc?sr=k">SEC filing</a> on Friday.</p>
+
+
+
+<p class="wp-block-paragraph">The new funding is nearly triple the $31 million the company had raised when it emerged from stealth last November with a <a href="https://www.geekwire.com/2025/powerlattice-a-new-semiconductor-startup-backed-by-former-intel-ceo-raises-25m/">]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">961939</post-id>	</item>
+		<item>
+		<title>Tech Moves: Former Amazon execs depart Warner Bros. Discovery; Amazon leader returns to Microsoft</title>
+		<link>https://www.geekwire.com/2026/tech-moves-former-amazon-execs-depart-warner-bros-discovery-amazon-leader-returns-to-microsoft/</link>
+		<pubDate>Thu, 29 Oct 2026 22:16:28 +0000</pubDate>
+		<dc:creator><![CDATA[Lisa Stiffler]]></dc:creator>
+						<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Tech Moves]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Avi Saxena]]></category>
+		<category><![CDATA[Microsoft Elevate]]></category>
+		<category><![CDATA[Microsoft Elevate Washington]]></category>
+		<category><![CDATA[Naria Santa Lucia]]></category>
+		<category><![CDATA[Pulse Space]]></category>
+		<category><![CDATA[Skydance Corporation]]></category>
+		<category><![CDATA[Tyler Whitworth]]></category>
+		<category><![CDATA[University of Washington]]></category>
+		<category><![CDATA[VertureLab]]></category>
+		<category><![CDATA[Warner Bros. Discovery]]></category>
+
+		<guid isPermaLink="false">https://www.geekwire.com/?p=961626</guid>
+				<description><![CDATA[<img width="806" height="402" src="https://cdn.geekwire.com/wp-content/uploads/2026/10/Discovery-departures.png" class="webfeedsFeaturedVisual wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/10/Discovery-departures.png 806w, https://cdn.geekwire.com/wp-content/uploads/2026/10/Discovery-departures-768x383.png 768w" sizes="auto, (max-width: 806px) 100vw, 806px"><br>Two former Amazon executives who helped build Discovery’s direct-to-consumer operation in Bellevue, Wash., are stepping down; an Amazon leader is returning to Microsoft to join its CoreAI effort; VertueLab names ED; and more personnel moves. <a href="https://www.geekwire.com/2026/tech-moves-former-amazon-execs-depart-warner-bros-discovery-amazon-leader-returns-to-microsoft/">Read More</a>]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="806" height="402" src="https://cdn.geekwire.com/wp-content/uploads/2026/10/Discovery-departures.png" alt="" class="wp-image-961680" srcset="https://cdn.geekwire.com/wp-content/uploads/2026/10/Discovery-departures.png 806w, https://cdn.geekwire.com/wp-content/uploads/2026/10/Discovery-departures-768x383.png 768w" sizes="auto, (max-width: 806px) 100vw, 806px" /><figcaption class="wp-element-caption">Avi Saxena, left, and Tyler Whitworth. (LinkedIn Photos)</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">&#8212; Two former Amazon executives who <a href="https://www.geekwire.com/2019/tech-moves-convoy-soaks-big-tech-talent-discovery-taps-amazon-exec-lead-new-seattle-office/">helped build </a><strong>Discovery</strong>’s direct-to-consumer operation in Bellevue, Wash., are stepping down from their leadership roles following the company’s acquisition by Paramount Skydance. They will remain in advisory roles during the transition.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.linkedin.com/in/saxena/"><strong>Avi Saxena</strong></a>]]></content:encoded>
+							<post-id xmlns="com-wordpress:feed-additions:1">961626</post-id>	</item>
+</channel>
+</rss>

@@ -1,14 +1,23 @@
+# Gradle / build
 .gradle/
 build/
 */build/
+.kotlin/
 local.properties
-.idea/
-*.iml
-.DS_Store
-*.apk
-*.aab
-*.jks
-*.keystore
 captures/
 .externalNativeBuild/
 .cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+# IDE
+.idea/
+*.iml
+.DS_Store
+# Signing: never commit keys or passwords (D-021, LLD §7)
+*.jks
+*.keystore
+keystore.properties
+# Local agent state
+.claude/scheduled_tasks.lock

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>AlleyWatch</title>
+	<atom:link href="https://www.alleywatch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.alleywatch.com</link>
+	<description>The Pulse of New York Tech</description>
+	<lastBuildDate>Fri, 06 Nov 2026 21:58:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.11</generator>
+
+<image>
+	<url>https://www.alleywatch.com/wp-content/uploads/2022/11/cropped-AlleyWatch-Logo-AW-32x32.png</url>
+	<title>AlleyWatch</title>
+	<link>https://www.alleywatch.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>The New York Tech Daily Funding Report: 11/6/2026</title>
+		<link>https://www.alleywatch.com/2026/11/the-new-york-tech-daily-funding-report-11-6-2026/</link>
+		
+		<dc:creator><![CDATA[AlleyWatch]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2026 18:27:01 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[NYC Startup Funding Report]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[Aashay Sanghvi]]></category>
+		<category><![CDATA[Anagram]]></category>
+		<category><![CDATA[Chad DePue]]></category>
+		<category><![CDATA[Compound]]></category>
+		<category><![CDATA[Cowboy]]></category>
+		<category><![CDATA[Farnaz Azmoodeh]]></category>
+		<category><![CDATA[Ian Lapham]]></category>
+		<category><![CDATA[James Smits]]></category>
+		<category><![CDATA[Kevin Kwok]]></category>
+		<category><![CDATA[Mats Olsen]]></category>
+		<category><![CDATA[Nebular]]></category>
+		<category><![CDATA[Semantic Ventures]]></category>
+		<category><![CDATA[Shine Ventures]]></category>
+		<category><![CDATA[Uncommon Projects]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163927</guid>
+
+					<description><![CDATA[The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/6/2026 featuring funding details for Cowboy and much more.]]></description>
+										<content:encoded><![CDATA[<div class="funding-roundup" style="font-family: system-ui, -apple-system, sans-serif;">
+<div class="intro" style="margin-bottom: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 6px;">
+<p style="font-size: 1.2rem; line-height: 1.6; margin: 0;">The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/6/2026 featuring funding details for <strong>Cowboy</strong> and much more. This page will be updated throughout the day to reflect any new fundings.</p>
+</div>
+<hr />
+<div class="funding-item" style="margin-bottom: 2rem;">
+<h3 style="color: #2b3035; margin-bottom: 1rem; font-size: 1.5rem;">Cowboy &#8211; $5M</h3>
+<p style="line-height: 1.6; margin-bottom: 0.5rem;"><span class="aw-industry-tag" style="background: #2b3035; color: #fff; padding: 3px 8px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; text-transform: uppercase;">AI</span></p>
+<p style="line-height: 1.6;"><strong>Cowboy</strong>, an app store that lets developers build, deploy, and monetize AI agents, has raised $5M in Seed funding from investors that include <strong>Nebular</strong>, <strong>Compound</strong>, <strong>Semantic Ventures</strong>, <strong>Anagram</strong>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Kalepa Raises $75M to Put AI Agents to Work Across Underwriting, Pricing, and Portfolio Management in the Insurance Industry</title>
+		<link>https://www.alleywatch.com/2026/11/kalepa-raises-75m-to-put-ai-agents-to-work-across-underwriting-pricing-and-portfolio-management-in-the-insurance-industry/</link>
+		
+		<dc:creator><![CDATA[AlleyWatch]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 15:17:30 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Business]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[Finance]]></category>
+		<category><![CDATA[Funded in New York]]></category>
+		<category><![CDATA[Funded in the Alley]]></category>
+		<category><![CDATA[Funding]]></category>
+		<category><![CDATA[Funding News]]></category>
+		<category><![CDATA[Insurtech]]></category>
+		<category><![CDATA[Interviews]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture Capital]]></category>
+		<category><![CDATA[IA Ventures]]></category>
+		<category><![CDATA[Inspired Capital]]></category>
+		<category><![CDATA[Kalepa]]></category>
+		<category><![CDATA[Paul Monasterio]]></category>
+		<category><![CDATA[Updata Partners]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163887</guid>
+
+					<description><![CDATA[Insurance is about to lose decades of underwriting judgment to retirement, and the industry’s answer so far has been AI that fills out forms. Kalepa wants AI to take on the work itself, and CEO Paul Monasterio says the real question is which tasks belong to people and which belong to agents. With $75M in new funding, $91M in total, he is betting insurers will want that choice across every part of the business. Find out where he draws the line.]]></description>
+										<content:encoded><![CDATA[<p>Insurance is losing judgment faster than it can replace it; a generation of veteran underwriters is retiring, and the pricing instincts they built over decades leave with them. Rising losses and softening prices shrink the margin for error on every decision, AI-native competitors enter the market built for speed, and most insurers still apply AI to isolated administrative tasks that never touch the core calls about which risks to write and how to price them. <a href="https://funding.alleywatch.com/companies/kalepa"><strong>Kalepa</strong></a>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The New York Startup Daily Funding Report: 11/5/2026</title>
+		<link>https://www.alleywatch.com/2026/11/the-new-york-startup-daily-funding-report-11-5-2026/</link>
+		
+		<dc:creator><![CDATA[AlleyWatch]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 15:07:57 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[NYC Startup Funding Report]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[Daniel Hillman]]></category>
+		<category><![CDATA[IA Ventures]]></category>
+		<category><![CDATA[Inspired Capital Partners]]></category>
+		<category><![CDATA[Kalepa]]></category>
+		<category><![CDATA[Paul Monasterio]]></category>
+		<category><![CDATA[Updata Partners]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163893</guid>
+
+					<description><![CDATA[The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/5/2026 featuring funding details for Kalepa and much more.]]></description>
+										<content:encoded><![CDATA[<div class="funding-roundup" style="font-family: system-ui, -apple-system, sans-serif;">
+<div class="intro" style="margin-bottom: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 6px;">
+<p style="font-size: 1.2rem; line-height: 1.6; margin: 0;">The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/5/2026 featuring funding details for <strong>Kalepa</strong> and much more. This page will be updated throughout the day to reflect any new fundings.</p>
+</div>
+<hr>
+<div class="funding-item" style="margin-bottom: 2rem;">
+<a href="https://www.alleywatch.com/2026/11/kalepa-raises-75m-to-put-ai-agents-to-work-across-underwriting-pricing-and-portfolio-management-in-the-insurance-industry/"><img decoding="async" src="https://www.alleywatch.com/wp-content/uploads/2026/11/kalepa_insurance-ai-agentic-underwriting-platform-workflows_funding.jpg" alt="Kalepa Raises $75M to Put AI Agents to Work Across Underwriting, Pricing, and Portfolio Management in the Insurance Industry" style="width: 100%; height: auto; margin-bottom: 1rem;" /></a></p>
+<h3 style="color: #2b3035; margin-bottom: 1rem; font-size: 1.5rem;">Kalepa &#8211; $75M</h3>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The October 2026 US Venture Capital Funding Report</title>
+		<link>https://www.alleywatch.com/2026/11/us-venture-capital-statistics-october-2026/</link>
+		
+		<dc:creator><![CDATA[Reza Chowdhury]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2026 16:27:16 +0000</pubDate>
+				<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[Funding]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[&Truth]]></category>
+		<category><![CDATA[Accel]]></category>
+		<category><![CDATA[Andreessen Horowitz]]></category>
+		<category><![CDATA[ARCH Venture Partners]]></category>
+		<category><![CDATA[Arda]]></category>
+		<category><![CDATA[Arena]]></category>
+		<category><![CDATA[Armadin]]></category>
+		<category><![CDATA[ASI]]></category>
+		<category><![CDATA[Atlas Atomics]]></category>
+		<category><![CDATA[B Capital]]></category>
+		<category><![CDATA[Bedrock Robotics]]></category>
+		<category><![CDATA[CapitalG]]></category>
+		<category><![CDATA[Dragoneer]]></category>
+		<category><![CDATA[Dream Labs]]></category>
+		<category><![CDATA[Eka Robotics]]></category>
+		<category><![CDATA[Emergence Capital]]></category>
+		<category><![CDATA[Firehawk Aerospace]]></category>
+		<category><![CDATA[Flapping Airplanes]]></category>
+		<category><![CDATA[Founders Fund]]></category>
+		<category><![CDATA[Hone]]></category>
+		<category><![CDATA[Index Ventures]]></category>
+		<category><![CDATA[Innovation X]]></category>
+		<category><![CDATA[Kalshi]]></category>
+		<category><![CDATA[Lux Capital]]></category>
+		<category><![CDATA[Modal Labs]]></category>
+		<category><![CDATA[OptimizeGEO.ai]]></category>
+		<category><![CDATA[Oratomic]]></category>
+		<category><![CDATA[Oro Mobility]]></category>
+		<category><![CDATA[pathos]]></category>
+		<category><![CDATA[Ramp]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<category><![CDATA[Spark Capital]]></category>
+		<category><![CDATA[Star Therapeutics]]></category>
+		<category><![CDATA[Teddy AI]]></category>
+		<category><![CDATA[Tenstorrent]]></category>
+		<category><![CDATA[Thrive Capital]]></category>
+		<category><![CDATA[Trace Capital]]></category>
+		<category><![CDATA[Type One Energy]]></category>
+		<category><![CDATA[TypeSafe AI]]></category>
+		<category><![CDATA[Vinci]]></category>
+		<category><![CDATA[Warp Sciences]]></category>
+		<category><![CDATA[Wellington Management]]></category>
+		<category><![CDATA[Xona]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163881</guid>
+
+					<description><![CDATA[US startups raised $20.83B in October, up 71% from a year ago and down 25% from September. Four rounds of $1B or more accounted for 26% of the total, and the 43 rounds of $100M or more took 68%. We broke down who raised the money and where it went.]]></description>
+										<content:encoded><![CDATA[<div style="background: #0A1429; color: #f2f7fd; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; padding: 28px 22px; max-width: 900px; margin: 0 auto; border-radius: 10px;">
+<p style="color: #f2f7fd; font-size: 16px; line-height: 1.7; margin: 0 0 16px;">US startups raised $20.83B across 563 rounds in October, down 25% from September and up 71% from October 2025. Four rounds of $1B or more, from Ramp, Tenstorrent, Flapping Airplanes and Kalshi, totaled $5.35B, or 26% of the month. Series A was the surprise: its $5.11B total jumped 72% from September&#8217;s $2.97B, with three rounds of $400M or more taking $2.27B of it.</p>
+<div style="background: #101F40; border: 1px solid #243C6B; border-left: 5px solid #8CCBF7; border-radius: 8px; padding: 20px 22px; margin: 24px 0;">
+<div style="color: #8ccbf7; font-size: 13px; font-weight: bold; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 10px;">Key Insights</div>
+<ul style="margin: 0; padding-left: 20px;">
+<li style="color: #f2f7fd; font-size: 15px; line-height: 1.65; margin-bottom: 9px;"><strong>Four $1B+ rounds took 26% of capital.</strong>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The New York Tech Daily Funding Report: 11/4/2026</title>
+		<link>https://www.alleywatch.com/2026/11/the-alleywatch-startup-daily-funding-report-11-4-2026/</link>
+		
+		<dc:creator><![CDATA[AlleyWatch]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2026 15:27:55 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[NYC Startup Funding Report]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[Ahmed Lone]]></category>
+		<category><![CDATA[Amex Ventures]]></category>
+		<category><![CDATA[Anish Agarwal]]></category>
+		<category><![CDATA[Battery Ventures]]></category>
+		<category><![CDATA[Khosla Ventures]]></category>
+		<category><![CDATA[Kleiner Perkins]]></category>
+		<category><![CDATA[Raaz Dwivedi]]></category>
+		<category><![CDATA[Raj Agrawal]]></category>
+		<category><![CDATA[Redpoint Ventures]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<category><![CDATA[Traversal]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163884</guid>
+
+					<description><![CDATA[The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/4/2026 featuring funding details for Traversal and much more.]]></description>
+										<content:encoded><![CDATA[<div class="funding-roundup" style="font-family: system-ui, -apple-system, sans-serif;">
+<div class="intro" style="margin-bottom: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 6px;">
+<p style="font-size: 1.2rem; line-height: 1.6; margin: 0;">The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/4/2026 featuring funding details for <strong>Traversal</strong> and much more. This page will be updated throughout the day to reflect any new fundings.</p>
+</div>
+<hr />
+<div class="funding-item" style="margin-bottom: 2rem;">
+<h3 style="color: #2b3035; margin-bottom: 1rem; font-size: 1.5rem;">Traversal &#8211; $120M</h3>
+<p style="line-height: 1.6; margin-bottom: 0.5rem;"><span class="aw-industry-tag" style="background: #2b3035; color: #fff; padding: 3px 8px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; text-transform: uppercase;">AI</span></p>
+<p style="line-height: 1.6;"><strong>Traversal</strong>, an AI platform that diagnoses and fixes software outages for enterprise engineering teams, has raised $120M in Series B funding led by <strong>Kleiner Perkins</strong>, <strong>Redpoint Ventures</strong>, and <strong>Khosla Ventures</strong>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The 10 Largest NYC Tech Startup Funding Rounds of October 2026</title>
+		<link>https://www.alleywatch.com/2026/11/nyc-startup-funding-top-largest-october-2026-vc/</link>
+		
+		<dc:creator><![CDATA[Reza Chowdhury]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2026 16:27:49 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[Funding]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[1789 Capital]]></category>
+		<category><![CDATA[500 Global]]></category>
+		<category><![CDATA[8VC]]></category>
+		<category><![CDATA[A*]]></category>
+		<category><![CDATA[Accel]]></category>
+		<category><![CDATA[Activant Capital]]></category>
+		<category><![CDATA[Adam D'Angelo]]></category>
+		<category><![CDATA[Akshat Bubna]]></category>
+		<category><![CDATA[Alex Rives]]></category>
+		<category><![CDATA[AlleyCorp]]></category>
+		<category><![CDATA[Alpaca VC]]></category>
+		<category><![CDATA[Alpha Wave Global]]></category>
+		<category><![CDATA[Alumni Ventures]]></category>
+		<category><![CDATA[Andreessen Horowitz]]></category>
+		<category><![CDATA[Andrew Wang]]></category>
+		<category><![CDATA[Aravind Srinivas]]></category>
+		<category><![CDATA[Avenir]]></category>
+		<category><![CDATA[Baillie Gifford]]></category>
+		<category><![CDATA[Bain Capital Ventures]]></category>
+		<category><![CDATA[Balyasny Asset Management]]></category>
+		<category><![CDATA[Bank of America]]></category>
+		<category><![CDATA[Barclays]]></category>
+		<category><![CDATA[Ben Winter]]></category>
+		<category><![CDATA[BNP Paribas]]></category>
+		<category><![CDATA[BoxGroup]]></category>
+		<category><![CDATA[Brendan Foody]]></category>
+		<category><![CDATA[Cameron Zoub]]></category>
+		<category><![CDATA[Capital Group]]></category>
+		<category><![CDATA[CapitalG]]></category>
+		<category><![CDATA[Capitolis]]></category>
+		<category><![CDATA[Charles Zuker]]></category>
+		<category><![CDATA[Chetan Parthiban]]></category>
+		<category><![CDATA[Citi]]></category>
+		<category><![CDATA[Coatue]]></category>
+		<category><![CDATA[Companyon Ventures]]></category>
+		<category><![CDATA[D. E. Shaw & Co.]]></category>
+		<category><![CDATA[D1 Capital Partners]]></category>
+		<category><![CDATA[Daytona]]></category>
+		<category><![CDATA[Definition]]></category>
+		<category><![CDATA[Dragoneer Investment Group]]></category>
+		<category><![CDATA[e2vc]]></category>
+		<category><![CDATA[Eric Chiang]]></category>
+		<category><![CDATA[Eric Glyman]]></category>
+		<category><![CDATA[Eric Yuan]]></category>
+		<category><![CDATA[Erik Bernhardsson]]></category>
+		<category><![CDATA[Euclidean Capital]]></category>
+		<category><![CDATA[Evergreen Fund]]></category>
+		<category><![CDATA[Everywhere Ventures]]></category>
+		<category><![CDATA[Fidelity]]></category>
+		<category><![CDATA[First Citizens Innovation Banking]]></category>
+		<category><![CDATA[FirstMark]]></category>
+		<category><![CDATA[FirstMark Capital]]></category>
+		<category><![CDATA[Founders Fund]]></category>
+		<category><![CDATA[Framework Ventures]]></category>
+		<category><![CDATA[Gaingels]]></category>
+		<category><![CDATA[Gene Lee]]></category>
+		<category><![CDATA[General Catalyst]]></category>
+		<category><![CDATA[Generation Investment Management]]></category>
+		<category><![CDATA[GIC]]></category>
+		<category><![CDATA[Gil Mandelzis]]></category>
+		<category><![CDATA[Glade Brook Capital Partners]]></category>
+		<category><![CDATA[Goran Draganic]]></category>
+		<category><![CDATA[Greenoaks]]></category>
+		<category><![CDATA[Hercules Capital]]></category>
+		<category><![CDATA[Hudson River Trading]]></category>
+		<category><![CDATA[Human capital]]></category>
+		<category><![CDATA[ICONIQ Capital]]></category>
+		<category><![CDATA[Igor Teleshevsky]]></category>
+		<category><![CDATA[Index Ventures]]></category>
+		<category><![CDATA[Insight Partners]]></category>
+		<category><![CDATA[Ivan Burazin]]></category>
+		<category><![CDATA[IVP]]></category>
+		<category><![CDATA[Jack Sharkey]]></category>
+		<category><![CDATA[Jonathan Hsu]]></category>
+		<category><![CDATA[Jonathan Schwartz]]></category>
+		<category><![CDATA[JP Morgan]]></category>
+		<category><![CDATA[Kalshi]]></category>
+		<category><![CDATA[Karim Atiyeh]]></category>
+		<category><![CDATA[Khosla Ventures]]></category>
+		<category><![CDATA[Kleiner Perkins]]></category>
+		<category><![CDATA[Layer Global]]></category>
+		<category><![CDATA[Lightspeed Venture Partners]]></category>
+		<category><![CDATA[Linda Du]]></category>
+		<category><![CDATA[Litquidity Ventures]]></category>
+		<category><![CDATA[Luana Lopes Lara]]></category>
+		<category><![CDATA[Lux Capital]]></category>
+		<category><![CDATA[M12 - Microsoft's Venture Fund]]></category>
+		<category><![CDATA[M13]]></category>
+		<category><![CDATA[Mana Ventures]]></category>
+		<category><![CDATA[Matt Biringer]]></category>
+		<category><![CDATA[Max Friefeld]]></category>
+		<category><![CDATA[Menlo Ventures]]></category>
+		<category><![CDATA[Miraj Mohsin]]></category>
+		<category><![CDATA[Modal Labs]]></category>
+		<category><![CDATA[Morgan Stanley Investment Management]]></category>
+		<category><![CDATA[Nancy Thornberry]]></category>
+		<category><![CDATA[Nomura]]></category>
+		<category><![CDATA[North.cloud]]></category>
+		<category><![CDATA[Okta Ventures]]></category>
+		<category><![CDATA[Oliver Ortlieb]]></category>
+		<category><![CDATA[Olivier Pomel]]></category>
+		<category><![CDATA[Ontario Teachers' Pension Plan]]></category>
+		<category><![CDATA[Pace Capital]]></category>
+		<category><![CDATA[Patrick Collison]]></category>
+		<category><![CDATA[PeakSpan Capital]]></category>
+		<category><![CDATA[Pinegrove Opportunity Partners]]></category>
+		<category><![CDATA[Pinegrove Venture Partners]]></category>
+		<category><![CDATA[Pioneer Fund]]></category>
+		<category><![CDATA[Qualcomm Ventures]]></category>
+		<category><![CDATA[Quiet Capital]]></category>
+		<category><![CDATA[Ramp]]></category>
+		<category><![CDATA[Redpoint]]></category>
+		<category><![CDATA[Ribbit Capital]]></category>
+		<category><![CDATA[Richard Axel]]></category>
+		<category><![CDATA[Samsung NEXT]]></category>
+		<category><![CDATA[Sands Capital Ventures]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<category><![CDATA[Sequoia Global Equities]]></category>
+		<category><![CDATA[Shopify Ventures]]></category>
+		<category><![CDATA[SignalRank]]></category>
+		<category><![CDATA[Soma Capital]]></category>
+		<category><![CDATA[State Street]]></category>
+		<category><![CDATA[Steven Schwartz]]></category>
+		<category><![CDATA[Stripes]]></category>
+		<category><![CDATA[Stuut]]></category>
+		<category><![CDATA[T. Rowe Price]]></category>
+		<category><![CDATA[Tarek Alaruri]]></category>
+		<category><![CDATA[Tarek Mansour]]></category>
+		<category><![CDATA[TCG Crossover]]></category>
+		<category><![CDATA[The Column Group]]></category>
+		<category><![CDATA[Thomas Glocer]]></category>
+		<category><![CDATA[Thomas Maniatis]]></category>
+		<category><![CDATA[Thrive Capital]]></category>
+		<category><![CDATA[Tobi Lutke]]></category>
+		<category><![CDATA[Torch Capital]]></category>
+		<category><![CDATA[Tradeweb]]></category>
+		<category><![CDATA[TriGemX Bio]]></category>
+		<category><![CDATA[UBS]]></category>
+		<category><![CDATA[Ultra]]></category>
+		<category><![CDATA[Uncommon Denominator]]></category>
+		<category><![CDATA[Upfront Ventures]]></category>
+		<category><![CDATA[Valon]]></category>
+		<category><![CDATA[Vedran Jukic]]></category>
+		<category><![CDATA[Viking Global Investors]]></category>
+		<category><![CDATA[Wellington Management]]></category>
+		<category><![CDATA[Whop]]></category>
+		<category><![CDATA[Wing Venture Capital]]></category>
+		<category><![CDATA[Y Combinator]]></category>
+		<category><![CDATA[Yassine Acoine]]></category>
+		<category><![CDATA[Zigg Capital]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163861</guid>
+
+					<description><![CDATA[NYC’s largest startup fundings of October 2026 span fintech, AI infrastructure, robotics, and biotech. Two rounds hit $1B or more. See who raised the money, who wrote the checks, and who’s backing the next wave. Read the full list of the top NYC startup funding rounds.]]></description>
+										<content:encoded><![CDATA[<p>Looking at the largest NYC startup funding rounds from October 2026, leveraging AlleyWatch&#8217;s proprietary funding data, we&#8217;ve analyzed the most significant venture capital deals of the month. Beyond the raw funding numbers, this month&#8217;s analysis includes detailed information about each company&#8217;s industry focus, founding team, business model, and total funding history to provide deeper context about these high-growth ventures.</p>
+<div class="aw-sponsored-promo" style="text-align: center; margin: 2rem 0;"><a href="https://ads.alleywatch.com?v=1" target="_blank" rel="nofollow noopener"><img decoding="async" class="aligncenter" src="https://alleywatch.com/wp-content/uploads/2026/04/alleywatch-advertising-popup-2026_v1.jpg" alt="REACH NYC TECH LEADERS - Advertise with AlleyWatch" /></a></div>
+<hr />
+<p><a href="https://alleywatch.com/2026/10/ultra-robotics-warehouse-robots-as-a-service-order-packing-logistics-ecommerce-fufillment-automation-jon-miller-schwartz/">]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Chord Acquires Zenlytic, Doubling Its Revenue</title>
+		<link>https://www.alleywatch.com/2026/11/chord-acquisition-zenlytic-enterprise-ai-data-price/</link>
+		
+		<dc:creator><![CDATA[Reza Chowdhury]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2026 15:27:42 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[Big Data]]></category>
+		<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Business]]></category>
+		<category><![CDATA[Data and Analytics]]></category>
+		<category><![CDATA[E-Commerce]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[NYC Tech and Startup Exits]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[14Peaks Capital]]></category>
+		<category><![CDATA[Bain Capital Ventures]]></category>
+		<category><![CDATA[Bryan Mahoney]]></category>
+		<category><![CDATA[Chord]]></category>
+		<category><![CDATA[Company Ventures]]></category>
+		<category><![CDATA[Correlation Ventures]]></category>
+		<category><![CDATA[Habitat Partners]]></category>
+		<category><![CDATA[M13]]></category>
+		<category><![CDATA[Paul Blankley]]></category>
+		<category><![CDATA[Primary Venture Partners]]></category>
+		<category><![CDATA[Ryan Janssen]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<category><![CDATA[Zenlytic]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163873</guid>
+
+					<description><![CDATA[Everyone’s giving AI agents access to company data. Almost nobody is making sure they understand the business. Chord just bought Zenlytic to fix that.]]></description>
+										<content:encoded><![CDATA[<p><strong>Chord</strong>, the New York-based AI data platform for commerce, has acquired <strong>Zenlytic</strong>, the New York AI-powered business intelligence startup, doubling its revenue. Terms of the transaction were not disclosed. &#8220;We built Zenlytic to help enterprises get answers they can trust from their own data, with a developer-first approach to keeping business context accurate,&#8221; remarked <strong>Ryan Janssen</strong>, CEO of Zenlytic. &#8220;This transaction allows Chord to build on that work, combining our analytics engine with their data infrastructure and activation capabilities so customers can move from asking questions to acting on the answers.&#8221;</p>
+<p><em>We built Zenlytic to help enterprises get answers they can trust from their own data, with a developer-first approach to keeping business context accurate. This transaction allows Chord to build on that work, combining our analytics engine with their data infrastructure and activation capabilities so customers can move from asking questions to acting on the answers. – Ryan Janssen</em></p>
+<p>Founded in 2018 by <strong>Ryan Janssen</strong> and <strong>Paul Blankley</strong>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The AlleyWatch October 2026 New York Venture Capital Funding Report</title>
+		<link>https://www.alleywatch.com/2026/11/new-york-venture-capital-october-2026/</link>
+		
+		<dc:creator><![CDATA[Reza Chowdhury]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2026 16:27:00 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[Funding]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[Accel]]></category>
+		<category><![CDATA[Allara]]></category>
+		<category><![CDATA[BoxGroup]]></category>
+		<category><![CDATA[Brellium]]></category>
+		<category><![CDATA[Capitolis]]></category>
+		<category><![CDATA[Clasp]]></category>
+		<category><![CDATA[Coast]]></category>
+		<category><![CDATA[Daytona]]></category>
+		<category><![CDATA[Dragoneer]]></category>
+		<category><![CDATA[Evos]]></category>
+		<category><![CDATA[Firefly]]></category>
+		<category><![CDATA[Hyphenate]]></category>
+		<category><![CDATA[iVerify]]></category>
+		<category><![CDATA[Kalshi]]></category>
+		<category><![CDATA[Melius]]></category>
+		<category><![CDATA[Modal Labs]]></category>
+		<category><![CDATA[North.cloud]]></category>
+		<category><![CDATA[OpenTrons]]></category>
+		<category><![CDATA[Othello]]></category>
+		<category><![CDATA[Prism Data]]></category>
+		<category><![CDATA[Qualitate]]></category>
+		<category><![CDATA[Ramp]]></category>
+		<category><![CDATA[Scuba]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<category><![CDATA[ShareWillow]]></category>
+		<category><![CDATA[Stuut]]></category>
+		<category><![CDATA[Thrive Capital]]></category>
+		<category><![CDATA[TriGemX Bio]]></category>
+		<category><![CDATA[True]]></category>
+		<category><![CDATA[Ultra]]></category>
+		<category><![CDATA[Valon]]></category>
+		<category><![CDATA[Wally Health]]></category>
+		<category><![CDATA[Wellington Management]]></category>
+		<category><![CDATA[Whop]]></category>
+		<category><![CDATA[Y Combinator]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163855</guid>
+
+					<description><![CDATA[New York startups raised $4.94B in October, the largest month for startup funding in NYC history. Ramp’s $1.85B Series G is the largest startup round in NYC history, and with Kalshi’s $1B and Modal’s $750M, three rounds took 73% of the money. Fewer deals than last October pushed the average round to $91.6M, and the 2026 total has reached $27.10B, 42% above all of 2025.]]></description>
+										<content:encoded><![CDATA[<div style="background: #0A1630; color: #eaf2fb; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; padding: 28px 22px; max-width: 900px; margin: 0 auto; border-radius: 10px;">
+<p style="color: #eaf2fb; font-size: 16px; line-height: 1.7; margin: 0 0 16px;">New York startups raised $4.94B across 54 rounds in October, the largest month for startup funding in NYC history. Capital is up 61% from September and 254% above October 2025. Ramp&#8217;s $1.85B Series G was the largest startup funding round in New York City history, and with Kalshi&#8217;s $1B and Modal&#8217;s $750M it brought the top three to $3.60B, or 73% of the month. The 2026 total now stands at $27.10B across 677 rounds, 42% above the full-year 2025 total of $19.11B with two months still to go.</p>
+<div style="background: #0F2142; border: 1px solid #1E3A66; border-left: 5px solid #59C3F7; border-radius: 8px; padding: 20px 22px; margin: 24px 0;">
+<div style="color: #59c3f7; font-size: 13px; font-weight: bold; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 10px;">Key Insights</div>
+<ul style="margin: 0; padding-left: 20px;">]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The New York Tech Daily Funding Report: 11/2/2026</title>
+		<link>https://www.alleywatch.com/2026/11/the-alleywatch-startup-daily-funding-report-11-2-2026/</link>
+		
+		<dc:creator><![CDATA[AlleyWatch]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2026 15:27:18 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[NYC Startup Funding Report]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[ Will Sealy]]></category>
+		<category><![CDATA[Anthony Rose]]></category>
+		<category><![CDATA[Clark]]></category>
+		<category><![CDATA[Enes Witwit]]></category>
+		<category><![CDATA[Logos]]></category>
+		<category><![CDATA[Marathon Management Partners]]></category>
+		<category><![CDATA[ParaFi]]></category>
+		<category><![CDATA[Rerail]]></category>
+		<category><![CDATA[Sofeon Ventures]]></category>
+		<category><![CDATA[Summer]]></category>
+		<category><![CDATA[Tom Zschach]]></category>
+		<category><![CDATA[Touring Capital]]></category>
+		<category><![CDATA[VanEck]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163859</guid>
+
+					<description><![CDATA[The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/2/2026 featuring funding details for Clark, Logos, and much more.]]></description>
+										<content:encoded><![CDATA[<div class="funding-roundup" style="font-family: system-ui, -apple-system, sans-serif;">
+<div class="intro" style="margin-bottom: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 6px;">
+<p style="font-size: 1.2rem; line-height: 1.6; margin: 0;">The latest venture capital, seed, pre-seed, and angel deals for NYC startups for 11/2/2026 featuring funding details for <strong>Clark</strong>, <strong>Logos</strong>, and much more. This page will be updated throughout the day to reflect any new fundings.</p>
+</div>
+<hr style="border: 0; border-top: 1px solid #e9ecef; margin: 1.5rem 0;" />
+<div class="funding-item" style="margin-bottom: 1.5rem;">
+<h3 style="color: #2b3035; margin-bottom: 1rem; font-size: 1.5rem;">Clark &#8211; $11M</h3>
+<p style="margin: 0 0 0.75rem 0;"><span class="aw-industry-tag" style="background: #2b3035; color: #fff; padding: 3px 8px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; text-transform: uppercase;">AI</span><span class="aw-industry-tag" style="background: #2b3035; color: #fff; padding: 3px 8px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; text-transform: uppercase;">ENTERPRISE</span></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>#NYCtech Week in Review: 10/25/26 – 10/31/26</title>
+		<link>https://www.alleywatch.com/2026/11/nyctech-week-in-review-10-25-26-10-31-26/</link>
+		
+		<dc:creator><![CDATA[AlleyWatch]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2026 13:27:00 +0000</pubDate>
+				<category><![CDATA[#NYCTech]]></category>
+		<category><![CDATA[AlleyTalk]]></category>
+		<category><![CDATA[Breaking]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[NYC Tech Week in Review]]></category>
+		<category><![CDATA[RFC-AW]]></category>
+		<category><![CDATA[Yahoo Finance Syndication]]></category>
+		<category><![CDATA[1kx]]></category>
+		<category><![CDATA[Aaron Kennedy]]></category>
+		<category><![CDATA[Ajay Krishna Amudan]]></category>
+		<category><![CDATA[Andreessen Horowitz]]></category>
+		<category><![CDATA[Arjun Bisen]]></category>
+		<category><![CDATA[Austin Rief]]></category>
+		<category><![CDATA[B Capital]]></category>
+		<category><![CDATA[Baillie Gifford]]></category>
+		<category><![CDATA[Balyasny Asset Management]]></category>
+		<category><![CDATA[Ben Hills]]></category>
+		<category><![CDATA[Blockchain Capital]]></category>
+		<category><![CDATA[Boldcap Ventures]]></category>
+		<category><![CDATA[Capital One Ventures]]></category>
+		<category><![CDATA[Capital Q Ventures]]></category>
+		<category><![CDATA[CapitalG]]></category>
+		<category><![CDATA[Charge Ventures]]></category>
+		<category><![CDATA[Charlie Walk]]></category>
+		<category><![CDATA[Chetan Manda]]></category>
+		<category><![CDATA[Circadian Ventures]]></category>
+		<category><![CDATA[Coatue]]></category>
+		<category><![CDATA[Coinbase Ventures]]></category>
+		<category><![CDATA[CoinFund]]></category>
+		<category><![CDATA[CreateOne]]></category>
+		<category><![CDATA[Dina Radenkovic Turner]]></category>
+		<category><![CDATA[Expa]]></category>
+		<category><![CDATA[Ferring Pharmaceuticals]]></category>
+		<category><![CDATA[Foundation Capital]]></category>
+		<category><![CDATA[Gaia Ventures]]></category>
+		<category><![CDATA[Gameto]]></category>
+		<category><![CDATA[Hudson River Trading]]></category>
+		<category><![CDATA[Hyphenate]]></category>
+		<category><![CDATA[Iris]]></category>
+		<category><![CDATA[Jeffrey Davis]]></category>
+		<category><![CDATA[Jesse Sawa]]></category>
+		<category><![CDATA[Kalshi]]></category>
+		<category><![CDATA[Lawrence Lenihan]]></category>
+		<category><![CDATA[Layer Global]]></category>
+		<category><![CDATA[Lerer Hippeau]]></category>
+		<category><![CDATA[Locker Room Capital]]></category>
+		<category><![CDATA[Luana Lopes Lara]]></category>
+		<category><![CDATA[Martín Varsavsky]]></category>
+		<category><![CDATA[Mochatrade]]></category>
+		<category><![CDATA[Morgan Stanley Investment Management]]></category>
+		<category><![CDATA[Mostest]]></category>
+		<category><![CDATA[Mouro Capital]]></category>
+		<category><![CDATA[Neal Luthra]]></category>
+		<category><![CDATA[New Era Capital Partners]]></category>
+		<category><![CDATA[Newbond]]></category>
+		<category><![CDATA[Nexus Luxury Collection]]></category>
+		<category><![CDATA[Nexus Venture Partners]]></category>
+		<category><![CDATA[Nikhil Raghuveera]]></category>
+		<category><![CDATA[Notation Capital]]></category>
+		<category><![CDATA[Overwatch Data]]></category>
+		<category><![CDATA[Parth Maheshwari]]></category>
+		<category><![CDATA[Paxos]]></category>
+		<category><![CDATA[Pioneer Fund]]></category>
+		<category><![CDATA[Predicate]]></category>
+		<category><![CDATA[PruVen Capital]]></category>
+		<category><![CDATA[Ramnandan Krishnamurthy]]></category>
+		<category><![CDATA[Robert Tagliapietra]]></category>
+		<category><![CDATA[Ryan Shank]]></category>
+		<category><![CDATA[Sagee Moyal]]></category>
+		<category><![CDATA[Sarah Klingman]]></category>
+		<category><![CDATA[Scott Belsky]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<category><![CDATA[Sequoia Global Equities]]></category>
+		<category><![CDATA[ShareWillow]]></category>
+		<category><![CDATA[Stripes]]></category>
+		<category><![CDATA[T-Squared Social]]></category>
+		<category><![CDATA[Tarek Mansour]]></category>
+		<category><![CDATA[Todd Deutsch]]></category>
+		<category><![CDATA[Tribe Capital]]></category>
+		<category><![CDATA[Twelve Below]]></category>
+		<category><![CDATA[Utkarsh Sinha]]></category>
+		<category><![CDATA[Visa Ventures]]></category>
+		<category><![CDATA[Wellington Management]]></category>
+		<category><![CDATA[Wildwood Ventures]]></category>
+		<category><![CDATA[Y Combinator]]></category>
+		<category><![CDATA[Zara Perumal]]></category>
+		<category><![CDATA[Zero Knowledge Ventures]]></category>
+		<guid isPermaLink="false">https://alleywatch.com/?p=163851</guid>
+
+					<description><![CDATA[9 new deals and $1.09B+ invested into NYC startups for the week. NYC Tech News for the week ending 10/31/26 featuring news for Kalshi, Hyphenate, and Overwatch Data, and much, much more.]]></description>
+										<content:encoded><![CDATA[<p>With so much going on in the city&#8217;s thriving ecosystem, it is easy to miss some of the happenings in the space. We keep you abreast of the things that you may have missed in <a href="https://www.alleywatch.com/">NYC Tech News</a> for the week ending 10/31/26 including the <a href="https://www.alleywatch.com/category/funding/">NYC startup fundings</a>, <a href="https://www.alleywatch.com/category/exits/">NYC startup exits</a>, and <a href="https://www.alleywatch.com/category/events/">NYC startup events</a> featuring news for Gameto, Kalshi, and Hyphenate, and much, much more.</p>
+<hr />
+<p><a href="https://alleywatch.com/2026/10/ferring-gameto-acquisition-price-fertility-biotech-ivf-fertilo/"><img decoding="async" style="width: 100%; height: auto;" src="https://alleywatch.com/wp-content/uploads/2026/10/Ferring-Gameto-acquisition-price-fertility-biotech-IVF-Fertilo.jpg" alt="Gameto" /></a></p>
+<h3><a href="https://alleywatch.com/tag/gameto/">Gameto</a> &#8211; Acquired for up to $1.38B</h3>
+<p><strong>Gameto</strong>]]></content:encoded>
+					
+		
+		
+			</item>
+</channel>
+</rss>

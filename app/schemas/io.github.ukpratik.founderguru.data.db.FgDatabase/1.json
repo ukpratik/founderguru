@@ -1,0 +1,263 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "0d42b28a84f236ad086c33799baac17d",
+    "entities": [
+      {
+        "tableName": "stories",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `sourceId` TEXT NOT NULL, `sourceName` TEXT NOT NULL, `url` TEXT NOT NULL, `urlKey` TEXT NOT NULL, `title` TEXT NOT NULL, `titleKey` TEXT NOT NULL, `snippet` TEXT NOT NULL, `imageUrl` TEXT, `publishedAt` INTEGER NOT NULL, `firstSeenAt` INTEGER NOT NULL, `lenses` INTEGER NOT NULL, `sectors` INTEGER NOT NULL, `regionMentions` INTEGER NOT NULL, `savedAt` INTEGER, `openedAt` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceId",
+            "columnName": "sourceId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceName",
+            "columnName": "sourceName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "urlKey",
+            "columnName": "urlKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "titleKey",
+            "columnName": "titleKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "snippet",
+            "columnName": "snippet",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "publishedAt",
+            "columnName": "publishedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstSeenAt",
+            "columnName": "firstSeenAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lenses",
+            "columnName": "lenses",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sectors",
+            "columnName": "sectors",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "regionMentions",
+            "columnName": "regionMentions",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "savedAt",
+            "columnName": "savedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "openedAt",
+            "columnName": "openedAt",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_stories_urlKey",
+            "unique": true,
+            "columnNames": [
+              "urlKey"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_stories_urlKey` ON `${TABLE_NAME}` (`urlKey`)"
+          },
+          {
+            "name": "index_stories_titleKey",
+            "unique": false,
+            "columnNames": [
+              "titleKey"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_stories_titleKey` ON `${TABLE_NAME}` (`titleKey`)"
+          },
+          {
+            "name": "index_stories_sourceId",
+            "unique": false,
+            "columnNames": [
+              "sourceId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_stories_sourceId` ON `${TABLE_NAME}` (`sourceId`)"
+          },
+          {
+            "name": "index_stories_publishedAt",
+            "unique": false,
+            "columnNames": [
+              "publishedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_stories_publishedAt` ON `${TABLE_NAME}` (`publishedAt`)"
+          },
+          {
+            "name": "index_stories_firstSeenAt",
+            "unique": false,
+            "columnNames": [
+              "firstSeenAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_stories_firstSeenAt` ON `${TABLE_NAME}` (`firstSeenAt`)"
+          },
+          {
+            "name": "index_stories_savedAt",
+            "unique": false,
+            "columnNames": [
+              "savedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_stories_savedAt` ON `${TABLE_NAME}` (`savedAt`)"
+          }
+        ]
+      },
+      {
+        "tableName": "source_state",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `region` TEXT NOT NULL, `url` TEXT NOT NULL, `enabled` INTEGER NOT NULL DEFAULT 1, `etag` TEXT, `lastModified` TEXT, `finalUrl` TEXT, `lastStatus` TEXT, `lastHttpCode` INTEGER, `lastError` TEXT, `lastAttemptAt` INTEGER, `lastSuccessAt` INTEGER, `newestItemAt` INTEGER, `consecutiveFailures` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "region",
+            "columnName": "region",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enabled",
+            "columnName": "enabled",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "1"
+          },
+          {
+            "fieldPath": "etag",
+            "columnName": "etag",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastModified",
+            "columnName": "lastModified",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "finalUrl",
+            "columnName": "finalUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastStatus",
+            "columnName": "lastStatus",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastHttpCode",
+            "columnName": "lastHttpCode",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "lastError",
+            "columnName": "lastError",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastAttemptAt",
+            "columnName": "lastAttemptAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "lastSuccessAt",
+            "columnName": "lastSuccessAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "newestItemAt",
+            "columnName": "newestItemAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "consecutiveFailures",
+            "columnName": "consecutiveFailures",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0d42b28a84f236ad086c33799baac17d')"
+    ]
+  }
+}

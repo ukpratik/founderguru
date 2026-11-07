@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/wp-content/themes/orbis//feeds/rss-display.xsl" type="text/xsl"?>
+<rss version="2.0" 
+	xmlns:media="http://search.yahoo.com/mrss/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+	<title>Rest of World - </title>
+	<atom:link href="https://restofworld.org/feed/latest/" rel="self" type="application/rss+xml" />
+	<link>https://restofworld.org</link>
+	<description>Reporting Global Tech Stories</description>
+	<lastBuildDate>Thu, 05 Nov 2026 11:01:58 +0000</lastBuildDate>
+	<copyright>Copyright 2026 Rest of World</copyright>
+	<sy:updatePeriod>daily</sy:updatePeriod>
+	<sy:updateFrequency>2</sy:updateFrequency>
+	<item>
+		<title>A rare strike in Taiwan exposes labor unrest beneath the global AI rush</title>
+		<link>https://restofworld.org/2026/taiwan-labor-strike-ai-profits/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Thu, 05 Nov 2026 11:00:00 +0000</pubDate>
+		<dc:creator>Hsiuwen Liu and Peiyi Yu</dc:creator>
+		<guid>https://restofworld.org/2026/taiwan-labor-strike-ai-profits/</guid>
+		<description><![CDATA[Labor disputes and unionization in Taiwan’s semiconductor industry highlight growing worker discontent over the unequal distribution of profits from the AI boom.]]></description>
+		<content:encoded><![CDATA[About a dozen workers at a Micron Technology plant in Taoyuan in Taiwan went on strike in October, the first in the island’s semiconductor industry, after their union and the...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/GettyImages-2300828582-sized.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/GettyImages-2300828582-sized.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>I-Hwa Cheng / AFP via Getty Images</media:credit>
+	<media:description>Micron Technology union representatives gesture during a protest outside of the Micron facility demanding greater profit shares and better bonuses, in Taoyuan on October 22, 2026. Eleven workers at a Micron Technology plant in Taiwan went on strike October 22 after their union and the US chip giant failed to agree on employee demands for a greater share of the company's profits, a union official said. </media:description>
+		</item>
+	<item>
+		<title>Startups recalibrate Chinese AI for the West</title>
+		<link>https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Mon, 02 Nov 2026 11:00:00 +0000</pubDate>
+		<dc:creator>Rina Chandran and Viola Zhou</dc:creator>
+		<guid>https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/</guid>
+		<description><![CDATA[A growing number of startups are editing powerful Chinese open-weight models for Western businesses that are concerned about censorship and security.]]></description>
+		<content:encoded><![CDATA[The concept of machine unlearning — or removing data from an artificial intelligence system after it has been trained — was largely an academic pursuit when Ben Luria, an Israeli...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/illo_alignment_final.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/illo_alignment_final.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>Why Africa needs its own AI off switch</title>
+		<link>https://restofworld.org/2026/africa-sovereign-ai-off-switch/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Thu, 29 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Jane Munga</dc:creator>
+		<guid>https://restofworld.org/2026/africa-sovereign-ai-off-switch/</guid>
+		<description><![CDATA[Africa must develop AI systems with local control to protect critical infrastructure such as mobile money networks from growing AI-powered cyberthreats.
+]]></description>
+		<content:encoded><![CDATA[Imagine that it is 6 a.m. in the wholesale markets of Nairobi. Merchants are delivering vegetables from up-country farms to the retailers who sell to the city’s households. Everyone is...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/illo_AI_off_switch_Final.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/illo_AI_off_switch_Final.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>AI models cost more when you don’t use English</title>
+		<link>https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Mon, 26 Oct 2026 10:00:22 +0000</pubDate>
+		<dc:creator>Ananya Bhattacharya</dc:creator>
+		<guid>https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/</guid>
+		<description><![CDATA[Some languages require far more tokens for AI models to process, raising costs and reducing context for the people who use them.]]></description>
+		<content:encoded><![CDATA[People who use less widely spoken languages could end up paying more to use artificial intelligence than those who speak English or other dominant languages. A new study published last...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/Ai-Cost-Languages-3-scaled.png?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/Ai-Cost-Languages-3-scaled.png?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>Big Tech’s thirst for water is sparking a global resistance</title>
+		<link>https://restofworld.org/2026/ai-datacenters-water-resistance-global/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Thu, 22 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Paris Marx</dc:creator>
+		<guid>https://restofworld.org/2026/ai-datacenters-water-resistance-global/</guid>
+		<description><![CDATA[In his new book “Hyperscale: The Ambition and Excess of Big Tech’s Data Empires,” writer Paris Marx examines how local communities are resisting the growing demand for water to cool data centers. ]]></description>
+		<content:encoded><![CDATA[After ChatGPT was released in November 2022, the tech industry was quick to herald the chatbot as the marker of a new wave of technological progress. As companies pushed to...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/GettyImages-2299069237_small.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/GettyImages-2299069237_small.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+	<media:description>This photograph taken on September 6, 2026 shows a placard opposing data centers displayed on a water dispenser during the People's Convention on AI Data Centers event at Visakhapatnam in India's Andhra Pradesh state. Construction of a massive Google data centre in the Indian city of Visakhapatnam, often called Vizag, has been met with resistance from residents, who fear the impact on the environment and their lives. But the tech giant says its &quot;gigawatt-scale&quot; AI facility -- in southern Andhra Pradesh state, part of a $15 billion investment -- will use air cooling systems, and not water from an area already facing shortages. (Photo by Idrees MOHAMMED / AFP via Getty Images)</media:description>
+		</item>
+	<item>
+		<title>Will developing nations be able to handle millions of AI agents?</title>
+		<link>https://restofworld.org/2026/meta-muse-openai-dots-ai-agents-global-south/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Mon, 19 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Danai Nesta Kupemba</dc:creator>
+		<guid>https://restofworld.org/2026/meta-muse-openai-dots-ai-agents-global-south/</guid>
+		<description><![CDATA[It may be some time before AI agents can fully navigate the complexities and cultural nuances of developing nations.]]></description>
+		<content:encoded><![CDATA[Big Tech’s newest personal agents — Meta’s Muse and OpenAI’s Dots — promise to book tables at restaurants, buy groceries, and carry out other types of digital grunt work for...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/illo_qgents_swarm_sketch_v3.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/illo_qgents_swarm_sketch_v3.jpg?width=160&dpr=2&crop=1:1" />
+		</item>
+	<item>
+		<title>Western open-weight models still can&#8217;t beat China</title>
+		<link>https://restofworld.org/2026/china-open-weight-models/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Fri, 16 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Rina Chandran</dc:creator>
+		<guid>https://restofworld.org/2026/china-open-weight-models/</guid>
+		<description><![CDATA[Chinese open-weight AI models offer high capability at significantly lower costs than U.S. frontier systems, but face monetization and compute challenges, experts said at a Rest of World event in San Francisco.
+]]></description>
+		<content:encoded><![CDATA[A slew of new open-weight artificial intelligence models from American and European companies aim to convert users of Chinese open models who are concerned about security, but fall short of...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/illo_chinese_US_weight.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/illo_chinese_US_weight.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>What the West can learn from AI optimists in the rest of the world</title>
+		<link>https://restofworld.org/2026/west-ai-anxiety-optimism-innovation/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Thu, 15 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Payal Arora</dc:creator>
+		<guid>https://restofworld.org/2026/west-ai-anxiety-optimism-innovation/</guid>
+		<description><![CDATA[The developing world’s enthusiastic adoption of AI and necessity-driven innovations offer lessons for an anxiety-ridden West.]]></description>
+		<content:encoded><![CDATA[On a recent Sunday afternoon, I was invited to debate AI’s impact on the cultural sector alongside Dutch politicians and creative-industry leaders. I was the lone optimist, arguing that if...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/illo_tech_optimism_final.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/illo_tech_optimism_final.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>BYD expands EV shipping fleet as wars upend freight costs and key trade routes</title>
+		<link>https://restofworld.org/2026/byd-expands-cargo-ship-ev-exports/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Wed, 14 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Indranil Ghosh</dc:creator>
+		<guid>https://restofworld.org/2026/byd-expands-cargo-ship-ev-exports/</guid>
+		<description><![CDATA[China’s EV giant says a shortage of ships is holding back its exports.]]></description>
+		<content:encoded><![CDATA[China’s BYD is building cars faster than it can export, so it’s adding more ships. The world’s largest electric vehicle maker will expand its fleet of car-carrying cargo ships to...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2024/02/GettyImages-1926876968.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2024/02/GettyImages-1926876968.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Costfoto/NurPhoto/Getty Images</media:credit>
+	<media:description>The ''BYD Explorer No. 1'' car carrier, loaded with new energy vehicles, is setting sail from Yantai Port in Yantai, China, on January 10, 2024.</media:description>
+		</item>
+	<item>
+		<title>The UAE embraces AI for kindergartners</title>
+		<link>https://restofworld.org/2026/uae-mandates-k12-ai-education-schools/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Tue, 13 Oct 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Ananya Bhattacharya</dc:creator>
+		<guid>https://restofworld.org/2026/uae-mandates-k12-ai-education-schools/</guid>
+		<description><![CDATA[The country’s approach offers a glimpse of what education could look like if AI literacy becomes as fundamental as reading and writing.]]></description>
+		<content:encoded><![CDATA[In September, Henry Price observed a classroom of 7- to 8-year-olds learn about the Stone Age. They discussed and wrote about cave paintings, then put on virtual reality headsets to...]]></content:encoded>
+		<media:content medium="image" url="https://fastly.restofworld.org/uploads/2026/10/School-AI-UAE_5.jpg?width=380&dpr=2&crop=16:9" width="760" height="428" />
+	<media:thumbnail url="https://fastly.restofworld.org/uploads/2026/10/School-AI-UAE_5.jpg?width=160&dpr=2&crop=1:1" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+</channel>
+</rss>

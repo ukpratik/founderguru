@@ -1,0 +1,2 @@
+# Fixture feeds are byte-exact captures (BOMs, control characters, Latin-1): never normalise them.
+core/src/test/resources/feeds/** -text

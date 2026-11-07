@@ -32,7 +32,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-      - name: All gates (tests, schema drift, lint, release build, permissions, no-Google, size)
+      - name: All gates (tests, schema drift, lint, release build + licences, permissions, no-Google, size)
         run: scripts/ci.sh
 
       - name: Upload reports on failure

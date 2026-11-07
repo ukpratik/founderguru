@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Weekly feed health (NFR-014, LLD §8, ADR-009): runs the app's own fetch + parse code (:tools:feedcheck) on every
+# source in sources.json and keeps one open issue per broken source ("Feed health: <id>", label feed-health), closed
+# automatically when the source recovers. HTTP 403 / publisher blocks are "blocked-from-CI": publishers often block
+# GitHub's IP ranges while phones are fine, so they are listed in the job summary but never open an issue.
+name: Feed health
+
+on:
+  schedule:
+    - cron: "0 5 * * 1" # Mondays 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: feed-health
+  cancel-in-progress: false
+
+jobs:
+  feedcheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: "platforms;android-37.0 build-tools;36.0.0"
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Check every feed (3 attempts, about 5 minutes apart)
+        run: ./gradlew :tools:feedcheck:run --args="app/src/main/assets/sources.json build/feedcheck.json --attempts 3 --retry-delay-s 300"
+
+      - name: Job summary
+        if: always()
+        run: if [[ -f build/feedcheck.md ]]; then cat build/feedcheck.md >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Open, update or close feed-health issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: scripts/feed-health-issues.sh build/feedcheck.json
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: feedcheck
+          path: build/feedcheck.*

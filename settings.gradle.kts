@@ -18,6 +18,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "founderguru"
 
-// ADR-008: :app -> :core; :tools:feedcheck -> :core (added in M5). Nothing depends on :app.
+// ADR-008: :app -> :core; :tools:feedcheck -> :core. Nothing depends on :app.
 include(":core")
 include(":app")
+include(":tools:feedcheck")

@@ -13,7 +13,7 @@ GRADLE=(./gradlew --stacktrace)
 APK=app/build/outputs/apk/release/app-release-unsigned.apk
 step() { printf '\n==> %s\n' "$*"; }
 
-step "1/7 Unit tests (:core JVM, :app Robolectric)"
+step "1/7 Unit tests (:core and :tools:feedcheck JVM, :app Robolectric)"
 "${GRADLE[@]}" test
 
 step "2/7 Room schema drift (NFR-012): the committed schema must equal the generated one"
@@ -27,7 +27,7 @@ fi
 step "3/7 Android Lint (release, abortOnError, warnings as errors)"
 "${GRADLE[@]}" lintRelease
 
-step "4/7 Release build (R8 + resource shrinking)"
+step "4/7 Release build (R8 + resource shrinking, AboutLibraries strict licence gate)"
 "${GRADLE[@]}" assembleRelease
 
 step "5/7 Permission allowlist"

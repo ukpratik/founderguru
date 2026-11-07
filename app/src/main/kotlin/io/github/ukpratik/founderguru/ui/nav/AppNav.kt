@@ -213,6 +213,15 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
         }
     }
 
+    // BUG-002 (US-011 AC 4): the feed's source links open Settings › Sources over a fresh Settings home (Back → Settings).
+    fun goSources() {
+        nav.navigate(SettingsHome) {
+            popUpTo(nav.graph.findStartDestination().id) { saveState = true }
+            launchSingleTop = true
+        }
+        nav.navigate(SettingsSources) { launchSingleTop = true }
+    }
+
     // Digest notification tap (LLD §4.9): open that tab and scroll to its "New since" divider.
     val landing by container.digestLanding.collectAsStateWithLifecycle()
     LaunchedEffect(landing) {
@@ -222,10 +231,13 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
         reselect[tab] = (reselect[tab] ?: 0) + 1
     }
 
+    // BUG-003: clearing the message changes this effect's key and cancels it, so the snackbar runs in the scaffold's scope.
     LaunchedEffect(message) {
         if (message == UserMessage.DIGEST_OFF) {
             onMessageShown(message)
-            if (snackbar.showSnackbar(digestOff, settingsLabel, duration = duration) == SnackbarResult.ActionPerformed) go(TopLevel.SETTINGS)
+            scope.launch {
+                if (snackbar.showSnackbar(digestOff, settingsLabel, duration = duration) == SnackbarResult.ActionPerformed) go(TopLevel.SETTINGS)
+            }
         }
     }
 
@@ -296,8 +308,8 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
             startDestination = if (globalOnly) GlobalFeed else LocalFeed,
             modifier = Modifier.fillMaxSize().padding(padding).background(Fg.colors.bg),
         ) {
-            composable<LocalFeed> { FeedRoute(container, Tab.LOCAL, now, reselect[Tab.LOCAL] ?: 0, nav, ::go, rowActions) }
-            composable<GlobalFeed> { FeedRoute(container, Tab.GLOBAL, now, reselect[Tab.GLOBAL] ?: 0, nav, ::go, rowActions) }
+            composable<LocalFeed> { FeedRoute(container, Tab.LOCAL, now, reselect[Tab.LOCAL] ?: 0, nav, ::go, ::goSources, rowActions) }
+            composable<GlobalFeed> { FeedRoute(container, Tab.GLOBAL, now, reselect[Tab.GLOBAL] ?: 0, nav, ::go, ::goSources, rowActions) }
             composable<Hot> { back ->
                 val route = back.toRoute<Hot>()
                 val vm = viewModel {
@@ -392,6 +404,7 @@ private fun FeedRoute(
     reselect: Int,
     nav: NavHostController,
     go: (TopLevel) -> Unit,
+    goSources: () -> Unit,
     rowActions: ((StoryRow) -> Unit, (StoryRow, Boolean) -> Unit) -> StoryRowActions,
 ) {
     val vm = viewModel {
@@ -425,7 +438,7 @@ private fun FeedRoute(
                 if (lens != LensFilter.All) vm.carryLensToGlobal(lens)
                 go(TopLevel.GLOBAL)
             },
-            openSources = { go(TopLevel.SETTINGS) },
+            openSources = goSources,
             openSearch = { nav.navigate(Search(TopLevel.of(tab))) },
             row = rowActions(vm::markOpened, vm::setSaved),
         ),

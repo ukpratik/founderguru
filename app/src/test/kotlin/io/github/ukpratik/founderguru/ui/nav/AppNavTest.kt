@@ -19,6 +19,11 @@ import com.google.common.truth.Truth.assertThat
 import io.github.ukpratik.founderguru.AppContainer
 import io.github.ukpratik.founderguru.core.model.Region
 import io.github.ukpratik.founderguru.data.Tab
+import io.github.ukpratik.founderguru.data.UserMessage
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import io.github.ukpratik.founderguru.ui.theme.FounderGuruTheme
 import kotlinx.coroutines.runBlocking
 import org.junit.Rule
@@ -73,6 +78,37 @@ class AppNavTest {
         rule.onNodeWithContentDescription("Back").performClick()
         rule.onNodeWithText("About FounderGuru").assertExists()
         rule.onNodeWithTag("nav-SETTINGS").assertIsSelected()
+    }
+
+    /** BUG-002 (US-011 AC 4): the feed's source links ("View sources", "Turn sources on") open Settings › Sources. */
+    @Test fun `source links open Settings Sources directly`() {
+        val c = container(Region.IN)
+        runBlocking {
+            c.startup.join()
+            c.catalog.sources.forEach { c.db.sources().setEnabled(it.id, false) }
+        }
+        rule.setContent { FounderGuruTheme(dark = false) { MainScaffold(c, globalOnly = false, dark = false, message = null, onMessageShown = {}) } }
+        rule.waitUntil(5_000) { rule.onAllNodesWithText("Turn sources on").fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("Turn sources on").performClick()
+        rule.onNodeWithTag("sources").assertExists()
+        rule.onNodeWithTag("nav-SETTINGS").assertIsSelected()
+        // Back goes to the Settings home, as if the user had tapped Sources there.
+        rule.onNodeWithContentDescription("Back").performClick()
+        rule.onNodeWithTag("settings").assertExists()
+    }
+
+    /** BUG-003 (US-012): the one-time "Digest is off" snackbar shows although the message is cleared as it starts. */
+    @Test fun `digest off snackbar shows once`() {
+        val c = container(Region.IN)
+        val shown = mutableListOf<UserMessage>()
+        rule.setContent {
+            var message by remember { mutableStateOf<UserMessage?>(UserMessage.DIGEST_OFF) }
+            FounderGuruTheme(dark = false) {
+                MainScaffold(c, globalOnly = false, dark = false, message = message, onMessageShown = { shown += it; message = null })
+            }
+        }
+        rule.waitUntil(5_000) { rule.onAllNodesWithText("Digest is off. Turn on in Settings").fetchSemanticsNodes().isNotEmpty() }
+        assertThat(shown).containsExactly(UserMessage.DIGEST_OFF)
     }
 
     @Test fun `global only has three items and opens on Global`() {

@@ -38,6 +38,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.ukpratik.founderguru.R
 import io.github.ukpratik.founderguru.ui.components.FgIcon
@@ -114,7 +115,7 @@ fun SearchScreen(
                 is SearchUiState.NoResults -> {
                     item { ResultHeader(state.q, 0) }
                     item {
-                        StateView(R.drawable.ic_search, stringResource(R.string.search_none_title, state.q), stringResource(R.string.search_none_body), StateTone.STATUS) {
+                        StateView(R.drawable.ic_search, stringResource(R.string.search_none_title, shortQuery(state.q)), stringResource(R.string.search_none_body), StateTone.STATUS) {
                             FgTextButton(stringResource(R.string.search_clear), { onClear(); focus.requestFocus() })
                         }
                     }
@@ -129,7 +130,15 @@ fun SearchScreen(
 private fun ResultHeader(q: String, count: Int) {
     val c = Fg.colors
     Column(Modifier.fillMaxWidth()) {
-        Text(q, Modifier.padding(start = Margin, end = Margin, top = 10.dp), color = c.ink, style = MaterialTheme.typography.headlineMedium)
+        // BUG-008: the echoed query is capped, so a long paste can't fill the screen.
+        Text(
+            q,
+            Modifier.padding(start = Margin, end = Margin, top = 10.dp).testTag("search-query"),
+            color = c.ink,
+            style = MaterialTheme.typography.headlineMedium,
+            maxLines = QUERY_TITLE_LINES,
+            overflow = TextOverflow.Ellipsis,
+        )
         Text(
             if (count == 0) pluralStringResource(R.plurals.story_count, 0, 0) else pluralStringResource(R.plurals.search_count, count, count),
             Modifier.padding(start = Margin, end = Margin, top = 4.dp, bottom = 12.dp).semantics { liveRegion = LiveRegionMode.Polite },
@@ -139,3 +148,9 @@ private fun ResultHeader(q: String, count: Int) {
         Hairline(Modifier.padding(horizontal = Margin), color = c.ink)
     }
 }
+
+/** The query as echoed in the no-results title (BUG-008): at most [QUERY_TITLE_CHARS] characters. */
+internal fun shortQuery(q: String): String = if (q.length <= QUERY_TITLE_CHARS) q else q.take(QUERY_TITLE_CHARS).trimEnd() + "…"
+
+private const val QUERY_TITLE_LINES = 2
+private const val QUERY_TITLE_CHARS = 60

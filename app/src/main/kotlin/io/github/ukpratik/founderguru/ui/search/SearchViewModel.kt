@@ -50,8 +50,9 @@ class SearchViewModel(search: (String) -> Flow<List<StoryRow>>, connectivity: Co
     val offline: StateFlow<Boolean> = connectivity.isOnline.map { !it }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
 
+    /** BUG-008: the field is single-line, so a multi-line paste is flattened to one line. */
     fun onQuery(q: String) {
-        _query.value = q
+        _query.value = q.replace(LINE_BREAKS, " ")
     }
 
     fun clear() {
@@ -69,5 +70,6 @@ class SearchViewModel(search: (String) -> Flow<List<StoryRow>>, connectivity: Co
     companion object {
         const val DEBOUNCE_MS = 250L
         const val MIN_CHARS = 2
+        private val LINE_BREAKS = Regex("[ \\t]*[\\r\\n\\u2028\\u2029]+[ \\t]*")
     }
 }

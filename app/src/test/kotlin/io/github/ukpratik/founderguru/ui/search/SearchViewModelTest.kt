@@ -53,4 +53,13 @@ class SearchViewModelTest {
             assertThat(awaitItem()).isEqualTo(SearchUiState.Idle)
         }
     }
+
+    /** BUG-008: a multi-line paste becomes one line; the field is single-line. */
+    @Test fun `a multi-line paste is flattened`() = runTest(dispatcher) {
+        val vm = SearchViewModel({ flowOf(emptyList()) }, FakeConnectivity(), FakeActions())
+        vm.onQuery("FounderGuru 1.0.0\r\nAndroid 16  \n\n  inc42 ok")
+        assertThat(vm.query.value).isEqualTo("FounderGuru 1.0.0 Android 16 inc42 ok")
+        vm.onQuery("zepto  funding")
+        assertThat(vm.query.value).isEqualTo("zepto  funding") // typed text is untouched
+    }
 }

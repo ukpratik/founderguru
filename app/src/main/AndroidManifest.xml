@@ -5,6 +5,22 @@
 
     <!-- Feeds and images only (NFR-006). The CI permission gate allowlists what may appear here (LLD §8). -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Offline states (US-011). -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Digest (US-012): requested only after the user picks Weekly or Daily (Android 13+). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Custom Tabs and browsers (US-007, Android 11+ package visibility; design-system §6). -->
+    <queries>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
     <application
         android:name=".FounderGuruApp"
@@ -16,7 +32,7 @@
         android:icon="@drawable/ic_launcher_placeholder"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:theme="@style/Theme.FounderGuru"
         tools:targetApi="36">
 
         <activity

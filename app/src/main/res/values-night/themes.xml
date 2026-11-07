@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<resources>
+    <color name="fg_bg">#141311</color>
+    <style name="Theme.FounderGuru" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/fg_bg</item>
+    </style>
+</resources>

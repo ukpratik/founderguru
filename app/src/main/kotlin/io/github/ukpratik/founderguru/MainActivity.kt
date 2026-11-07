@@ -3,63 +3,63 @@ package io.github.ukpratik.founderguru
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeDrawingPadding
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.launch
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
+import io.github.ukpratik.founderguru.platform.DeviceCountry
+import io.github.ukpratik.founderguru.ui.app.AppUiState
+import io.github.ukpratik.founderguru.ui.app.AppViewModel
+import io.github.ukpratik.founderguru.ui.nav.BlankFrame
+import io.github.ukpratik.founderguru.ui.nav.MainScaffold
+import io.github.ukpratik.founderguru.ui.onboarding.OnboardingScreen
+import io.github.ukpratik.founderguru.ui.onboarding.OnboardingViewModel
+import io.github.ukpratik.founderguru.ui.theme.DarkFg
+import io.github.ukpratik.founderguru.ui.theme.FounderGuruTheme
+import io.github.ukpratik.founderguru.ui.theme.LightFg
+import io.github.ukpratik.founderguru.ui.theme.isDark
 
-/**
- * M1 developer screen: runs the refresh pipeline and lists per-source health. Replaced by the real UI in M3
- * (design-system, onboarding, Local/Global); it intentionally uses no design tokens.
- */
+/** Single activity (LLD §5). System bars follow the app theme, not the system one (design-system §6). */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         val container = (application as FounderGuruApp).container
         setContent {
-            MaterialTheme {
-                Surface(Modifier.fillMaxSize()) {
-                    val scope = rememberCoroutineScope()
-                    var report by remember { mutableStateOf("") }
-                    var running by remember { mutableStateOf(false) }
-                    Column(Modifier.safeDrawingPadding().padding(16.dp).verticalScroll(rememberScrollState())) {
-                        Button(
-                            enabled = !running,
-                            onClick = {
-                                running = true
-                                scope.launch {
-                                    container.sourcesRepository.sync(container.catalog)
-                                    val r = container.refreshRepository.refresh(region = null)
-                                    val states = container.db.sources().all().sortedBy { it.id }
-                                    report = "Stories: ${container.db.stories().count()} · updated ${r.updated.size}, " +
-                                        "304 ${r.notModified.size}, failed ${r.failed.size}\n\n" +
-                                        states.joinToString("\n") { "${it.id}: ${it.lastStatus} ${it.lastError.orEmpty()}" }
-                                    running = false
-                                }
-                            },
-                        ) { Text(stringResource(R.string.dev_refresh)) }
-                        Text(report, Modifier.padding(top = 16.dp))
-                    }
+            val app = viewModel { AppViewModel(container.settings, container.messages) }
+            val theme by app.theme.collectAsStateWithLifecycle()
+            val dark = theme.isDark()
+            LaunchedEffect(dark) { applySystemBars(dark) }
+            FounderGuruTheme(dark) {
+                val state by app.uiState.collectAsStateWithLifecycle()
+                val message by app.message.collectAsStateWithLifecycle()
+                when (val s = state) {
+                    AppUiState.Loading -> BlankFrame()
+                    AppUiState.Onboarding -> OnboardingRoute(container)
+                    is AppUiState.Main -> MainScaffold(container, s.globalOnly, dark, message, app::messageShown)
                 }
             }
         }
     }
+
+    private fun applySystemBars(dark: Boolean) {
+        val bg = (if (dark) DarkFg.bg else LightFg.bg).toArgb()
+        val style = if (dark) SystemBarStyle.dark(bg) else SystemBarStyle.light(bg, bg)
+        enableEdgeToEdge(statusBarStyle = style, navigationBarStyle = style)
+    }
+}
+
+@Composable
+private fun OnboardingRoute(container: AppContainer) {
+    val context = LocalContext.current
+    val vm = viewModel { OnboardingViewModel(DeviceCountry.suggestedRegion(context), container.settings, container.messages) }
+    val state by vm.uiState.collectAsStateWithLifecycle()
+    val names = container.catalog.sources.groupBy({ it.region }, { it.name })
+    OnboardingScreen(state, names, vm)
 }

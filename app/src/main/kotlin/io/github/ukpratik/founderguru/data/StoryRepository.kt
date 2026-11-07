@@ -15,8 +15,14 @@ import kotlinx.coroutines.flow.combine
 
 enum class Tab { LOCAL, GLOBAL }
 
+/** Row actions from the lists (US-009 save, D-017 visited state). */
+interface StoryActions {
+    suspend fun setSaved(id: Long, saved: Boolean)
+    suspend fun markOpened(id: Long)
+}
+
 /** Read side of the story cache (LLD §3). Blending, sectioning and trending happen on these rows in `:core`. */
-class StoryRepository(private val db: FgDatabase, private val catalog: SourcesCatalog, private val clock: Clock) {
+class StoryRepository(private val db: FgDatabase, private val catalog: SourcesCatalog, private val clock: Clock) : StoryActions {
 
     /**
      * The tab's 14-day window, newest first. Local = the region's rows blended with at most 30% via-Global rows
@@ -33,9 +39,15 @@ class StoryRepository(private val db: FgDatabase, private val catalog: SourcesCa
         }
     }
 
+    /** Bookmark toggle (US-009); `savedAt` = [Clock.now] when saving. */
+    override suspend fun setSaved(id: Long, saved: Boolean) = db.stories().setSavedAt(id, if (saved) clock.now() else null)
+
+    /** Visited state (D-017). */
+    override suspend fun markOpened(id: Long) = db.stories().setOpenedAt(id, clock.now())
+
     /**
      * Re-tags every stored story with the current rules (LLD §4.10). Called at start when the stored tagger version is
-     * older than [Tagger.TAGGER_VERSION] (the version check lands with the settings store in M3). Stories from sources
+     * older than [Tagger.TAGGER_VERSION] (see [io.github.ukpratik.founderguru.AppContainer.startup]). Stories from sources
      * no longer in the catalogue keep their tags.
      */
     suspend fun retagAll(): Int = db.withTransaction {

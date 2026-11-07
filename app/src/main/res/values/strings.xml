@@ -1,6 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!-- Copy from the signed-off design (product/04-design/final, design-brief §7). Sentence case, no exclamation marks. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">FounderGuru</string>
-    <!-- M1 developer screen only; replaced in M3. -->
-    <string name="dev_refresh">Refresh all sources</string>
+
+    <!-- Regions (US-001) -->
+    <string name="region_in">India</string>
+    <string name="region_eu">Europe</string>
+    <string name="region_na">US &amp; Canada</string>
+    <string name="region_af">Africa</string>
+    <string name="region_sea">Southeast Asia</string>
+    <string name="region_latam">Latin America</string>
+    <string name="region_global">Global only</string>
+
+    <!-- Lenses (US-005); nouns for the empty-lens copy (design-system §7) -->
+    <string name="lens_all">All</string>
+    <string name="lens_funding">Funding</string>
+    <string name="lens_launches">Launches &amp; ideas</string>
+    <string name="lens_trends">Problems &amp; trends</string>
+    <string name="lens_playbooks">Playbooks</string>
+    <string name="lens_noun_funding">funding</string>
+    <string name="lens_noun_launches">launch</string>
+    <string name="lens_noun_trends">problem and trend</string>
+    <string name="lens_noun_playbooks">playbook</string>
+    <string name="lens_group">Founder lens</string>
+    <string name="lens_chip_description">%1$s, filter</string>
+
+    <!-- Onboarding (SCR-01, SCR-02) -->
+    <string name="onboarding_wordmark_founder">Founder</string>
+    <string name="onboarding_wordmark_guru">Guru</string>
+    <string name="onboarding_step">Step %1$d of 2</string>
+    <string name="onboarding_headline">Your startup ecosystem, </string>
+    <string name="onboarding_headline_em">every morning.</string>
+    <string name="onboarding_lede">Startup news from your ecosystem and the world. Free, no ads, no account.</string>
+    <string name="onboarding_region_question">Where are you building?</string>
+    <string name="onboarding_pick_one">Pick one</string>
+    <string name="onboarding_global_sub">Skip local news. TechCrunch, Crunchbase, Show HN…</string>
+    <string name="onboarding_more_sources">+%1$d</string>
+    <string name="tag_suggested">Suggested</string>
+    <string name="tag_limited">Limited coverage</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="onboarding_continue_note">Next: an optional weekly catch-up. Change anything later in Settings.</string>
+    <string name="onboarding_digest_headline">Get a weekly </string>
+    <string name="onboarding_digest_headline_em">catch-up?</string>
+    <string name="onboarding_digest_lede">One notification on Monday morning with what changed in %1$s. Nothing else, ever.</string>
+    <string name="onboarding_digest_lede_world">One notification on Monday morning with what changed worldwide. Nothing else, ever.</string>
+    <string name="onboarding_digest_label">Digest</string>
+    <string name="onboarding_digest_change_later">Change later in Settings</string>
+    <string name="digest_weekly">Weekly</string>
+    <string name="digest_weekly_sub">Mondays around 08:00</string>
+    <string name="digest_daily">Daily</string>
+    <string name="digest_daily_sub">Every day around 08:00</string>
+    <string name="digest_not_now">Not now</string>
+    <string name="digest_not_now_sub">You can turn it on in Settings</string>
+    <string name="tag_recommended">Recommended</string>
+    <string name="onboarding_sample_label">What it looks like</string>
+    <string name="onboarding_sample_weekly">This week in %1$s: 12 funding stories · Fintech is hot · 41 new stories</string>
+    <string name="onboarding_sample_daily">Today in %1$s: 3 funding stories · Fintech is hot · 9 new stories</string>
+    <string name="onboarding_sample_weekly_world">This week worldwide: 12 funding stories · AI is hot · 41 new stories</string>
+    <string name="onboarding_sample_daily_world">Today worldwide: 3 funding stories · AI is hot · 9 new stories</string>
+    <string name="onboarding_cta_weekly">Turn on weekly digest</string>
+    <string name="onboarding_cta_daily">Turn on daily digest</string>
+    <string name="onboarding_cta_start">Start reading</string>
+    <string name="onboarding_rationale_weekly">Android will ask to allow notifications. We send one a week, nothing else.</string>
+    <string name="onboarding_rationale_daily">Android will ask to allow notifications. We send one a day, nothing else.</string>
+    <string name="onboarding_no_notifications">No notifications. You can turn the digest on in Settings.</string>
+    <string name="back">Back</string>
+
+    <!-- Navigation (D-016) -->
+    <string name="nav_local">Local</string>
+    <string name="nav_global">Global</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Feed header -->
+    <string name="feed_overline_local">Local</string>
+    <string name="feed_overline_global">Global</string>
+    <string name="feed_title_world">World</string>
+    <string name="feed_title_global">Global</string>
+    <string name="search_stories">Search stories</string>
+    <string name="dateline_refreshing">Refreshing…</string>
+    <string name="dateline_updated_now">Updated just now</string>
+    <string name="dateline_updated_minutes">Updated %1$d min ago</string>
+    <string name="dateline_updated_at">Updated %1$s</string>
+    <string name="dateline_never">Not updated yet</string>
+    <plurals name="dateline_getting">
+        <item quantity="one">Getting stories from %1$d source…</item>
+        <item quantity="other">Getting stories from %1$d sources…</item>
+    </plurals>
+    <string name="loading_stories">Loading stories</string>
+
+    <!-- What's hot (US-006) -->
+    <string name="hot_title">What\'s hot this week</string>
+    <string name="hot_subtitle">Stories, last 7 days</string>
+    <plurals name="hot_item_description">
+        <item quantity="one">%1$s, %2$d story this week</item>
+        <item quantity="other">%1$s, %2$d stories this week</item>
+    </plurals>
+
+    <!-- Markers (US-008, D-023 G-1) -->
+    <string name="marker_new">New since your last visit · %1$d</string>
+    <string name="marker_new_lens">New since your last visit · %1$s · %2$d</string>
+    <string name="marker_earlier">Earlier</string>
+    <string name="caught_up">You\'re caught up</string>
+    <string name="caught_up_lens">You\'re caught up on %1$s</string>
+    <string name="caught_up_since">That\'s everything new since your last visit, %1$s.</string>
+    <string name="caught_up_since_lens">Since %1$s.</string>
+    <string name="caught_up_first_sync">That\'s everything new since your first sync.</string>
+    <string name="nothing_new">Nothing new since %1$s</string>
+    <string name="nothing_new_lens">Nothing new on %1$s since %2$s</string>
+    <string name="nothing_new_body">Pull down to check again. Earlier stories are below.</string>
+    <string name="time_yesterday_at">yesterday at %1$s</string>
+    <string name="time_day_at">%1$s at %2$s</string>
+
+    <!-- Story row (US-007) -->
+    <string name="via_global">Via Global</string>
+    <string name="save">Save</string>
+    <string name="remove_from_saved">Remove from saved</string>
+    <string name="more_options">More options, share</string>
+    <string name="share">Share</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="row_saved">Saved</string>
+    <string name="time_yesterday">Yesterday</string>
+    <string name="time_yesterday_spoken">yesterday</string>
+    <string name="time_now">now</string>
+    <string name="time_now_spoken">just now</string>
+    <string name="time_minutes_short">%1$dm</string>
+    <string name="time_hours_short">%1$dh</string>
+    <plurals name="time_minutes_ago">
+        <item quantity="one">%1$d minute ago</item>
+        <item quantity="other">%1$d minutes ago</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="one">%1$d hour ago</item>
+        <item quantity="other">%1$d hours ago</item>
+    </plurals>
+
+    <!-- Banners and strip (US-011, US-002, D-023 G-10) -->
+    <string name="offline_strip">Offline · showing stories from %1$s</string>
+    <string name="offline_strip_never">Offline</string>
+    <string name="banner_limited_lead">Limited coverage.</string>
+    <string name="banner_limited_body">We add sources as we find good ones. Global stories that mention the region are mixed in.</string>
+    <plurals name="banner_failed_lead">
+        <item quantity="one">%1$d source couldn\'t update.</item>
+        <item quantity="other">%1$d sources couldn\'t update.</item>
+    </plurals>
+    <string name="banner_failed_body">Their older stories are still here.</string>
+    <string name="view_sources">View sources</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="see_global">See Global</string>
+
+    <!-- Empty and error states (US-011, US-005, D-023 G-3) -->
+    <string name="offline_title">You\'re offline</string>
+    <string name="offline_body">FounderGuru needs a connection for the first sync. After that, stories are kept on your phone for 14 days.</string>
+    <string name="retry">Retry</string>
+    <string name="all_failed_title">Couldn\'t reach %1$s\'s sources</string>
+    <plurals name="all_failed_body">
+        <item quantity="one">The %2$s source didn\'t answer. It\'s usually temporary; Global may still work.</item>
+        <item quantity="other">None of the %1$d %2$s sources answered. It\'s usually temporary; Global may still work.</item>
+    </plurals>
+    <string name="all_failed_title_global">Couldn\'t reach the global sources</string>
+    <plurals name="all_failed_body_global">
+        <item quantity="one">The global source didn\'t answer and nothing is saved on this phone yet.</item>
+        <item quantity="other">None of the %1$d sources answered and nothing is saved on this phone yet.</item>
+    </plurals>
+    <string name="source_status">Source status</string>
+    <string name="empty_lens_title">No %1$s stories in %2$s</string>
+    <string name="empty_lens_body">Nothing in the last 14 days. Global usually has a few.</string>
+    <string name="empty_lens_title_global">No %1$s stories this fortnight</string>
+    <string name="empty_lens_body_global">None of the global sources posted one in the last 14 days.</string>
+    <string name="show_all_stories">Show all stories</string>
+    <string name="empty_region_title">No stories from %1$s yet</string>
+    <plurals name="empty_region_body">
+        <item quantity="one">Its %1$d source has posted nothing in the last 14 days. Global has stories that mention the region when they appear.</item>
+        <item quantity="other">Its %1$d sources have posted nothing in the last 14 days. Global has stories that mention the region when they appear.</item>
+    </plurals>
+    <string name="empty_region_title_global">No global stories yet</string>
+    <string name="empty_region_body_global">The global sources have posted nothing in the last 14 days.</string>
+    <string name="sources_off_title">All %1$s sources are off</string>
+    <string name="sources_off_body">Turn at least one source back on to see %1$s stories here. Global is unaffected.</string>
+    <string name="sources_off_title_global">All global sources are off</string>
+    <string name="sources_off_body_global">Turn at least one source back on to see stories here.</string>
+    <string name="turn_sources_on">Turn sources on</string>
+
+    <!-- What's hot results (SCR-05) -->
+    <string name="hot_results_bar">%1$s · What\'s hot</string>
+    <string name="hot_rank" tools:ignore="PluralsCandidate">This week\'s no. %1$d sector</string>
+    <plurals name="hot_results_count">
+        <item quantity="one">story in the last 7 days</item>
+        <item quantity="other">stories in the last 7 days</item>
+    </plurals>
+    <plurals name="hot_results_heading">
+        <item quantity="one">%1$s. %2$d story in the last 7 days.</item>
+        <item quantity="other">%1$s. %2$d stories in the last 7 days.</item>
+    </plurals>
+    <string name="hot_gone_title">Fewer than 3 %1$s stories this week</string>
+    <string name="hot_gone_body">After the latest refresh, %1$s no longer makes the list. Older %1$s stories are still in the feed.</string>
+    <string name="hot_back_to">Back to %1$s</string>
+
+    <!-- Snackbars -->
+    <string name="snack_no_browser">No browser found to open this story</string>
+    <string name="copy_link">Copy link</string>
+    <string name="snack_digest_off">Digest is off. Turn on in Settings</string>
+
+    <!-- M4 destinations, stubbed in M3 -->
+    <string name="stub_saved_body">Saved stories arrive in the next build.</string>
+    <string name="stub_settings_body">Settings, sources and About arrive in the next build.</string>
+    <string name="stub_search_title">Search</string>
+    <string name="stub_search_body">Search arrives in the next build.</string>
 </resources>

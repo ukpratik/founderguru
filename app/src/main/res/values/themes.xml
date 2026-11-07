@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<resources>
+    <!-- Window background = design `bg`, so the frame before Compose draws matches the app (LLD §5). -->
+    <color name="fg_bg">#F7F4EE</color>
+    <style name="Theme.FounderGuru" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/fg_bg</item>
+    </style>
+</resources>

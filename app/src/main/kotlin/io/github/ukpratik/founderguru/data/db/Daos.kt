@@ -44,6 +44,10 @@ interface StoryDao {
     @Query("UPDATE stories SET savedAt = :savedAt WHERE id = :id")
     suspend fun setSavedAt(id: Long, savedAt: Long?)
 
+    /** Visited state (D-017): set when the story is opened. */
+    @Query("UPDATE stories SET openedAt = :openedAt WHERE id = :id")
+    suspend fun setOpenedAt(id: Long, openedAt: Long)
+
     /** NFR-004: unsaved stories older than the window go. Saved stories are never pruned (D-023 G-5). */
     @Query("DELETE FROM stories WHERE savedAt IS NULL AND publishedAt < :before")
     suspend fun pruneOlderThan(before: Long): Int
@@ -88,6 +92,10 @@ private const val ROW = """st.id, st.sourceId, st.sourceName, st.url, st.title, 
 interface SourceStateDao {
     @Query("SELECT * FROM source_state")
     suspend fun all(): List<SourceStateEntity>
+
+    /** Health and enabled state for the feed states (US-011); emits on every refresh write. */
+    @Query("SELECT * FROM source_state")
+    fun observeAll(): Flow<List<SourceStateEntity>>
 
     @Query("SELECT * FROM source_state WHERE id = :id")
     suspend fun byId(id: String): SourceStateEntity?

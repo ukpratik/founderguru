@@ -29,7 +29,7 @@
     <string name="onboarding_wordmark_founder">Founder</string>
     <string name="onboarding_wordmark_guru">Guru</string>
     <string name="onboarding_step">Step %1$d of 2</string>
-    <string name="onboarding_headline">Your startup ecosystem, </string>
+    <string name="onboarding_headline">"Your startup ecosystem, "</string>
     <string name="onboarding_headline_em">every morning.</string>
     <string name="onboarding_lede">Startup news from your ecosystem and the world. Free, no ads, no account.</string>
     <string name="onboarding_region_question">Where are you building?</string>
@@ -40,7 +40,7 @@
     <string name="tag_limited">Limited coverage</string>
     <string name="onboarding_continue">Continue</string>
     <string name="onboarding_continue_note">Next: an optional weekly catch-up. Change anything later in Settings.</string>
-    <string name="onboarding_digest_headline">Get a weekly </string>
+    <string name="onboarding_digest_headline">"Get a weekly "</string>
     <string name="onboarding_digest_headline_em">catch-up?</string>
     <string name="onboarding_digest_lede">One notification on Monday morning with what changed in %1$s. Nothing else, ever.</string>
     <string name="onboarding_digest_lede_world">One notification on Monday morning with what changed worldwide. Nothing else, ever.</string>

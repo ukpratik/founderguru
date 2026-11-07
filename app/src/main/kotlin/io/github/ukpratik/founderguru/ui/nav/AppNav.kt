@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 package io.github.ukpratik.founderguru.ui.nav
 
+import android.app.Activity
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.ContextWrapper
 import android.view.accessibility.AccessibilityManager
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -181,8 +183,13 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
     val reselect = remember { mutableStateMapOf<Tab, Int>() }
 
     // Last-visit lifecycle (LLD §4.9): the feed tab in front is "visited"; leaving it or stopping the app ends the visit.
-    LaunchedEffect(current) { current?.tab?.let(container.visits::enter) ?: container.visits.leave() }
-    LifecycleEventEffect(Lifecycle.Event.ON_STOP) { container.visits.leave() }
+    // BUG-001: a configuration change (rotation, dark mode, font scale, locale) recreates the activity. Its stop is not
+    // leaving, and the new composition's first frame has no destination yet (current == null), which is not leaving either.
+    LaunchedEffect(current) {
+        val top = current ?: return@LaunchedEffect
+        top.tab?.let(container.visits::enter) ?: container.visits.leave()
+    }
+    LifecycleEventEffect(Lifecycle.Event.ON_STOP) { if (context.findActivity()?.isChangingConfigurations != true) container.visits.leave() }
     LifecycleEventEffect(Lifecycle.Event.ON_START) { current?.tab?.let(container.visits::enter) }
 
     val longSnack = remember(context) { context.getSystemService(AccessibilityManager::class.java)?.isTouchExplorationEnabled == true }
@@ -462,6 +469,12 @@ private fun BottomBar(items: List<TopLevel>, current: TopLevel?, onSelect: (TopL
             }
         }
     }
+}
+
+private tailrec fun Context.findActivity(): Activity? = when (this) {
+    is Activity -> this
+    is ContextWrapper -> baseContext.findActivity()
+    else -> null
 }
 
 private fun copy(context: Context, url: String) = copyText(context, url, url)

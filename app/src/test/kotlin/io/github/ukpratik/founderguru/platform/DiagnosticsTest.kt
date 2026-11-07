@@ -41,4 +41,22 @@ class DiagnosticsTest {
         assertThat(text).doesNotContain("region")
         assertThat(text).doesNotContain("https://")
     }
+
+    /** BUG-009: a status as wide as its column ("not_modified 304") still has a space before the date. */
+    @Test fun `columns are always separated`() {
+        val text = Diagnostics.text(
+            Diagnostics.Input(
+                versionName = "1.0.0", versionCode = 10000, androidRelease = "16", apiLevel = 36, theme = ThemePref.SYSTEM,
+                digest = DigestMode.OFF, notificationsEnabled = false, bgRefresh = true, lastRefreshAt = t,
+                sources = listOf(
+                    source("crunchbase-news", Region.GLOBAL, status = "NOT_MODIFIED", attemptAt = t).copy(lastHttpCode = 304),
+                    source("yourstory", Region.IN, status = "NOT_A_FEED", attemptAt = t).copy(lastHttpCode = 200),
+                ),
+                cachedStories = 0,
+            ),
+            ZoneOffset.UTC,
+        )
+        assertThat(text).containsMatch("crunchbase-news +not_modified 304 +2026-11-07 08:12")
+        assertThat(text).containsMatch("yourstory +not_a_feed 200 +2026-11-07 08:12")
+    }
 }

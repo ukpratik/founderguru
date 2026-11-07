@@ -39,14 +39,18 @@ object Diagnostics {
         val sorted = i.sources.sortedWith(compareBy({ it.region }, { it.id }))
         appendLine("sources ${sorted.count { it.enabled }}/${sorted.size} on")
         val width = (sorted.maxOfOrNull { it.id.length } ?: 0) + 2
-        sorted.forEach { s ->
-            val status = when {
+        val statuses = sorted.map { s ->
+            when {
                 !s.enabled -> "off"
                 s.lastStatus == null -> "not yet"
                 else -> s.lastStatus.lowercase() + (s.lastHttpCode?.let { " $it" } ?: "")
             }
+        }
+        // BUG-009: the status column is as wide as its longest value plus two spaces, so it never runs into the date.
+        val statusWidth = (statuses.maxOfOrNull { it.length } ?: 0) + 2
+        sorted.zip(statuses).forEach { (s, status) ->
             val fails = if (s.consecutiveFailures > 0) " · fails ${s.consecutiveFailures}" else ""
-            appendLine("${s.id.padEnd(width)}${status.padEnd(16)}${at(s.lastAttemptAt)}$fails")
+            appendLine("${s.id.padEnd(width)}${status.padEnd(statusWidth)}${at(s.lastAttemptAt)}$fails")
         }
         append("cache ${i.cachedStories} stories")
     }

@@ -184,7 +184,7 @@ fun FgBanner(
     body: String,
     action: String?,
     onAction: () -> Unit,
-    onDismiss: () -> Unit,
+    onDismiss: (() -> Unit)?,
     modifier: Modifier = Modifier,
 ) {
     val c = Fg.colors
@@ -202,8 +202,10 @@ fun FgBanner(
         Column(Modifier.weight(1f).padding(bottom = 8.dp)) {
             Text(
                 buildAnnotatedString {
-                    withStyle(SpanStyle(fontWeight = FontWeight.SemiBold)) { append(lead) }
-                    append(' ')
+                    if (lead.isNotEmpty()) {
+                        withStyle(SpanStyle(fontWeight = FontWeight.SemiBold)) { append(lead) }
+                        append(' ')
+                    }
                     append(body)
                 },
                 color = c.ink,
@@ -211,8 +213,12 @@ fun FgBanner(
             )
             if (action != null) FgTextButton(action, onAction, Modifier.padding(top = 4.dp))
         }
-        IconButton(onClick = onDismiss, modifier = Modifier.size(48.dp)) {
-            FgIcon(R.drawable.ic_close, stringResource(R.string.dismiss), c.ink2, size = 20.dp)
+        if (onDismiss != null) {
+            IconButton(onClick = onDismiss, modifier = Modifier.size(48.dp)) {
+                FgIcon(R.drawable.ic_close, stringResource(R.string.dismiss), c.ink2, size = 20.dp)
+            }
+        } else {
+            Spacer(Modifier.size(12.dp))
         }
     }
 }

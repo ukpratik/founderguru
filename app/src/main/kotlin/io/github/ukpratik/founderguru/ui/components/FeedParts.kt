@@ -59,7 +59,7 @@ import io.github.ukpratik.founderguru.ui.theme.FgType
 
 /** Tab title block: accent overline + serif title, and the search action (`.appbar`). */
 @Composable
-fun FeedAppBar(overline: String, title: String, onSearch: () -> Unit) {
+fun FeedAppBar(overline: String, title: String, onSearch: (() -> Unit)?) {
     val c = Fg.colors
     Row(Modifier.fillMaxWidth().padding(start = Margin, end = 8.dp, top = 10.dp, bottom = 6.dp), verticalAlignment = Alignment.Top) {
         Column(Modifier.weight(1f)) {
@@ -71,8 +71,10 @@ fun FeedAppBar(overline: String, title: String, onSearch: () -> Unit) {
                 style = MaterialTheme.typography.headlineLarge,
             )
         }
-        IconButton(onClick = onSearch, modifier = Modifier.size(48.dp)) {
-            FgIcon(R.drawable.ic_search, stringResource(R.string.search_stories), c.ink2)
+        if (onSearch != null) {
+            IconButton(onClick = onSearch, modifier = Modifier.size(48.dp)) {
+                FgIcon(R.drawable.ic_search, stringResource(R.string.search_stories), c.ink2)
+            }
         }
     }
 }

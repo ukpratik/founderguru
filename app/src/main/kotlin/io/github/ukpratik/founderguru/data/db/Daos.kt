@@ -74,6 +74,22 @@ interface StoryDao {
     )
     fun viaGlobalCandidates(regionBit: Int, since: Long): Flow<List<StoryRow>>
 
+    /** Saved (US-009): newest saved first, no source filter (saved stories outlive disabled or removed sources, D-017). */
+    @Query("SELECT $ROW FROM stories st WHERE st.savedAt IS NOT NULL ORDER BY st.savedAt DESC, st.id DESC")
+    fun saved(): Flow<List<StoryRow>>
+
+    /**
+     * Search (US-014, LLD §3): [pattern] = `%` + the escaped query + `%`. `LIKE` is case-insensitive for ASCII only
+     * (D-023 G-12). Saved stories always match; others only from enabled sources. Newest first, at most 200.
+     */
+    @Query(
+        """SELECT $ROW FROM stories st LEFT JOIN source_state s ON s.id = st.sourceId
+           WHERE (st.title LIKE :pattern ESCAPE '\' OR st.snippet LIKE :pattern ESCAPE '\')
+             AND (st.savedAt IS NOT NULL OR s.enabled = 1)
+           ORDER BY st.publishedAt DESC, st.id DESC LIMIT 200""",
+    )
+    fun search(pattern: String): Flow<List<StoryRow>>
+
     @Query("SELECT id, sourceId, title, snippet FROM stories")
     suspend fun allForRetag(): List<RetagRow>
 

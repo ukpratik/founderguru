@@ -69,7 +69,26 @@ import io.github.ukpratik.founderguru.ui.feed.FeedUiState
 import io.github.ukpratik.founderguru.ui.feed.FeedViewModel
 import io.github.ukpratik.founderguru.ui.hot.HotResultsScreen
 import io.github.ukpratik.founderguru.ui.hot.HotViewModel
-import io.github.ukpratik.founderguru.ui.stub.StubScreen
+import io.github.ukpratik.founderguru.ui.saved.SavedScreen
+import io.github.ukpratik.founderguru.ui.saved.SavedViewModel
+import io.github.ukpratik.founderguru.ui.search.SearchScreen
+import io.github.ukpratik.founderguru.ui.search.SearchViewModel
+import io.github.ukpratik.founderguru.ui.settings.AboutLinks
+import io.github.ukpratik.founderguru.ui.settings.AboutScreen
+import io.github.ukpratik.founderguru.ui.settings.AboutSourcesScreen
+import io.github.ukpratik.founderguru.ui.settings.DigestScreen
+import io.github.ukpratik.founderguru.ui.settings.RegionScreen
+import io.github.ukpratik.founderguru.ui.settings.SettingsHomeScreen
+import io.github.ukpratik.founderguru.ui.settings.SettingsViewModel
+import io.github.ukpratik.founderguru.ui.settings.SourcesMapper
+import io.github.ukpratik.founderguru.ui.settings.SourcesScreen
+import io.github.ukpratik.founderguru.ui.components.Labels
+import io.github.ukpratik.founderguru.platform.Diagnostics
+import io.github.ukpratik.founderguru.BuildConfig
+import android.os.Build
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import io.github.ukpratik.founderguru.ui.theme.Fg
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -91,10 +110,22 @@ import kotlinx.serialization.Serializable
     val sector: Sector get() = Sector.valueOf(sectorName)
 }
 
-@Serializable data class Search(val tabName: String) {
-    constructor(tab: Tab) : this(tab.name)
-    val tab: Tab get() = Tab.valueOf(tabName)
+/** Search is a child of the top-level destination it was opened from (Local, Global or Saved). */
+@Serializable data class Search(val parentName: String) {
+    constructor(parent: TopLevel) : this(parent.name)
+    val parent: TopLevel get() = TopLevel.valueOf(parentName)
 }
+
+/** Settings sub-screens (LLD §5), pushed with predictive back; Settings stays the selected tab. */
+@Serializable data object SettingsRegion
+
+@Serializable data object SettingsSources
+
+@Serializable data object SettingsDigest
+
+@Serializable data object About
+
+@Serializable data object AboutSources
 
 /** Bottom-nav items (D-016): Local · Global · Saved · Settings; three without Local for "Global only". */
 enum class TopLevel(@StringRes val label: Int, @DrawableRes val icon: Int, @DrawableRes val selectedIcon: Int) {
@@ -122,7 +153,7 @@ enum class TopLevel(@StringRes val label: Int, @DrawableRes val icon: Int, @Draw
     }
 }
 
-/** Home: bottom navigation, the two feeds, What's hot, and the M4 stubs. */
+/** Home: bottom navigation, the two feeds, What's hot, Saved, Search and Settings. */
 @Composable
 fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, message: UserMessage?, onMessageShown: (UserMessage) -> Unit) {
     val nav = rememberNavController()
@@ -137,7 +168,9 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
             d.hasRoute<Saved>() -> TopLevel.SAVED
             d.hasRoute<SettingsHome>() -> TopLevel.SETTINGS
             d.hasRoute<Hot>() -> TopLevel.of(entry!!.toRoute<Hot>().tab)
-            d.hasRoute<Search>() -> TopLevel.of(entry!!.toRoute<Search>().tab)
+            d.hasRoute<Search>() -> entry!!.toRoute<Search>().parent
+            d.hasRoute<SettingsRegion>() || d.hasRoute<SettingsSources>() || d.hasRoute<SettingsDigest>() ||
+                d.hasRoute<About>() || d.hasRoute<AboutSources>() -> TopLevel.SETTINGS
             else -> null
         }
     }
@@ -155,6 +188,12 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
     val copyLink = stringResource(R.string.copy_link)
     val digestOff = stringResource(R.string.snack_digest_off)
     val settingsLabel = stringResource(R.string.nav_settings)
+    val savedText = stringResource(R.string.snack_saved)
+    val removedText = stringResource(R.string.snack_removed)
+    val undoText = stringResource(R.string.undo)
+    val noApp = stringResource(R.string.snack_no_app)
+    val diagnosticsText = stringResource(R.string.snack_diagnostics)
+    val settings by container.settings.settings.collectAsStateWithLifecycle(null)
 
     fun go(top: TopLevel) {
         nav.navigate(top.route) {
@@ -162,6 +201,15 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
             launchSingleTop = true
             restoreState = true
         }
+    }
+
+    // Digest notification tap (LLD §4.9): open that tab and scroll to its "New since" divider.
+    val landing by container.digestLanding.collectAsStateWithLifecycle()
+    LaunchedEffect(landing) {
+        val tab = landing ?: return@LaunchedEffect
+        container.digestLanding.value = null
+        go(TopLevel.of(tab))
+        reselect[tab] = (reselect[tab] ?: 0) + 1
     }
 
     LaunchedEffect(message) {
@@ -182,7 +230,23 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
                     ArticleOpener.Result.NOT_WEB -> Unit
                 }
             },
-            setSaved = setSaved,
+            setSaved = { row, saved ->
+                setSaved(row, saved)
+                scope.launch {
+                    if (!saved) {
+                        // "Removed from saved · Undo": the original savedAt comes back, so the row returns to its place.
+                        val previous = row.savedAt ?: return@launch
+                        if (snackbar.showSnackbar(removedText, undoText, duration = duration) == SnackbarResult.ActionPerformed) {
+                            container.storyRepository.restoreSavedAt(row.id, previous)
+                        }
+                    } else if (!container.settings.current().firstSaveHintShown) {
+                        container.settings.setFirstSaveHintShown() // "Saved · Undo" on the first save only
+                        if (snackbar.showSnackbar(savedText, undoText, duration = duration) == SnackbarResult.ActionPerformed) {
+                            container.storyRepository.setSaved(row.id, false)
+                        }
+                    }
+                }
+            },
             share = { row -> Sharer.share(context, row.title, row.url) },
             openInBrowser = { row ->
                 when (ArticleOpener.openInBrowser(context, row.url)) {
@@ -233,10 +297,77 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
                 HotResultsScreen(state, now, onBack = { nav.popBackStack() }, rowActions = rowActions(vm::markOpened, vm::setSaved))
             }
             composable<Search> {
-                StubScreen(stringResource(R.string.stub_search_title), stringResource(R.string.stub_search_body), onBack = { nav.popBackStack() })
+                val vm = viewModel { SearchViewModel(container.storyRepository::search, container.connectivity, container.storyRepository) }
+                val query by vm.query.collectAsStateWithLifecycle()
+                val state by vm.uiState.collectAsStateWithLifecycle()
+                val offline by vm.offline.collectAsStateWithLifecycle()
+                SearchScreen(query, state, offline, now, vm::onQuery, vm::clear, onBack = { nav.popBackStack() }, rowActions = rowActions(vm::markOpened, vm::setSaved))
             }
-            composable<Saved> { StubScreen(stringResource(R.string.nav_saved), stringResource(R.string.stub_saved_body)) }
-            composable<SettingsHome> { StubScreen(stringResource(R.string.nav_settings), stringResource(R.string.stub_settings_body)) }
+            composable<Saved> {
+                val vm = viewModel { SavedViewModel(container.storyRepository.saved(), container.connectivity, container.storyRepository) }
+                val state by vm.uiState.collectAsStateWithLifecycle()
+                val home = if (globalOnly) TopLevel.GLOBAL else TopLevel.LOCAL
+                val homeName = settings?.region?.takeIf { !globalOnly }?.let { stringResource(Labels.region(it)) } ?: stringResource(R.string.nav_global)
+                SavedScreen(state, now, homeName, onGoHome = { go(home) }, onSearch = { nav.navigate(Search(TopLevel.SAVED)) }, rowActions = rowActions(vm::markOpened, vm::setSaved))
+            }
+            composable<SettingsHome> {
+                val vm = settingsViewModel(container)
+                val state by vm.uiState.collectAsStateWithLifecycle()
+                LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { vm.onResume() }
+                SettingsHomeScreen(
+                    state, BuildConfig.VERSION_NAME,
+                    onRegion = { nav.navigate(SettingsRegion) },
+                    onSources = { nav.navigate(SettingsSources) },
+                    onDigest = { nav.navigate(SettingsDigest) },
+                    onAbout = { nav.navigate(About) },
+                    onBgRefresh = vm::setBgRefresh,
+                    onTheme = vm::setTheme,
+                )
+            }
+            composable<SettingsRegion> {
+                val vm = settingsViewModel(container)
+                val current = settings?.region ?: return@composable
+                RegionScreen(current, container.catalog.sources.groupBy({ it.region }, { it.name }), onBack = { nav.popBackStack() }) { region ->
+                    vm.setRegion(region)
+                    nav.popBackStack()
+                }
+            }
+            composable<SettingsSources> {
+                val vm = settingsViewModel(container)
+                val state by vm.sources.collectAsStateWithLifecycle()
+                SourcesScreen(state, now, onBack = { nav.popBackStack() }, onToggle = vm::setSourceEnabled)
+            }
+            composable<SettingsDigest> {
+                val vm = settingsViewModel(container)
+                val state by vm.uiState.collectAsStateWithLifecycle()
+                LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { vm.onResume() }
+                DigestScreen(state, onBack = { nav.popBackStack() }, vm = vm)
+            }
+            composable<About> {
+                val open = { url: String ->
+                    if (ArticleOpener.openInBrowser(context, url) != ArticleOpener.Result.OPENED) scope.launch { snackbar.showSnackbar(noApp, duration = duration) }
+                }
+                AboutScreen(
+                    version = BuildConfig.VERSION_NAME,
+                    sourceCount = container.catalog.sources.size,
+                    hosts = SourcesMapper.hosts(container.catalog.sources),
+                    donateUrl = AboutLinks.DONATE,
+                    onBack = { nav.popBackStack() },
+                    onOpen = { open(it) },
+                    onSources = { nav.navigate(AboutSources) },
+                    onCopyDiagnostics = {
+                        scope.launch {
+                            copyText(context, "FounderGuru diagnostics", diagnostics(container))
+                            snackbar.showSnackbar(diagnosticsText, duration = duration)
+                        }
+                    },
+                )
+            }
+            composable<AboutSources> {
+                AboutSourcesScreen(container.catalog.sources, onBack = { nav.popBackStack() }) { url ->
+                    if (ArticleOpener.openInBrowser(context, url) != ArticleOpener.Result.OPENED) scope.launch { snackbar.showSnackbar(noApp, duration = duration) }
+                }
+            }
         }
     }
 }
@@ -259,8 +390,16 @@ private fun FeedRoute(
     }
     val state by vm.uiState.collectAsStateWithLifecycle()
     val listState: LazyListState = rememberLazyListState()
-    // Re-tap the selected tab: scroll to the "New since" divider, or to the top (design notes).
-    LaunchedEffect(reselect) { if (reselect > 0) listState.animateScrollToItem(dividerIndex(state)) }
+    // Re-tap the selected tab or a digest tap: scroll to the "New since" divider, or to the top (design notes). The
+    // request waits until the stories are there (a digest tap can arrive before the first frame of content).
+    var handled by rememberSaveable { mutableIntStateOf(0) }
+    val ready = state is FeedUiState.Content
+    LaunchedEffect(reselect, ready) {
+        if (reselect > handled && ready) {
+            handled = reselect
+            listState.animateScrollToItem(dividerIndex(state))
+        }
+    }
     FeedScreen(
         state = state,
         now = now,
@@ -275,7 +414,7 @@ private fun FeedRoute(
                 go(TopLevel.GLOBAL)
             },
             openSources = { go(TopLevel.SETTINGS) },
-            openSearch = { nav.navigate(Search(tab)) },
+            openSearch = { nav.navigate(Search(TopLevel.of(tab))) },
             row = rowActions(vm::markOpened, vm::setSaved),
         ),
     )
@@ -320,8 +459,38 @@ private fun BottomBar(items: List<TopLevel>, current: TopLevel?, onSelect: (TopL
     }
 }
 
-private fun copy(context: Context, url: String) {
-    context.getSystemService(ClipboardManager::class.java)?.setPrimaryClip(ClipData.newPlainText(url, url))
+private fun copy(context: Context, url: String) = copyText(context, url, url)
+
+private fun copyText(context: Context, label: String, text: String) {
+    context.getSystemService(ClipboardManager::class.java)?.setPrimaryClip(ClipData.newPlainText(label, text))
+}
+
+@Composable
+private fun settingsViewModel(container: AppContainer): SettingsViewModel = viewModel {
+    SettingsViewModel(
+        container.settings, container.catalog.sources, container.db.sources().observeAll(), container.notifier::canPost,
+        container.refresher, { id, on -> container.db.sources().setEnabled(id, on) },
+    )
+}
+
+/** About › Copy diagnostics (HLD §6): no region, saved stories, opened links or searches. */
+private suspend fun diagnostics(container: AppContainer): String {
+    val s = container.settings.current()
+    return Diagnostics.text(
+        Diagnostics.Input(
+            versionName = BuildConfig.VERSION_NAME,
+            versionCode = BuildConfig.VERSION_CODE,
+            androidRelease = Build.VERSION.RELEASE,
+            apiLevel = Build.VERSION.SDK_INT,
+            theme = s.theme,
+            digest = s.digest,
+            notificationsEnabled = container.notifier.canPost(),
+            bgRefresh = s.bgRefresh,
+            lastRefreshAt = s.lastRefreshAt,
+            sources = container.db.sources().all(),
+            cachedStories = container.db.stories().count(),
+        ),
+    )
 }
 
 private const val MINUTE_MS = 60_000L

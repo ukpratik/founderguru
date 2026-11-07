@@ -9,6 +9,7 @@ import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
+import io.github.ukpratik.founderguru.core.digest.DigestMode
 import io.github.ukpratik.founderguru.core.feed.LensFilter
 import io.github.ukpratik.founderguru.core.model.Lens
 import io.github.ukpratik.founderguru.core.model.Region
@@ -20,7 +21,6 @@ import kotlinx.coroutines.flow.map
 
 enum class ThemePref { SYSTEM, LIGHT, DARK }
 
-enum class DigestMode { OFF, WEEKLY, DAILY }
 
 /** A snapshot of `settings.preferences_pb` (LLD §2.2). */
 data class Settings(
@@ -37,6 +37,8 @@ data class Settings(
     val limitedBannerDismissed: Set<Region> = emptySet(),
     val failedNoteDismissedAt: Long = 0,
     val taggerVersion: Int = 0,
+    /** The "Saved · Undo" snackbar shows on the first save only (design-system §5). */
+    val firstSaveHintShown: Boolean = false,
 ) {
     fun lens(tab: Tab): LensFilter = if (tab == Tab.LOCAL) lensLocal else lensGlobal
     fun lastVisit(tab: Tab): Long? = if (tab == Tab.LOCAL) lastVisitLocal else lastVisitGlobal
@@ -58,6 +60,8 @@ class SettingsStore(private val store: DataStore<Preferences>) {
     suspend fun setRegion(region: Region) = store.edit { it[REGION] = region.name }
     suspend fun setDigest(mode: DigestMode) = store.edit { it[DIGEST] = mode.name }
     suspend fun setTheme(theme: ThemePref) = store.edit { it[THEME] = theme.name }
+    suspend fun setBgRefresh(on: Boolean) = store.edit { it[BG_REFRESH] = on }
+    suspend fun setFirstSaveHintShown() = store.edit { it[FIRST_SAVE_HINT] = true }
 
     suspend fun setLens(tab: Tab, lens: LensFilter) = store.edit {
         it[if (tab == Tab.LOCAL) LENS_LOCAL else LENS_GLOBAL] = when (lens) {
@@ -86,6 +90,7 @@ class SettingsStore(private val store: DataStore<Preferences>) {
         limitedBannerDismissed = p[LIMITED_DISMISSED].orEmpty().mapNotNull { enumOrNull<Region>(it) }.toSet(),
         failedNoteDismissedAt = p[FAILED_DISMISSED_AT] ?: 0,
         taggerVersion = p[TAGGER_VERSION] ?: 0,
+        firstSaveHintShown = p[FIRST_SAVE_HINT] ?: false,
     )
 
     private fun lensOf(value: String?): LensFilter = value?.let { enumOrNull<Lens>(it) }?.let(LensFilter::Only) ?: LensFilter.All
@@ -108,5 +113,6 @@ class SettingsStore(private val store: DataStore<Preferences>) {
         private val LIMITED_DISMISSED = stringSetPreferencesKey("limited_banner_dismissed")
         private val FAILED_DISMISSED_AT = longPreferencesKey("failed_note_dismissed_at")
         private val TAGGER_VERSION = intPreferencesKey("tagger_version")
+        private val FIRST_SAVE_HINT = booleanPreferencesKey("first_save_hint_shown")
     }
 }

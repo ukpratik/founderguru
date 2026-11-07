@@ -6,6 +6,7 @@ import io.github.ukpratik.founderguru.core.model.Lens
 import io.github.ukpratik.founderguru.core.model.Region
 import io.github.ukpratik.founderguru.core.model.StoryRow
 import io.github.ukpratik.founderguru.core.tag.Sector
+import io.github.ukpratik.founderguru.data.RefreshResult
 import io.github.ukpratik.founderguru.data.Refresher
 import io.github.ukpratik.founderguru.data.StoryActions
 import io.github.ukpratik.founderguru.data.db.SourceStateEntity
@@ -54,11 +55,16 @@ class FakeConnectivity(online: Boolean = true) : Connectivity {
     override val isOnline = MutableStateFlow(online)
 }
 
-class FakeRefresher : Refresher {
+class FakeRefresher(var result: RefreshResult? = RefreshResult(emptyList(), emptyList(), emptyMap())) : Refresher {
     override val refreshing = MutableStateFlow(false)
     var calls = 0
+    var nowCalls = 0
     override fun refresh() {
         calls++
+    }
+    override suspend fun refreshNow(): RefreshResult? {
+        nowCalls++
+        return result
     }
 }
 
@@ -70,5 +76,8 @@ class FakeActions : StoryActions {
     }
     override suspend fun markOpened(id: Long) {
         opened += id
+    }
+    override suspend fun restoreSavedAt(id: Long, savedAt: Long) {
+        saved[id] = true
     }
 }

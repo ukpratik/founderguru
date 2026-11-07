@@ -19,6 +19,9 @@ enum class Tab { LOCAL, GLOBAL }
 interface StoryActions {
     suspend fun setSaved(id: Long, saved: Boolean)
     suspend fun markOpened(id: Long)
+
+    /** Undo of a removal: puts the original `savedAt` back, so the story returns to its place in Saved. */
+    suspend fun restoreSavedAt(id: Long, savedAt: Long)
 }
 
 /** Read side of the story cache (LLD §3). Blending, sectioning and trending happen on these rows in `:core`. */
@@ -39,11 +42,27 @@ class StoryRepository(private val db: FgDatabase, private val catalog: SourcesCa
         }
     }
 
+    /** Saved stories, newest saved first (US-009). */
+    fun saved(): Flow<List<StoryRow>> = db.stories().saved()
+
+    /** Local search over titles and snippets (US-014); [query] is trimmed and its `LIKE` wildcards escaped. */
+    fun search(query: String): Flow<List<StoryRow>> = db.stories().search(likePattern(query))
+
+    override suspend fun restoreSavedAt(id: Long, savedAt: Long) = db.stories().setSavedAt(id, savedAt)
+
     /** Bookmark toggle (US-009); `savedAt` = [Clock.now] when saving. */
     override suspend fun setSaved(id: Long, saved: Boolean) = db.stories().setSavedAt(id, if (saved) clock.now() else null)
 
     /** Visited state (D-017). */
     override suspend fun markOpened(id: Long) = db.stories().setOpenedAt(id, clock.now())
+
+    companion object {
+        /** `%` + [query] with `\`, `%` and `_` escaped + `%` (LLD §5 "Search"; the DAO uses `ESCAPE '\'`). */
+        fun likePattern(query: String): String {
+            val escaped = query.trim().replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+            return "%$escaped%"
+        }
+    }
 
     /**
      * Re-tags every stored story with the current rules (LLD §4.10). Called at start when the stored tagger version is

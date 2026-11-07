@@ -11,7 +11,21 @@ import io.github.ukpratik.founderguru.core.model.SourcesCatalog
 import io.github.ukpratik.founderguru.core.sources.CatalogLoader
 import io.github.ukpratik.founderguru.core.tag.Tagger
 import io.github.ukpratik.founderguru.core.time.SystemClock
+import androidx.work.WorkManager
+import io.github.ukpratik.founderguru.core.digest.DigestMode
+import io.github.ukpratik.founderguru.core.feed.LensFilter
+import io.github.ukpratik.founderguru.core.model.Region
 import io.github.ukpratik.founderguru.data.AppRefresher
+import io.github.ukpratik.founderguru.data.ForegroundRefresh
+import io.github.ukpratik.founderguru.data.Tab
+import io.github.ukpratik.founderguru.platform.DigestNotifier
+import io.github.ukpratik.founderguru.ui.components.Labels
+import io.github.ukpratik.founderguru.work.DigestRunner
+import io.github.ukpratik.founderguru.work.FgWorkerFactory
+import io.github.ukpratik.founderguru.work.WorkScheduler
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.map
 import io.github.ukpratik.founderguru.data.RefreshRepository
 import io.github.ukpratik.founderguru.data.SourcesRepository
 import io.github.ukpratik.founderguru.data.StoryRepository
@@ -28,7 +42,8 @@ import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 
 /** Manual DI (ADR-004): every long-lived object, built once in [FounderGuruApp]. */
-class AppContainer(context: Context) {
+class AppContainer(context: Context, workManager: (Context) -> WorkManager = { WorkManager.getInstance(it) }) {
+    private val appContext: Context = context.applicationContext
     val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
     val clock = SystemClock
     val catalog: SourcesCatalog = context.assets.open(SOURCES_ASSET).bufferedReader().use { CatalogLoader.load(it.readText()) }
@@ -53,9 +68,47 @@ class AppContainer(context: Context) {
             settings.setTaggerVersion(Tagger.TAGGER_VERSION)
         }
     }
-    val refresher = AppRefresher(refreshRepository, settings, clock, appScope, startup)
+    val refresher = AppRefresher(refreshRepository, settings, connectivity, clock, appScope, startup)
+    val foreground = ForegroundRefresh(settings, connectivity, refresher, clock, appScope)
     val visits = VisitTracker(settings, clock, appScope)
     val messages = UserMessages()
+    val notifier = DigestNotifier(appContext)
+    val scheduler = WorkScheduler({ workManager(appContext) }, clock)
+    val digestRunner = DigestRunner(
+        settings, refresher, storyRepository::tabWindow, notifier, scheduler,
+        regionName = { r -> if (r == Region.GLOBAL) null else appContext.getString(Labels.region(r)) },
+        clock = clock,
+    )
+    val workerFactory = FgWorkerFactory({ refresher }, { digestRunner })
+
+    /** The tab a digest notification tap opens (LLD §4.9 "Digest landing"); consumed by the navigation. */
+    val digestLanding = MutableStateFlow<Tab?>(null)
+
+    init {
+        // Scheduling follows the stored settings (LLD §4.11): one source of truth for onboarding, Settings and start.
+        appScope.launch {
+            settings.settings.map { it.onboardingDone && it.bgRefresh }.distinctUntilChanged().collect { scheduler.setBackgroundRefresh(it) }
+        }
+        appScope.launch {
+            var atStart = true
+            settings.settings.map { if (it.onboardingDone) it.digest else DigestMode.OFF }.distinctUntilChanged().collect { mode ->
+                if (mode != DigestMode.OFF && !notifier.canPost()) {
+                    settings.setDigest(DigestMode.OFF) // notifications blocked since: Off everywhere (D-017)
+                } else {
+                    scheduler.scheduleDigest(mode, keep = atStart)
+                }
+                atStart = false
+            }
+        }
+    }
+
+    /** A digest notification was tapped: that tab's lens goes to All so the divider shows the notification's n. */
+    fun openFromDigest(tab: Tab) {
+        appScope.launch {
+            settings.setLens(tab, LensFilter.All)
+            digestLanding.value = tab
+        }
+    }
 
     companion object {
         const val SOURCES_ASSET = "sources.json"

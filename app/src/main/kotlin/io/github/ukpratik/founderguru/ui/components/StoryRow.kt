@@ -79,7 +79,7 @@ private val THUMB = 76.dp
  */
 @OptIn(ExperimentalFoundationApi::class, ExperimentalLayoutApi::class)
 @Composable
-fun StoryRow(row: StoryRow, now: Long, older: Boolean, actions: StoryRowActions, modifier: Modifier = Modifier) {
+fun StoryRow(row: StoryRow, now: Long, older: Boolean, actions: StoryRowActions, modifier: Modifier = Modifier, highlight: String? = null) {
     val c = Fg.colors
     val res = LocalResources.current
     val haptics = LocalHapticFeedback.current
@@ -135,7 +135,7 @@ fun StoryRow(row: StoryRow, now: Long, older: Boolean, actions: StoryRowActions,
             val visited = row.openedAt != null
             val headline: @Composable () -> Unit = {
                 Text(
-                    row.title,
+                    marked(row.title, highlight, c.accentSoft),
                     color = if (older || visited) c.ink2 else c.ink,
                     style = if (visited && !older) headlineStyle.copy(fontWeight = FontWeight.Medium) else headlineStyle,
                     maxLines = if (large) 5 else 3,
@@ -145,7 +145,7 @@ fun StoryRow(row: StoryRow, now: Long, older: Boolean, actions: StoryRowActions,
             val snippet: @Composable () -> Unit = {
                 if (row.snippet.isNotBlank()) {
                     Text(
-                        row.snippet,
+                        marked(row.snippet, highlight, c.accentSoft),
                         Modifier.padding(top = 2.dp),
                         color = c.ink2,
                         style = MaterialTheme.typography.bodyMedium,
@@ -210,6 +210,25 @@ fun StoryRow(row: StoryRow, now: Long, older: Boolean, actions: StoryRowActions,
             }
         }
         Hairline()
+    }
+}
+
+/** Search matches (design SCR-10): `accent-soft` background and bold, so the mark is not colour alone. ASCII case-insensitive like `LIKE`. */
+fun marked(text: String, query: String?, tint: androidx.compose.ui.graphics.Color): androidx.compose.ui.text.AnnotatedString {
+    val q = query?.trim().orEmpty()
+    if (q.length < 2) return androidx.compose.ui.text.AnnotatedString(text)
+    return buildAnnotatedString {
+        var i = 0
+        while (i < text.length) {
+            val at = text.indexOf(q, i, ignoreCase = true)
+            if (at < 0) {
+                append(text.substring(i))
+                break
+            }
+            append(text.substring(i, at))
+            withStyle(SpanStyle(fontWeight = FontWeight.Bold, background = tint)) { append(text.substring(at, at + q.length)) }
+            i = at + q.length
+        }
     }
 }
 

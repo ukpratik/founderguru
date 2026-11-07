@@ -2,6 +2,9 @@
 package io.github.ukpratik.founderguru
 
 import android.app.Application
+import androidx.work.Configuration
+import io.github.ukpratik.founderguru.platform.DigestNotifier
+import io.github.ukpratik.founderguru.work.FgWorkerFactory
 import coil3.ImageLoader
 import coil3.PlatformContext
 import coil3.SingletonImageLoader
@@ -11,14 +14,21 @@ import coil3.network.okhttp.OkHttpNetworkFetcherFactory
 import coil3.request.crossfade
 import okio.Path.Companion.toOkioPath
 
-class FounderGuruApp : Application(), SingletonImageLoader.Factory {
+class FounderGuruApp : Application(), SingletonImageLoader.Factory, Configuration.Provider {
     lateinit var container: AppContainer
         private set
 
     override fun onCreate() {
         super.onCreate()
         container = AppContainer(this)
+        DigestNotifier.ensureChannel(this)
     }
+
+    /** WorkManager with the app's worker factory (ADR-004); the default start-up initializer is removed in the manifest. */
+    override val workManagerConfiguration: Configuration
+        get() = Configuration.Builder()
+            .setWorkerFactory(FgWorkerFactory({ container.refresher }, { container.digestRunner }))
+            .build()
 
     /** Coil (LLD §4.14): memory 15%, disk 100 MB in `cacheDir/images` (NFR-004), no crossfade. */
     override fun newImageLoader(context: PlatformContext): ImageLoader = ImageLoader.Builder(context)

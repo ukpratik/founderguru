@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import io.github.ukpratik.founderguru.core.model.Region
 import io.github.ukpratik.founderguru.data.UserMessage
 import io.github.ukpratik.founderguru.data.UserMessages
-import io.github.ukpratik.founderguru.data.prefs.DigestMode
+import io.github.ukpratik.founderguru.core.digest.DigestMode
 import io.github.ukpratik.founderguru.data.prefs.SettingsStore
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

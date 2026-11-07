@@ -52,7 +52,7 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import io.github.ukpratik.founderguru.R
 import io.github.ukpratik.founderguru.core.model.Region
-import io.github.ukpratik.founderguru.data.prefs.DigestMode
+import io.github.ukpratik.founderguru.core.digest.DigestMode
 import io.github.ukpratik.founderguru.ui.components.FgButton
 import io.github.ukpratik.founderguru.ui.components.FgIcon
 import io.github.ukpratik.founderguru.ui.components.Hairline

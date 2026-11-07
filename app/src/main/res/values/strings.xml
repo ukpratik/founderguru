@@ -202,9 +202,138 @@
     <string name="copy_link">Copy link</string>
     <string name="snack_digest_off">Digest is off. Turn on in Settings</string>
 
-    <!-- M4 destinations, stubbed in M3 -->
-    <string name="stub_saved_body">Saved stories arrive in the next build.</string>
-    <string name="stub_settings_body">Settings, sources and About arrive in the next build.</string>
-    <string name="stub_search_title">Search</string>
-    <string name="stub_search_body">Search arrives in the next build.</string>
+    <string name="snack_saved">Saved</string>
+    <string name="snack_removed">Removed from saved</string>
+    <string name="undo">Undo</string>
+    <string name="snack_diagnostics">Diagnostics copied</string>
+    <string name="snack_no_app">No app found to open this link</string>
+
+    <!-- Digest notification (US-012) -->
+    <string name="channel_digest">Digest</string>
+
+    <!-- Saved (SCR-06, US-009) -->
+    <string name="saved_overline">Saved</string>
+    <string name="saved_title">Your stories</string>
+    <string name="saved_sub">Kept on this phone, never expire</string>
+    <plurals name="story_count">
+        <item quantity="one">%1$d story</item>
+        <item quantity="other">%1$d stories</item>
+    </plurals>
+    <string name="saved_empty_title">Nothing saved yet</string>
+    <string name="saved_empty_body">Tap the bookmark on any story to keep it here. Saved stories never expire.</string>
+    <string name="saved_go_to">Go to %1$s</string>
+    <string name="saved_offline">Offline · saved stories still open if your browser cached them</string>
+
+    <!-- Search (SCR-10, US-014) -->
+    <string name="search_hint">Search stories</string>
+    <string name="search_clear">Clear search</string>
+    <string name="search_scope">Searches titles and snippets of the last 14 days and your saved stories. Works offline.</string>
+    <string name="search_idle_title">Find a company or topic</string>
+    <string name="search_idle_body">Try a startup name, an investor, a city or a sector, like \"UPI\" or \"Series A\".</string>
+    <plurals name="search_count">
+        <item quantity="one">%1$d story · newest first</item>
+        <item quantity="other">%1$d stories · newest first</item>
+    </plurals>
+    <string name="search_none_title">No stories match \"%1$s\"</string>
+    <string name="search_none_body">Search covers the last 14 days and your saved stories. Try fewer words.</string>
+    <string name="search_offline">Offline · search still works</string>
+
+    <!-- Settings (SCR-07, US-010) -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_group_news">Your news</string>
+    <string name="settings_group_updates">Updates</string>
+    <string name="settings_group_look">Look</string>
+    <string name="settings_group_app">App</string>
+    <string name="settings_region">Region</string>
+    <string name="settings_sources">Sources</string>
+    <string name="settings_sources_value" tools:ignore="PluralsCandidate">%1$d %2$s + %3$d global</string>
+    <string name="settings_sources_value_global" tools:ignore="PluralsCandidate">%1$d global</string>
+    <plurals name="settings_sources_failed">
+        <item quantity="one">%1$d couldn\'t update</item>
+        <item quantity="other">%1$d couldn\'t update</item>
+    </plurals>
+    <plurals name="settings_sources_blocked">
+        <item quantity="one">%1$d blocked</item>
+        <item quantity="other">%1$d blocked</item>
+    </plurals>
+    <string name="settings_digest">Digest</string>
+    <string name="settings_digest_weekly">Weekly, Mondays around 08:00</string>
+    <string name="settings_digest_daily">Daily, every day around 08:00</string>
+    <string name="settings_digest_off">Off</string>
+    <string name="settings_digest_blocked">Off · notifications are blocked for FounderGuru</string>
+    <string name="settings_digest_blocked_help">To get the digest, allow notifications first.</string>
+    <string name="open_system_settings">Open system settings</string>
+    <string name="settings_bg_refresh">Background refresh</string>
+    <string name="settings_bg_refresh_on">Every 6 hours on any network, when the battery isn\'t low</string>
+    <string name="settings_bg_refresh_off">Off. Stories update only when you pull to refresh</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_system_sub">Follows your phone</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="settings_about">About FounderGuru</string>
+    <string name="settings_about_value">Version %1$s · licence, privacy, sources</string>
+
+    <!-- Region (SCR-01 redo) -->
+    <string name="region_intro">Local shows startup news from here. Global is always available.</string>
+    <string name="region_global_sub">Hide Local. TechCrunch, Crunchbase, Show HN…</string>
+    <string name="save_button">Save</string>
+
+    <!-- Sources (SCR-08, US-004, US-010, US-011) -->
+    <string name="sources_intro">Turn a source off to hide its stories right away.</string>
+    <string name="sources_intro_status">Turn a source off to hide its stories right away. Status is from the last refresh, %1$s.</string>
+    <string name="sources_group">%1$s · %2$d of %3$d on</string>
+    <string name="sources_group_global">Global</string>
+    <string name="sources_all_off">All %1$s sources are off. Local will be empty until you turn at least one back on.</string>
+    <string name="health_ok">OK · updated %1$s</string>
+    <string name="health_failed">Couldn\'t update · %1$s · %2$s</string>
+    <string name="health_blocked">Blocked by publisher (HTTP %1$d) · %2$s</string>
+    <string name="health_blocked_plain">Blocked by publisher · %1$s</string>
+    <string name="health_off">Off · stories hidden</string>
+    <string name="health_never">Not updated yet</string>
+    <string name="health_newest">Showing stories up to %1$s</string>
+    <string name="health_via">%1$s · via %2$s</string>
+    <string name="reason_timeout">timed out</string>
+    <string name="reason_network">couldn\'t connect</string>
+    <string name="reason_http">HTTP %1$d</string>
+    <string name="reason_http_plain">server error</string>
+    <string name="reason_format">not a valid feed</string>
+    <string name="reason_too_large">feed too large</string>
+    <string name="reason_redirect">redirect problem</string>
+
+    <!-- Digest settings -->
+    <string name="digest_intro">One notification with what\'s new in %1$s since your last visit. Skipped when there is nothing new.</string>
+    <string name="digest_intro_world">One notification with what\'s new worldwide since your last visit. Skipped when there is nothing new.</string>
+    <string name="digest_off">Off</string>
+    <string name="digest_preview">Preview</string>
+    <string name="digest_late_note">Android may deliver it a little late to save battery.</string>
+
+    <!-- About (SCR-09, US-010, US-013, NFR-010) -->
+    <string name="about_title">About</string>
+    <string name="about_lede">FounderGuru %1$s · free and open source, GPL-3.0-or-later. No ads, no account, no tracking.</string>
+    <string name="about_privacy">Privacy</string>
+    <string name="about_privacy_body">Nothing about you leaves this phone. Feed and image hosts see your IP address, as with any browser. The app stores stories, your saved stories and your settings on this phone only, and sends no analytics or crash reports.</string>
+    <string name="about_code">Source code and licences</string>
+    <string name="about_code_sub">Repository, GPL-3.0 text, open-source libraries and fonts (OFL)</string>
+    <string name="about_sources">Sources</string>
+    <plurals name="about_sources_sub">
+        <item quantity="one">%1$d feed, with a link to its publisher</item>
+        <item quantity="other">%1$d feeds, with a link to each publisher</item>
+    </plurals>
+    <string name="about_hosts">Who the app talks to</string>
+    <string name="about_hosts_lead">Feed hosts (only for sources that are on)</string>
+    <string name="about_hosts_proxy">%1$s (third-party proxy for Show HN)</string>
+    <string name="about_images">Images are loaded from the publishers\' own servers.</string>
+    <string name="about_group_help">Help and support</string>
+    <string name="about_feedback">Send feedback</string>
+    <string name="about_feedback_sub">Opens the issue tracker in your browser</string>
+    <string name="about_donate">Donate</string>
+    <string name="about_donate_sub">Keeps the project going. No perks, no pressure.</string>
+    <string name="about_donate_soon">Donation links are coming. No perks, no pressure.</string>
+    <string name="about_diagnostics">Copy diagnostics</string>
+    <string name="about_diagnostics_sub">Version, Android version and source status. No personal data.</string>
+    <string name="about_sources_title">Sources</string>
+    <string name="about_sources_intro">Every story links to the publisher\'s own page. Tap a source to visit its site.</string>
 </resources>

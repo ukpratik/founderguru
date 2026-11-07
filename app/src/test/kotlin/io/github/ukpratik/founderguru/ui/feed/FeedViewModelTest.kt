@@ -10,7 +10,7 @@ import io.github.ukpratik.founderguru.core.model.Region
 import io.github.ukpratik.founderguru.core.model.StoryRow
 import io.github.ukpratik.founderguru.data.Tab
 import io.github.ukpratik.founderguru.data.Visit
-import io.github.ukpratik.founderguru.data.prefs.DigestMode
+import io.github.ukpratik.founderguru.core.digest.DigestMode
 import io.github.ukpratik.founderguru.ui.FakeActions
 import io.github.ukpratik.founderguru.ui.FakeConnectivity
 import io.github.ukpratik.founderguru.ui.FakeRefresher

@@ -43,12 +43,12 @@ class StoryRepositoryTest {
 
     @After fun tearDown() = db.close()
 
-    private fun story(source: String, ageHours: Long, mentions: Int = 0, title: String = "Story ${next + 1}") = runBlocking {
+    private fun story(source: String, ageHours: Long, mentions: Int = 0, title: String = "Story ${next + 1}", snippet: String = "") = runBlocking {
         next++
         db.stories().insert(
             StoryEntity(
                 sourceId = source, sourceName = source, url = "https://x/$next", urlKey = "x/$next", title = title, titleKey = "k$next",
-                snippet = "", imageUrl = null, publishedAt = now - ageHours * hour, firstSeenAt = now, regionMentions = mentions,
+                snippet = snippet, imageUrl = null, publishedAt = now - ageHours * hour, firstSeenAt = now, regionMentions = mentions,
             ),
         )
     }
@@ -103,5 +103,43 @@ class StoryRepositoryTest {
         val i = db.stories().bySource("in-a").single()
         assertThat(i.lenses).isEqualTo(Lens.TRENDS.bit)
         assertThat(i.regionMentions).isEqualTo(0)
+    }
+
+    @Test fun `Saved - newest saved first, kept when the source is off, restore puts it back in place`() = runBlocking<Unit> {
+        val a = story("in-a", 1)
+        val b = story("gl-a", 2)
+        val c = story("in-b", 3)
+        db.stories().setSavedAt(a, 10)
+        db.stories().setSavedAt(b, 30)
+        db.stories().setSavedAt(c, 20)
+        db.sources().setEnabled("gl-a", false)
+        assertThat(repo.saved().first().map { it.id }).containsExactly(b, c, a).inOrder()
+
+        repo.setSaved(c, false)
+        assertThat(repo.saved().first().map { it.id }).containsExactly(b, a).inOrder()
+        repo.restoreSavedAt(c, 20)
+        assertThat(repo.saved().first().map { it.id }).containsExactly(b, c, a).inOrder()
+    }
+
+    @Test fun `Search - title and snippet, ASCII case-insensitive, newest first, saved always, disabled sources hidden`() = runBlocking<Unit> {
+        val old = story("in-a", 5, title = "UPI credit lines")
+        val new = story("in-b", 1, title = "Payroll startup", snippet = "Wages early over upi")
+        val off = story("gl-a", 2, title = "UPI in Brazil")
+        val offSaved = story("gl-a", 3, title = "UPI abroad")
+        story("in-a", 1, title = "Unrelated")
+        db.stories().setSavedAt(offSaved, 1)
+        db.sources().setEnabled("gl-a", false)
+        assertThat(repo.search("upi").first().map { it.id }).containsExactly(new, offSaved, old).inOrder()
+        assertThat(off).isNotIn(repo.search("UPI").first().map { it.id })
+    }
+
+    @Test fun `Search escapes LIKE wildcards`() = runBlocking<Unit> {
+        val pct = story("in-a", 1, title = "Growth of 50% in a year")
+        story("in-a", 2, title = "Growth of 500 users")
+        val under = story("in-a", 3, title = "snake_case naming")
+        story("in-a", 4, title = "snakeXcase naming")
+        assertThat(repo.search("50%").first().map { it.id }).containsExactly(pct)
+        assertThat(repo.search("e_c").first().map { it.id }).containsExactly(under)
+        assertThat(StoryRepository.likePattern("  a\\b%_ ")).isEqualTo("%a\\\\b\\%\\_%")
     }
 }

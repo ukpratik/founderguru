@@ -41,6 +41,10 @@ android {
 
     // Robolectric tests (Room, repositories) need the merged resources and assets (LLD §8).
     testOptions.unitTests.isIncludeAndroidResources = true
+
+    // MigrationTestHelper reads the exported schemas from the app's assets; Robolectric only sees the variant's merged
+    // assets, so the schemas go into debug builds (a few KB, never release) for the migration tests (NFR-012).
+    sourceSets.getByName("debug").assets.directories.add("schemas")
 }
 
 // LLD §2.1, NFR-012: the Room schema JSON is exported and committed; CI fails if it drifts.
@@ -63,6 +67,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.browser)
+    implementation(libs.androidx.work.runtime)
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
 
@@ -75,6 +80,7 @@ dependencies {
     testImplementation(libs.okhttp.mockwebserver3)
     testImplementation(libs.okhttp.tls)
     testImplementation(libs.turbine)
+    testImplementation(libs.androidx.work.testing)
     testImplementation(libs.compose.ui.test.junit4)
     debugImplementation(libs.compose.ui.test.manifest)
 }

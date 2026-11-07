@@ -198,6 +198,29 @@ class RefreshRepositoryTest {
         assertThat(db.stories().count()).isEqualTo(2)
     }
 
+    @Test fun `stored stories carry lens, sector and region tags (M2)`() = runBlocking<Unit> {
+        serve("gl-a", item("Bengaluru fintech startup raises seed round", "https://g.com/1"))
+        serve("in-a", item("Bengaluru fintech startup raises seed round again", "https://a.in/1"))
+        val global = src("gl-a", Region.GLOBAL).copy(defaultLens = io.github.ukpratik.founderguru.core.model.Lens.TRENDS)
+        repo(global, src("in-a", Region.IN))
+        only(global).refresh(null)
+        only(src("in-a", Region.IN)).refresh(null)
+        val g = db.stories().bySource("gl-a").single()
+        assertThat(g.lenses).isEqualTo(io.github.ukpratik.founderguru.core.model.Lens.FUNDING.bit or io.github.ukpratik.founderguru.core.model.Lens.TRENDS.bit)
+        assertThat(g.sectors and io.github.ukpratik.founderguru.core.tag.Sector.FINTECH.bit).isNotEqualTo(0L)
+        assertThat(g.regionMentions).isEqualTo(Region.IN.mentionBit)
+        assertThat(db.stories().bySource("in-a").single().regionMentions).isEqualTo(0) // regional sources: never set
+    }
+
+    @Test fun `keyword-filtered sources keep only startup stories (M2)`() = runBlocking<Unit> {
+        serve("in-a", item("Peppermint Robotics raises Rs 100 crore", "https://a.in/1"), item("Lenskart Q2 net profit more than doubles", "https://a.in/2"))
+        val filtered = src("in-a", Region.IN).copy(needsKeywordFilter = true)
+        repo(filtered)
+        only(filtered).refresh(null)
+        assertThat(db.stories().bySource("in-a").map { it.url }).containsExactly("https://a.in/1")
+        assertThat(db.sources().byId("in-a")!!.lastStatus).isEqualTo("OK")
+    }
+
     @Test fun `concurrent callers share one run (no double fetch)`() = runBlocking<Unit> {
         serve("in-a", item("Zepto raises big new round", "https://news.in/zepto"))
         val repo = repo(src("in-a", Region.IN))

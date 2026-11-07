@@ -1,0 +1,71 @@
+{
+  "description": "Only 2 sectors qualify (Space has 2 stories), so the strip is hidden.",
+  "now": "2026-11-07T12:00:00Z",
+  "rows": [
+    {
+      "id": 1,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 2,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 3,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 4,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 5,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 6,
+      "sourceId": "c",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 7,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 8,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    }
+  ],
+  "expected": []
+}

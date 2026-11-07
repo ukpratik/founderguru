@@ -1,0 +1,116 @@
+{
+  "description": "A story exactly 7 days old counts; 1 ms older doesn't (Fintech falls to 2).",
+  "now": "2026-11-07T12:00:00Z",
+  "rows": [
+    {
+      "id": 1,
+      "sourceId": "a",
+      "publishedAt": "2026-10-31T12:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 2,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 3,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 4,
+      "sourceId": "a",
+      "publishedAt": "2026-10-31T11:59:59.999Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 5,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 6,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 7,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 8,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 9,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 10,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 11,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 12,
+      "sourceId": "c",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    }
+  ],
+  "expected": [
+    {
+      "sector": "AI",
+      "count": 3
+    },
+    {
+      "sector": "GAMING",
+      "count": 3
+    },
+    {
+      "sector": "SPACE",
+      "count": 3
+    }
+  ]
+}

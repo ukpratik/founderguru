@@ -6,6 +6,8 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Upsert
+import io.github.ukpratik.founderguru.core.model.StoryRow
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface StoryDao {
@@ -53,9 +55,34 @@ interface StoryDao {
     )
     suspend fun pruneUnsavedBeyond(limit: Int): Int
 
+    /** A tab's own rows: enabled sources of [region], 14-day window (LLD §3). Turning a source off hides its stories. */
+    @Query(
+        """SELECT $ROW FROM stories st JOIN source_state s ON s.id = st.sourceId
+           WHERE s.enabled = 1 AND s.region = :region AND st.publishedAt >= :since ORDER BY st.publishedAt DESC, st.id DESC""",
+    )
+    fun regionWindow(region: String, since: Long): Flow<List<StoryRow>>
+
+    /** Local's via-Global candidates: enabled Global sources whose stories mention the region (LLD §3, §4.8). */
+    @Query(
+        """SELECT $ROW FROM stories st JOIN source_state s ON s.id = st.sourceId
+           WHERE s.enabled = 1 AND s.region = 'GLOBAL' AND (st.regionMentions & :regionBit) != 0 AND st.publishedAt >= :since
+           ORDER BY st.publishedAt DESC, st.id DESC""",
+    )
+    fun viaGlobalCandidates(regionBit: Int, since: Long): Flow<List<StoryRow>>
+
+    @Query("SELECT id, sourceId, title, snippet FROM stories")
+    suspend fun allForRetag(): List<RetagRow>
+
+    @Query("UPDATE stories SET lenses = :lenses, sectors = :sectors, regionMentions = :regionMentions WHERE id = :id")
+    suspend fun updateTags(id: Long, lenses: Int, sectors: Long, regionMentions: Int)
+
     @Query("DELETE FROM stories WHERE savedAt IS NULL AND sourceId NOT IN (:keepIds)")
     suspend fun deleteUnsavedNotIn(keepIds: List<String>): Int
 }
+
+/** The `StoryRow` projection columns (LLD §3); `viaGlobal` is set by the blend, never stored. */
+private const val ROW = """st.id, st.sourceId, st.sourceName, st.url, st.title, st.snippet, st.imageUrl, st.publishedAt,
+    st.firstSeenAt, st.lenses, st.sectors, st.regionMentions, st.savedAt, st.openedAt, 0 AS viaGlobal"""
 
 @Dao
 interface SourceStateDao {

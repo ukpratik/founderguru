@@ -13,6 +13,9 @@ import io.github.ukpratik.founderguru.core.model.SourcesCatalog
 import io.github.ukpratik.founderguru.core.model.StoryDraft
 import io.github.ukpratik.founderguru.core.normalise.ItemNormaliser
 import io.github.ukpratik.founderguru.core.normalise.TitleKey
+import io.github.ukpratik.founderguru.core.tag.StartupFilter
+import io.github.ukpratik.founderguru.core.tag.Tagger
+import io.github.ukpratik.founderguru.core.tag.WordMatcher
 import io.github.ukpratik.founderguru.core.time.Clock
 import io.github.ukpratik.founderguru.data.db.FgDatabase
 import io.github.ukpratik.founderguru.data.db.SourceStateEntity
@@ -35,7 +38,8 @@ data class RefreshResult(val updated: List<String>, val notModified: List<String
 /**
  * The refresh pipeline (LLD §4.1, US-004, NFR-001/003/004/005): fetch → normalise → de-duplicate → cap → write, one
  * source at a time per transaction, at most [PARALLEL] sources in flight. One failing source never affects another.
- * Tagging and keyword filtering join in M2; connectivity, triggers and progress state in M4.
+ * Items from `needsKeywordFilter` sources must pass [StartupFilter]; every stored story is tagged by [Tagger] (M2).
+ * Connectivity, triggers and progress state come in M4.
  */
 class RefreshRepository(
     private val db: FgDatabase,
@@ -116,7 +120,8 @@ class RefreshRepository(
             val next = when (outcome) {
                 is FetchOutcome.Updated -> {
                     val drafts = outcome.items.mapNotNull { ItemNormaliser.normalise(it, outcome.fetchedUrl, now) }
-                    insertDrafts(source, drafts, now)
+                    val kept = if (source.needsKeywordFilter) drafts.filter { StartupFilter.keep(WordMatcher.text(it.title, it.snippet)) } else drafts
+                    insertDrafts(source, kept, now)
                     state.copy(
                         lastStatus = STATUS_OK, lastHttpCode = 200, lastError = if (outcome.truncated) "truncated" else null,
                         lastAttemptAt = now, lastSuccessAt = now, consecutiveFailures = 0,
@@ -158,11 +163,13 @@ class RefreshRepository(
                     matches.forEach { stories.deleteUnsaved(it.id) }
                 }
             }
+            val tags = Tagger.tag(draft.title, draft.snippet, source)
             stories.insert(
                 StoryEntity(
                     sourceId = source.id, sourceName = source.name, url = draft.url, urlKey = draft.urlKey,
                     title = draft.title, titleKey = draft.titleKey, snippet = draft.snippet, imageUrl = draft.imageUrl,
                     publishedAt = draft.publishedAt, firstSeenAt = now,
+                    lenses = tags.lenses, sectors = tags.sectors, regionMentions = tags.regionMentions,
                 ),
             )
         }

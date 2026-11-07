@@ -61,3 +61,6 @@ data class SourceStateEntity(
 
 /** A title-dedup candidate: an existing story plus its source's region. */
 data class TitleMatch(val id: Long, val region: String?, val savedAt: Long?)
+
+/** Input for re-tagging after a rule update (LLD §4.10). */
+data class RetagRow(val id: Long, val sourceId: String, val title: String, val snippet: String)

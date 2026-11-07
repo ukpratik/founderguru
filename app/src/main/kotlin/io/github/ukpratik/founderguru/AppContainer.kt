@@ -10,6 +10,7 @@ import io.github.ukpratik.founderguru.core.sources.CatalogLoader
 import io.github.ukpratik.founderguru.core.time.SystemClock
 import io.github.ukpratik.founderguru.data.RefreshRepository
 import io.github.ukpratik.founderguru.data.SourcesRepository
+import io.github.ukpratik.founderguru.data.StoryRepository
 import io.github.ukpratik.founderguru.data.db.FgDatabase
 
 /** Manual DI (ADR-004): every long-lived object, built once in [FounderGuruApp]. */
@@ -21,6 +22,7 @@ class AppContainer(context: Context) {
     val fetcher = FeedFetcher(httpClient, parserFactory = { Xml.newPullParser() }, policy = policy)
     val sourcesRepository = SourcesRepository(db)
     val refreshRepository = RefreshRepository(db, fetcher, catalog, SystemClock)
+    val storyRepository = StoryRepository(db, catalog, SystemClock)
 
     companion object {
         const val SOURCES_ASSET = "sources.json"

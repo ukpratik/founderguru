@@ -1,0 +1,86 @@
+{
+  "description": "Sectors tagged from titles: AI/GenAI/LLM and EV/EVs are case-sensitive whole words, so 'said', 'every' and lowercase 'ev' don't count.",
+  "now": "2026-11-07T12:00:00Z",
+  "rows": [
+    {
+      "id": 1,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Startup raises seed for AI copilots"
+    },
+    {
+      "id": 2,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "GenAI tools for lawyers"
+    },
+    {
+      "id": 3,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Founder said every deal matters"
+    },
+    {
+      "id": 4,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "LLM startup hires"
+    },
+    {
+      "id": 5,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "EV maker expands"
+    },
+    {
+      "id": 6,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Electric vehicle charging grows"
+    },
+    {
+      "id": 7,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "EVs win in India"
+    },
+    {
+      "id": 8,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Every evening an ev rumour spreads"
+    },
+    {
+      "id": 9,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Payments startup grows"
+    },
+    {
+      "id": 10,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Neobank adds payments"
+    },
+    {
+      "id": 11,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "title": "Fintech regulation tightens"
+    }
+  ],
+  "expected": [
+    {
+      "sector": "AI",
+      "count": 3
+    },
+    {
+      "sector": "FINTECH",
+      "count": 3
+    },
+    {
+      "sector": "MOBILITY_EV",
+      "count": 3
+    }
+  ]
+}

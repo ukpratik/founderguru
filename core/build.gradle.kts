@@ -27,6 +27,9 @@ tasks.test {
     providers.gradleProperty("fg.live").orNull?.let { systemProperty("fg.live", it) }
     // -Pfg.capture=<file> (with fg.live) also writes every live item as {id, sourceId, title, snippet} JSON: the raw pool
     // that lens-testset.json was sampled from (LLD §8).
+    // -Pfg.updateGolden=true rewrites the trending golden files (review the diff by hand).
+    providers.gradleProperty("fg.updateGolden").orNull?.let { systemProperty("fg.updateGolden", it) }
+    inputs.dir("src/test/resources").withPropertyName("testResources")
     providers.gradleProperty("fg.capture").orNull?.let { systemProperty("fg.capture", it) }
     testLogging { events("failed"); showStandardStreams = providers.gradleProperty("fg.live").isPresent }
 }

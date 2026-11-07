@@ -3,9 +3,12 @@ package io.github.ukpratik.founderguru.core.model
 
 import kotlinx.serialization.Serializable
 
-/** The 6 v1 regions plus GLOBAL (LLD §2.3). Stored by name; never rename. */
+/**
+ * The 6 v1 regions plus GLOBAL (LLD §2.3). Stored by name; never rename. [mentionBit] is the `stories.regionMentions`
+ * bit (LLD §2.1); GLOBAL has none.
+ */
 @Serializable
-enum class Region { GLOBAL, IN, EU, NA, AF, SEA, LATAM }
+enum class Region(val mentionBit: Int) { GLOBAL(0), IN(1), EU(2), NA(4), AF(8), SEA(16), LATAM(32) }
 
 /** Founder lenses (US-005). [bit] is the `stories.lenses` bitmask value (LLD §2.1). */
 @Serializable
@@ -95,3 +98,22 @@ sealed interface FetchOutcome {
 
     data class Failed(val kind: FailureKind, val httpCode: Int?, val message: String) : FetchOutcome
 }
+
+/** The read model for lists (LLD §3): a `stories` projection. [viaGlobal] is set only by the Local blend. */
+data class StoryRow(
+    val id: Long,
+    val sourceId: String,
+    val sourceName: String,
+    val url: String,
+    val title: String,
+    val snippet: String,
+    val imageUrl: String?,
+    val publishedAt: Long,
+    val firstSeenAt: Long,
+    val lenses: Int,
+    val sectors: Long,
+    val regionMentions: Int,
+    val savedAt: Long?,
+    val openedAt: Long?,
+    val viaGlobal: Boolean = false,
+)

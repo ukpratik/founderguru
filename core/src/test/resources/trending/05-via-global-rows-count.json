@@ -1,0 +1,95 @@
+{
+  "description": "Local's via-Global rows count like any other row (blended input).",
+  "now": "2026-11-07T12:00:00Z",
+  "rows": [
+    {
+      "id": 1,
+      "sourceId": "in-a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 2,
+      "sourceId": "in-a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 3,
+      "sourceId": "gl-a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ],
+      "viaGlobal": true
+    },
+    {
+      "id": 4,
+      "sourceId": "in-a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 5,
+      "sourceId": "gl-b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ],
+      "viaGlobal": true
+    },
+    {
+      "id": 6,
+      "sourceId": "gl-a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ],
+      "viaGlobal": true
+    },
+    {
+      "id": 7,
+      "sourceId": "in-a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SAAS_B2B"
+      ]
+    },
+    {
+      "id": 8,
+      "sourceId": "in-b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SAAS_B2B"
+      ]
+    },
+    {
+      "id": 9,
+      "sourceId": "in-b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SAAS_B2B"
+      ]
+    }
+  ],
+  "expected": [
+    {
+      "sector": "AI",
+      "count": 3
+    },
+    {
+      "sector": "FINTECH",
+      "count": 3
+    },
+    {
+      "sector": "SAAS_B2B",
+      "count": 3
+    }
+  ]
+}

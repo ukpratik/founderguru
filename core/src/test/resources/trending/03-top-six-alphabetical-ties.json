@@ -1,0 +1,352 @@
+{
+  "description": "8 sectors qualify; the top 6 by count, ties A-Z by display name (AI before Fintech; EdTech, Health, Space; Biotech before Gaming). Proptech (3) drops.",
+  "now": "2026-11-07T12:00:00Z",
+  "rows": [
+    {
+      "id": 1,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 2,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 3,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 4,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 5,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 6,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 7,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 8,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 9,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 10,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 11,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 12,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 13,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 14,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 15,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 16,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 17,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 18,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 19,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 20,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "EDTECH"
+      ]
+    },
+    {
+      "id": 21,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "EDTECH"
+      ]
+    },
+    {
+      "id": 22,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "EDTECH"
+      ]
+    },
+    {
+      "id": 23,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "EDTECH"
+      ]
+    },
+    {
+      "id": 24,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "EDTECH"
+      ]
+    },
+    {
+      "id": 25,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 26,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 27,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 28,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 29,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "SPACE"
+      ]
+    },
+    {
+      "id": 30,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 31,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 32,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 33,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "GAMING"
+      ]
+    },
+    {
+      "id": 34,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "BIOTECH"
+      ]
+    },
+    {
+      "id": 35,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "BIOTECH"
+      ]
+    },
+    {
+      "id": 36,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "BIOTECH"
+      ]
+    },
+    {
+      "id": 37,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "BIOTECH"
+      ]
+    },
+    {
+      "id": 38,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "PROPTECH"
+      ]
+    },
+    {
+      "id": 39,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "PROPTECH"
+      ]
+    },
+    {
+      "id": 40,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "PROPTECH"
+      ]
+    }
+  ],
+  "expected": [
+    {
+      "sector": "AI",
+      "count": 7
+    },
+    {
+      "sector": "FINTECH",
+      "count": 7
+    },
+    {
+      "sector": "EDTECH",
+      "count": 5
+    },
+    {
+      "sector": "HEALTH",
+      "count": 5
+    },
+    {
+      "sector": "SPACE",
+      "count": 5
+    },
+    {
+      "sector": "BIOTECH",
+      "count": 4
+    }
+  ]
+}

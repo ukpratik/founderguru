@@ -1,0 +1,149 @@
+{
+  "description": "A sector needs >= 3 stories from >= 2 sources. Fintech (4 stories, 1 source) and Health (2 stories) don't qualify.",
+  "now": "2026-11-07T12:00:00Z",
+  "rows": [
+    {
+      "id": 1,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 2,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 3,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "AI"
+      ]
+    },
+    {
+      "id": 4,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 5,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 6,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 7,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": 8,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 9,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "HEALTH"
+      ]
+    },
+    {
+      "id": 10,
+      "sourceId": "a",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "CLIMATE_ENERGY"
+      ]
+    },
+    {
+      "id": 11,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "CLIMATE_ENERGY"
+      ]
+    },
+    {
+      "id": 12,
+      "sourceId": "c",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "CLIMATE_ENERGY"
+      ]
+    },
+    {
+      "id": 13,
+      "sourceId": "c",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "CLIMATE_ENERGY"
+      ]
+    },
+    {
+      "id": 14,
+      "sourceId": "b",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "LOGISTICS",
+        "AI"
+      ]
+    },
+    {
+      "id": 15,
+      "sourceId": "c",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "LOGISTICS"
+      ]
+    },
+    {
+      "id": 16,
+      "sourceId": "c",
+      "publishedAt": "2026-11-06T10:00:00Z",
+      "sectors": [
+        "LOGISTICS"
+      ]
+    }
+  ],
+  "expected": [
+    {
+      "sector": "AI",
+      "count": 4
+    },
+    {
+      "sector": "CLIMATE_ENERGY",
+      "count": 4
+    },
+    {
+      "sector": "LOGISTICS",
+      "count": 3
+    }
+  ]
+}

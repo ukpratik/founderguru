@@ -1,0 +1,14 @@
+{
+  "uniqueId": "me.rsms:inter",
+  "name": "Inter",
+  "description": "Interface typeface, bundled in the APK as a Latin subset of the Regular, Medium, SemiBold and Bold instances. Copyright 2020 The Inter Project Authors.",
+  "website": "https://github.com/rsms/inter",
+  "developers": [
+    {
+      "name": "The Inter Project Authors"
+    }
+  ],
+  "licenses": [
+    "OFL-1.1"
+  ]
+}

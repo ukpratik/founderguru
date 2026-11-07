@@ -1,0 +1,14 @@
+{
+  "uniqueId": "com.productiontype:newsreader",
+  "name": "Newsreader",
+  "description": "Reading typeface (headlines), bundled in the APK as a Latin subset of the Medium, SemiBold and Medium Italic instances. Copyright 2020 The Newsreader Project Authors.",
+  "website": "https://github.com/productiontype/Newsreader",
+  "developers": [
+    {
+      "name": "The Newsreader Project Authors"
+    }
+  ],
+  "licenses": [
+    "OFL-1.1"
+  ]
+}

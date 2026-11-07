@@ -388,6 +388,7 @@ fun AboutScreen(
     onOpen: (String) -> Unit,
     onSources: () -> Unit,
     onCopyDiagnostics: () -> Unit,
+    onLicences: () -> Unit = {},
 ) {
     val c = Fg.colors
     Column(Modifier.fillMaxSize().background(c.bg)) {
@@ -400,6 +401,9 @@ fun AboutScreen(
             }
             item {
                 SettingsRow(R.drawable.ic_code, stringResource(R.string.about_code), stringResource(R.string.about_code_sub), { onOpen(AboutLinks.REPO) }, trailing = Trailing.EXTERNAL)
+            }
+            item {
+                SettingsRow(R.drawable.ic_info, stringResource(R.string.about_licences), stringResource(R.string.about_licences_sub), onLicences, Modifier.testTag("licences-row"))
             }
             item { SettingsRow(R.drawable.ic_rss, stringResource(R.string.about_sources), pluralStringResource(R.plurals.about_sources_sub, sourceCount, sourceCount), onSources) }
             item {

@@ -40,6 +40,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.LiveRegionMode
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
@@ -83,7 +84,8 @@ fun Hairline(modifier: Modifier = Modifier, color: Color = Fg.colors.rule) =
 /** Uppercase tracked label (`labelSmall`); TalkBack reads [text] in sentence case (design-system §3 "Small-caps"). */
 @Composable
 fun Kicker(text: String, color: Color, modifier: Modifier = Modifier) =
-    Text(text.uppercase(), modifier, color = color, style = MaterialTheme.typography.labelSmall)
+    // M5 TalkBack pass: read the words in their normal case, so short all-caps labels ("INDIA", "AI") aren't spelled out.
+    Text(text.uppercase(), modifier.semantics { contentDescription = text }, color = color, style = MaterialTheme.typography.labelSmall)
 
 /** Filled CTA: ink fill, bg text, full shape, 52dp (48dp for `small`). */
 @Composable

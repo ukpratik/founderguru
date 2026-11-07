@@ -85,7 +85,7 @@ fun SettingsRow(
     Row(
         modifier
             .fillMaxWidth()
-            .let { if (onClick != null) it.clickable(onClick = onClick) else it }
+            .let { if (onClick != null) it.clickable(role = Role.Button, onClick = onClick) else it }
             .heightIn(min = 64.dp)
             .padding(start = Margin, end = 12.dp, top = 10.dp, bottom = 10.dp),
         verticalAlignment = Alignment.CenterVertically,

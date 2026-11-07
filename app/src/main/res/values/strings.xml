@@ -315,8 +315,14 @@
     <string name="about_lede">FounderGuru %1$s · free and open source, GPL-3.0-or-later. No ads, no account, no tracking.</string>
     <string name="about_privacy">Privacy</string>
     <string name="about_privacy_body">Nothing about you leaves this phone. Feed and image hosts see your IP address, as with any browser. The app stores stories, your saved stories and your settings on this phone only, and sends no analytics or crash reports.</string>
-    <string name="about_code">Source code and licences</string>
-    <string name="about_code_sub">Repository, GPL-3.0 text, open-source libraries and fonts (OFL)</string>
+    <string name="about_code">Source code</string>
+    <string name="about_code_sub">The repository on GitHub, with the GPL-3.0 text</string>
+    <string name="about_licences">Open-source licences</string>
+    <string name="about_licences_sub">Libraries, fonts (OFL) and icons in this app</string>
+    <string name="licences_title">Open-source licences</string>
+    <string name="licences_intro">FounderGuru is built with these libraries, fonts and icons. Tap one to read its licence.</string>
+    <string name="licence_row">%1$s %2$s</string>
+    <string name="licence_close">Close</string>
     <string name="about_sources">Sources</string>
     <plurals name="about_sources_sub">
         <item quantity="one">%1$d feed, with a link to its publisher</item>

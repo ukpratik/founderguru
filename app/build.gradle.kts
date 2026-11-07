@@ -4,6 +4,7 @@ plugins {
     id("fg.android.compose")
     alias(libs.plugins.ksp)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.aboutlibraries.android)
 }
 
 android {
@@ -11,9 +12,22 @@ android {
 
     defaultConfig {
         applicationId = "io.github.ukpratik.founderguru" // permanent (D-020, ADR-009)
-        // versionCode = MAJOR × 10000 + MINOR × 100 + PATCH (LLD §9). Pre-release development builds stay at 0.x.
-        versionCode = 100
-        versionName = "0.1.0"
+        // versionCode = MAJOR × 10000 + MINOR × 100 + PATCH (LLD §9, ADR-006): 1.0.0 → 10000.
+        versionCode = 10000
+        versionName = "1.0.0"
+    }
+
+    // D-021 / ADR-006: the GitHub-release key lives in ~/.android-keys/, its passwords in ~/.gradle/gradle.properties
+    // (founderguru.release.*), never in this repo. Without those properties release builds stay unsigned (CI, F-Droid).
+    signingConfigs {
+        providers.gradleProperty("founderguru.release.storeFile").orNull?.let { storeFilePath ->
+            create("release") {
+                storeFile = file(storeFilePath)
+                storePassword = providers.gradleProperty("founderguru.release.storePassword").get()
+                keyAlias = providers.gradleProperty("founderguru.release.keyAlias").get()
+                keyPassword = providers.gradleProperty("founderguru.release.keyPassword").get()
+            }
+        }
     }
 
     buildTypes {
@@ -21,7 +35,9 @@ android {
             applicationIdSuffix = ".debug"
         }
         release {
-            // No signing config yet (D-021 lands with the first release): release builds are unsigned, as on CI and F-Droid.
+            signingConfigs.findByName("release")?.let { signingConfig = it }
+            // Reproducible builds (F-Droid, LLD §9): no git metadata in the APK.
+            vcsInfo.include = false
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -51,6 +67,25 @@ android {
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
     arg("room.generateKotlin", "true")
+}
+
+// US-013, ADR-007 licence gate (as in Lantern Sudoku): generated at build time, fully offline. Strict mode fails the
+// release build on any licence outside the GPL-3.0-compatible allowlist. The same report feeds About › Open-source licences.
+aboutLibraries {
+    offlineMode = true
+    collect {
+        configPath = file("aboutlibraries")
+        fetchRemoteLicense = false
+        fetchRemoteFunding = false
+        filterVariants.addAll("release")
+    }
+    export {
+        excludeFields.addAll("generated", "funding", "developers")
+    }
+    license {
+        strictMode = com.mikepenz.aboutlibraries.plugin.StrictMode.FAIL
+        allowedLicenses.addAll("Apache-2.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "OFL-1.1")
+    }
 }
 
 dependencies {

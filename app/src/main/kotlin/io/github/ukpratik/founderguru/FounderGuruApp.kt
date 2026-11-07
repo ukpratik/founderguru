@@ -2,6 +2,7 @@
 package io.github.ukpratik.founderguru
 
 import android.app.Application
+import android.os.StrictMode
 import androidx.work.Configuration
 import io.github.ukpratik.founderguru.platform.DigestNotifier
 import io.github.ukpratik.founderguru.work.FgWorkerFactory
@@ -20,6 +21,11 @@ class FounderGuruApp : Application(), SingletonImageLoader.Factory, Configuratio
 
     override fun onCreate() {
         super.onCreate()
+        // LLD §6: StrictMode in debug builds only (log, never crash); release builds have no StrictMode and no logging.
+        if (BuildConfig.DEBUG) {
+            StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build())
+            StrictMode.setVmPolicy(StrictMode.VmPolicy.Builder().detectAll().penaltyLog().build())
+        }
         container = AppContainer(this)
         DigestNotifier.ensureChannel(this)
     }

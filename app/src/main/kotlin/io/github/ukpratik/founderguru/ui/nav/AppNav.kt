@@ -76,6 +76,7 @@ import io.github.ukpratik.founderguru.ui.search.SearchViewModel
 import io.github.ukpratik.founderguru.ui.settings.AboutLinks
 import io.github.ukpratik.founderguru.ui.settings.AboutScreen
 import io.github.ukpratik.founderguru.ui.settings.AboutSourcesScreen
+import io.github.ukpratik.founderguru.ui.settings.LicencesScreen
 import io.github.ukpratik.founderguru.ui.settings.DigestScreen
 import io.github.ukpratik.founderguru.ui.settings.RegionScreen
 import io.github.ukpratik.founderguru.ui.settings.SettingsHomeScreen
@@ -127,6 +128,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable data object AboutSources
 
+@Serializable data object AboutLicences
+
 /** Bottom-nav items (D-016): Local · Global · Saved · Settings; three without Local for "Global only". */
 enum class TopLevel(@StringRes val label: Int, @DrawableRes val icon: Int, @DrawableRes val selectedIcon: Int) {
     LOCAL(R.string.nav_local, R.drawable.ic_local, R.drawable.ic_local),
@@ -170,7 +173,7 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
             d.hasRoute<Hot>() -> TopLevel.of(entry!!.toRoute<Hot>().tab)
             d.hasRoute<Search>() -> entry!!.toRoute<Search>().parent
             d.hasRoute<SettingsRegion>() || d.hasRoute<SettingsSources>() || d.hasRoute<SettingsDigest>() ||
-                d.hasRoute<About>() || d.hasRoute<AboutSources>() -> TopLevel.SETTINGS
+                d.hasRoute<About>() || d.hasRoute<AboutSources>() || d.hasRoute<AboutLicences>() -> TopLevel.SETTINGS
             else -> null
         }
     }
@@ -355,6 +358,7 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
                     onBack = { nav.popBackStack() },
                     onOpen = { open(it) },
                     onSources = { nav.navigate(AboutSources) },
+                    onLicences = { nav.navigate(AboutLicences) },
                     onCopyDiagnostics = {
                         scope.launch {
                             copyText(context, "FounderGuru diagnostics", diagnostics(container))
@@ -363,6 +367,7 @@ fun MainScaffold(container: AppContainer, globalOnly: Boolean, dark: Boolean, me
                     },
                 )
             }
+            composable<AboutLicences> { LicencesScreen(onBack = { nav.popBackStack() }) }
             composable<AboutSources> {
                 AboutSourcesScreen(container.catalog.sources, onBack = { nav.popBackStack() }) { url ->
                     if (ArticleOpener.openInBrowser(context, url) != ArticleOpener.Result.OPENED) scope.launch { snackbar.showSnackbar(noApp, duration = duration) }

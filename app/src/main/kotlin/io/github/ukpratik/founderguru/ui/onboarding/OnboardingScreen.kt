@@ -240,9 +240,13 @@ private fun DigestStep(state: OnboardingUiState.DigestStep, vm: OnboardingAction
     val c = Fg.colors
     val world = state.region == Region.GLOBAL
     val place = stringResource(Labels.region(state.region))
+    // Android 12 and older have no notification permission prompt, so don't promise one (BUG-011).
+    val asks = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
     val (cta, note) = when (state.choice) {
-        DigestMode.WEEKLY -> stringResource(R.string.onboarding_cta_weekly) to stringResource(R.string.onboarding_rationale_weekly)
-        DigestMode.DAILY -> stringResource(R.string.onboarding_cta_daily) to stringResource(R.string.onboarding_rationale_daily)
+        DigestMode.WEEKLY -> stringResource(R.string.onboarding_cta_weekly) to
+            stringResource(if (asks) R.string.onboarding_rationale_weekly else R.string.onboarding_rationale_weekly_no_prompt)
+        DigestMode.DAILY -> stringResource(R.string.onboarding_cta_daily) to
+            stringResource(if (asks) R.string.onboarding_rationale_daily else R.string.onboarding_rationale_daily_no_prompt)
         DigestMode.OFF -> stringResource(R.string.onboarding_cta_start) to stringResource(R.string.onboarding_no_notifications)
     }
     Frame(step = 2, onBack = { vm.back() }, cta = cta, note = note, onCta = onCta) {

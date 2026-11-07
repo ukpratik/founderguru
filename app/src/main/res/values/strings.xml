@@ -63,6 +63,8 @@
     <string name="onboarding_cta_start">Start reading</string>
     <string name="onboarding_rationale_weekly">Android will ask to allow notifications. We send one a week, nothing else.</string>
     <string name="onboarding_rationale_daily">Android will ask to allow notifications. We send one a day, nothing else.</string>
+    <string name="onboarding_rationale_weekly_no_prompt">We send one a week, nothing else.</string>
+    <string name="onboarding_rationale_daily_no_prompt">We send one a day, nothing else.</string>
     <string name="onboarding_no_notifications">No notifications. You can turn the digest on in Settings.</string>
     <string name="back">Back</string>
 

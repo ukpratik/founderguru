@@ -1,0 +1,31 @@
+FounderGuru is a calm, free startup-news reader for aspiring and early-stage founders. It brings together about two dozen trusted startup publishers and shows what is being funded, launched, solved and discussed in your own ecosystem and in the world.
+
+Two tabs
+• Local: startup stories from your region (India, Europe, North America, Southeast Asia, Africa or Latin America), with a few big global stories mixed in and marked "Via Global".
+• Global: worldwide startup news, launches and founder playbooks.
+
+Founder lenses
+• Funding, Launches & ideas, Problems & trends, Playbooks. Tap a lens to see only those stories. Lenses are set by simple, open keyword rules that run on your phone, so a few stories will be in the wrong lens or none.
+
+What's hot this week
+• The sectors with the most stories in the last 7 days (for example AI, Fintech, Climate), with a tap to see them all.
+
+Catch up quickly
+• A "New since your last visit" line, so you know where you stopped.
+• An optional weekly or daily digest notification, which you choose during setup and can turn off at any time.
+• Save stories for later, share a link, and search everything on your phone, also offline.
+
+Sources are linked, not copied
+FounderGuru reads each publisher's public RSS or Atom feed and shows only the headline, a short snippet of up to 200 characters, the image the feed provides, the publisher's name and the time. Every story opens on the publisher's own website. The full list of sources, with a link to each publisher, is in Settings › About › Sources, and you can turn any source off.
+
+Private by design
+• No ads, no analytics, no crash reporting, no account, no backend server.
+• The app connects only to the publishers' feed hosts, to hnrss.org (a third-party proxy for the Show HN feed) and to the image hosts named in the feeds. Those hosts see your IP address, as with any browser.
+• Your saved stories, searches and settings stay on your phone.
+
+Limits worth knowing
+• English only. Coverage of Southeast Asia and Latin America is thinner than other regions.
+• Stories come from commercial publishers; some articles may be behind the publisher's own paywall.
+• Lenses and the startup filter use keywords, not AI, so they are not perfect.
+
+FounderGuru is free and open source software (GPL-3.0-or-later). Report a problem or suggest a source at https://github.com/ukpratik/founderguru/issues

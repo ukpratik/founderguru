@@ -40,6 +40,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
+import java.util.concurrent.TimeUnit
 
 /** Manual DI (ADR-004): every long-lived object, built once in [FounderGuruApp]. */
 class AppContainer(context: Context, workManager: (Context) -> WorkManager = { WorkManager.getInstance(it) }) {
@@ -52,8 +53,16 @@ class AppContainer(context: Context, workManager: (Context) -> WorkManager = { W
     private val policy = HttpPolicy(userAgent = HttpPolicy.userAgent(BuildConfig.VERSION_NAME))
     val httpClient = policy.newClient()
 
-    /** Thumbnails (LLD §4.14): the same honest client, following redirects (https only by the network config). */
-    val imageClient: OkHttpClient = httpClient.newBuilder().followRedirects(true).followSslRedirects(false).build()
+    /**
+     * Thumbnails (LLD §4.14): the same honest client, following redirects (https only by the network config). No call
+     * timeout (BUG-004): full-size feed images (0.7–2.4 MB) take longer than 10 s on slow links; the connect and read
+     * timeouts still end a stalled download. Feeds keep the 10 s call timeout.
+     */
+    val imageClient: OkHttpClient = httpClient.newBuilder()
+        .callTimeout(0, TimeUnit.MILLISECONDS)
+        .followRedirects(true)
+        .followSslRedirects(false)
+        .build()
     val fetcher = FeedFetcher(httpClient, parserFactory = { Xml.newPullParser() }, policy = policy)
     val sourcesRepository = SourcesRepository(db)
     val refreshRepository = RefreshRepository(db, fetcher, catalog, clock)

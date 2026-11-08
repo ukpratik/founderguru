@@ -21,3 +21,6 @@ captures/
 keystore.properties
 # Local agent state
 .claude/scheduled_tasks.lock
+
+# Product docs live in their own private repo (ukpratik/founderguru-product)
+/product/

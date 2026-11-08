@@ -31,8 +31,8 @@ Then it helps you scan:
 
 | Where | Status |
 |---|---|
-| F-Droid | Not yet submitted (draft metadata in [`product/08-release/fdroid-metadata-draft.yml`](product/08-release/fdroid-metadata-draft.yml)) |
-| [GitHub Releases](https://github.com/ukpratik/founderguru/releases) | Coming with 1.0.0 |
+| F-Droid | Submitted, waiting for F-Droid review |
+| [GitHub Releases](https://github.com/ukpratik/founderguru/releases) | 1.0.0: signed APK |
 
 Android 8.0 (API 26) or newer.
 
@@ -100,7 +100,6 @@ tools/feedcheck/     JVM CLI used by the weekly feed-health workflow
 build-logic/         Gradle convention plugins
 scripts/             ci.sh and its gates, feed-health-issues.sh, subset-fonts.sh
 fastlane/            store listing texts, changelogs and images (used by F-Droid)
-product/             discovery, PRD, design, architecture, build and QA documents
 ```
 
 ## Contributing

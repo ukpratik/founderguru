@@ -34,7 +34,7 @@ jobs:
         with:
           packages: "platforms;android-37.0 build-tools;36.0.0"
 
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
 
       - name: Check every feed (3 attempts, about 5 minutes apart)
         run: ./gradlew :tools:feedcheck:run --args="app/src/main/assets/sources.json build/feedcheck.json --attempts 3 --retry-delay-s 300"

@@ -339,7 +339,6 @@
     <string name="about_feedback_sub">Opens the issue tracker in your browser</string>
     <string name="about_donate">Donate</string>
     <string name="about_donate_sub">Keeps the project going. No perks, no pressure.</string>
-    <string name="about_donate_soon">Donation links are coming. No perks, no pressure.</string>
     <string name="about_diagnostics">Copy diagnostics</string>
     <string name="about_diagnostics_sub">Version, Android version and source status. No personal data.</string>
     <string name="about_sources_title">Sources</string>

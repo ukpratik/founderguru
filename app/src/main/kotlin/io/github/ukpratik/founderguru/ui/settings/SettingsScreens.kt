@@ -418,11 +418,10 @@ fun AboutScreen(
             item {
                 SettingsRow(R.drawable.ic_mail, stringResource(R.string.about_feedback), stringResource(R.string.about_feedback_sub), { onOpen(AboutLinks.ISSUES) }, trailing = Trailing.EXTERNAL)
             }
-            item {
-                if (donateUrl != null) {
+            // No donation link in 1.0 (D-028): the row appears only once a URL is set.
+            if (donateUrl != null) {
+                item {
                     SettingsRow(R.drawable.ic_heart, stringResource(R.string.about_donate), stringResource(R.string.about_donate_sub), { onOpen(donateUrl) }, trailing = Trailing.EXTERNAL)
-                } else {
-                    SettingsRow(R.drawable.ic_heart, stringResource(R.string.about_donate), stringResource(R.string.about_donate_soon), null, trailing = Trailing.NONE)
                 }
             }
             item {
@@ -465,7 +464,7 @@ fun AboutSourcesScreen(sources: List<SourceDef>, onBack: () -> Unit, onOpen: (St
     }
 }
 
-/** Project links (D-023 G-8). The donation link is a placeholder until the user sets one up. */
+/** Project links (D-023 G-8). No donation link in 1.0 (D-028); set DONATE to show the About row. */
 object AboutLinks {
     const val REPO = "https://github.com/ukpratik/founderguru"
     const val ISSUES = "$REPO/issues"

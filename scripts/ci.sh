@@ -10,7 +10,6 @@ if [[ -z "${ANDROID_HOME:-}" && ! -f local.properties && -d "$HOME/Library/Andro
 fi
 
 GRADLE=(./gradlew --stacktrace)
-APK=app/build/outputs/apk/release/app-release-unsigned.apk
 step() { printf '\n==> %s\n' "$*"; }
 
 step "1/7 Unit tests (:core and :tools:feedcheck JVM, :app Robolectric)"
@@ -29,6 +28,9 @@ step "3/7 Android Lint (release, abortOnError, warnings as errors)"
 
 step "4/7 Release build (R8 + resource shrinking, AboutLibraries strict licence gate)"
 "${GRADLE[@]}" assembleRelease
+# Unsigned in CI and on F-Droid; signed when the local release key is configured (D-021).
+APK=app/build/outputs/apk/release/app-release-unsigned.apk
+[[ -f "$APK" ]] || APK=app/build/outputs/apk/release/app-release.apk
 
 step "5/7 Permission allowlist"
 scripts/check-permissions.sh "$APK"
